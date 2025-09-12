@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0a1128;
+  --color-deep: #001f54;
+  --color-brand-primary: #034078;
+  --color-brand-secondary: #1282a2;
+  --color-surface: #fefcfb;
+  --color-text: #0a1128;
+  --color-textd: #fefcfb;
+  
+  --radius: 1rem;
+  --shadow-card: 0 8px 28px rgba(10,17,40,0.12);
+}
+
+html {
+  color-scheme: light;
+}
+
+@layer base {
+  * {
+    border-color: rgb(18 130 162 / 0.2);
+  }
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-text);
+  }
+}
