@@ -54,16 +54,16 @@ export default function Testimonials() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="inline-flex items-center px-4 py-2 bg-brand-primary/10 rounded-full text-brand-primary font-medium text-sm">
+          <div className="inline-flex items-center px-4 py-2 bg-white rounded-full text-brand-primary font-medium text-sm">
             <Star className="w-4 h-4 mr-2 fill-current" />
             Client Testimonials
           </div>
           
-          <h2 className="text-4xl lg:text-6xl font-bold bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-primary bg-clip-text text-transparent">
+          <h2 className="text-4xl lg:text-6xl font-bold text-white">
             What Our Clients Say
           </h2>
           
-          <p className="text-xl text-brand-secondary max-w-4xl mx-auto leading-relaxed" style={{ color: '#034078' }}>
+          <p className="text-xl text-[#00d3f3] max-w-4xl mx-auto leading-relaxed" style={{ color: '#00d3f3' }}>
             Don&apos;t just take our word for it. Here&apos;s what industry leaders have to say about working with us.
           </p>
         </motion.div>
@@ -79,7 +79,7 @@ export default function Testimonials() {
               viewport={{ once: true }}
               className="group"
             >
-              <Card className="h-full hover:shadow-2xl transition-all duration-500 border-0 bg-white/80 backdrop-blur-sm group-hover:scale-105 group-hover:-translate-y-2">
+              <Card className="h-full hover:shadow-2xl transition-all duration-500 border-0 bg-white backdrop-blur-sm group-hover:scale-105 group-hover:-translate-y-2">
                 <CardContent className="p-8 space-y-6 relative overflow-hidden">
                   {/* Decorative background pattern */}
                   <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-brand-primary/5 to-brand-secondary/5 rounded-full -translate-y-16 translate-x-16"></div>
@@ -140,23 +140,23 @@ export default function Testimonials() {
 
         {/* Stats Section */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20  bg-[#121b2f]/50 rounded-2xl py-8 "
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <div className="text-center space-y-2">
-            <div className="text-4xl font-bold text-brand-primary" style={{ color: '#034078' }}>100%</div>
-            <div className="text-brand-secondary font-medium" style={{ color: '#034078' }}>Client Satisfaction</div>
+          <div className="text-center space-y-2 ">
+            <div className="text-4xl font-bold text-brand-primary" style={{ color: '#ffffff' }}>100%</div>
+            <div className="text-brand-secondary font-medium" style={{ color: '#ffffff' }}>Client Satisfaction</div>
           </div>
           <div className="text-center space-y-2">
-            <div className="text-4xl font-bold text-brand-primary" style={{ color: '#034078' }}>50+</div>
-            <div className="text-brand-secondary font-medium" style={{ color: '#034078' }}>Successful Projects</div>
+            <div className="text-4xl font-bold text-brand-primary" style={{ color: '#ffffff' }}>50+</div>
+            <div className="text-brand-secondary font-medium" style={{ color: '#ffffff' }}>Successful Projects</div>
           </div>
           <div className="text-center space-y-2">
-            <div className="text-4xl font-bold text-brand-primary" style={{ color: '#034078' }}>5.0</div>
-            <div className="text-brand-secondary font-medium" style={{ color: '#034078' }}>Average Rating</div>
+            <div className="text-4xl font-bold text-brand-primary" style={{ color: '#ffffff' }}>5.0</div>
+            <div className="text-brand-secondary font-medium" style={{ color: '#ffffff' }}>Average Rating</div>
           </div>
         </motion.div>
       </div>

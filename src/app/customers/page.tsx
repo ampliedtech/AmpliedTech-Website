@@ -83,6 +83,11 @@ export default function CustomersPage() {
           <CustomersLogos />
         </Section>
 
+        {/* Testimonials */}
+        <Section background="seamless">
+          <Testimonials />
+        </Section>
+
         {/* Case Studies */}
         <Section background="light">
           <div className="space-y-16">
@@ -166,10 +171,7 @@ export default function CustomersPage() {
           </div>
         </Section>
 
-        {/* Testimonials */}
-        <Section background="surface">
-          <Testimonials />
-        </Section>
+        
 
         <CTABand />
       </main>

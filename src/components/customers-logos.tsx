@@ -126,7 +126,7 @@ export default function CustomersLogos() {
             <div className="relative bg-white rounded-3xl border border-brand-secondary/10 p-8 h-full flex flex-col items-center text-center space-y-6 group-hover:shadow-2xl group-hover:border-brand-primary/20 transition-all duration-500">
               {/* Background gradient on hover */}
               <motion.div
-                className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 to-brand-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"
+                className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 to-brand-secondary/5 h-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"
                 initial={false}
               />
               

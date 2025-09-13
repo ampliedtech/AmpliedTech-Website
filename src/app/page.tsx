@@ -34,7 +34,7 @@ export default function Home() {
           <CustomersLogos />
         </Section>
         
-        <Section background="surface">
+        <Section background="seamless">
           <Testimonials />
         </Section>
         

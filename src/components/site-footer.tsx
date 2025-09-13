@@ -61,7 +61,7 @@ export default function SiteFooter() {
           {/* Company Links */}
           <div>
             <h3 className="text-textd font-semibold mb-4">Company</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-*">
               {footerLinks.company.map((item) => (
                 <li key={item.name}>
                   <Link
@@ -78,7 +78,7 @@ export default function SiteFooter() {
           {/* Resources */}
           <div>
             <h3 className="text-textd font-semibold mb-4">Resources</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-">
               {footerLinks.resources.map((item) => (
                 <li key={item.name}>
                   <Link
