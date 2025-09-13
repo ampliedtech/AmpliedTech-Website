@@ -1,8 +1,11 @@
+"use client";
+
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 import Section from "@/components/section";
 import ServicesGrid from "@/components/services-grid";
 import CTABand from "@/components/cta-band";
+import { useEffect } from "react";
 
 // Function to get service-specific animated visuals
 function getServiceVisual(serviceTitle: string) {
@@ -293,6 +296,33 @@ const detailedServices = [
 ];
 
 export default function ServicesPage() {
+  useEffect(() => {
+    // Handle hash navigation when coming from homepage
+    const handleHashNavigation = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          setTimeout(() => {
+            element.scrollIntoView({ 
+              behavior: 'smooth',
+              block: 'start',
+              inline: 'nearest'
+            });
+          }, 100); // Small delay to ensure page is fully loaded
+        }
+      }
+    };
+
+    // Run on mount and when hash changes
+    handleHashNavigation();
+    window.addEventListener('hashchange', handleHashNavigation);
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashNavigation);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen">
       <SiteHeader />
@@ -331,6 +361,7 @@ export default function ServicesPage() {
               {detailedServices.map((service, index) => (
                 <div
                   key={service.title}
+                  id={service.title.toLowerCase().replace(/\s+/g, '-').replace(/&/g, 'and')}
                   className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ color: '#034078' }}
                 >
                   <div className={`space-y-6 ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
@@ -375,7 +406,7 @@ export default function ServicesPage() {
                         {getServiceVisual(service.title)}
                         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
                           <p className="text-brand-secondary text-lg font-medium bg-white/90 px-3 py-1 rounded-full shadow-sm">
-                            {service.title}
+                            {/* {service.title} */}
                           </p>
                         </div>
                       </div>

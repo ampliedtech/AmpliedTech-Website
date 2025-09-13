@@ -13,6 +13,7 @@ import {
   CheckCircle
 } from "lucide-react";
 import { useState } from "react";
+import { useRouter, usePathname } from "next/navigation";
 
 const services = [
   {
@@ -70,6 +71,29 @@ function ServiceCard({ service, index }: { service: typeof services[0], index: n
   const [isHovered, setIsHovered] = useState(false);
   const controls = useAnimation();
   const Icon = service.icon;
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const handleLearnMore = () => {
+    const serviceId = service.title.toLowerCase().replace(/\s+/g, '-').replace(/&/g, 'and');
+    
+    if (pathname === '/services') {
+      // If on services page, scroll to the detailed section
+      const element = document.getElementById(serviceId);
+      if (element) {
+        element.scrollIntoView({ 
+          
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'nearest'
+          
+        });
+      }
+    } else {
+      // If on homepage, navigate to services page with hash
+      router.push(`/services#${serviceId}`);
+    }
+  };
 
   const handleHover = () => {
     setIsHovered(true);
@@ -199,7 +223,8 @@ function ServiceCard({ service, index }: { service: typeof services[0], index: n
               transition={{ duration: 0.4, delay: (index * 0.1) + 0.6 }}
             >
               <motion.button
-                className="flex items-center space-x-2 text-brand-primary font-semibold text-sm group-hover:text-brand-secondary transition-colors duration-300"
+                onClick={handleLearnMore}
+                className="flex items-center space-x-2 text-brand-primary font-semibold text-sm group-hover:text-brand-secondary transition-colors duration-300 cursor-pointer"
                 whileHover={{ x: 5 }}
                 whileTap={{ scale: 0.95 }}
               >
