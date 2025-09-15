@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import Logo from "@/components/logo";
 
@@ -58,14 +58,7 @@ export default function SiteHeader() {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Button
-              asChild
-              variant="ghost"
-              className="text-textd hover:bg-brand-primary/10 hover:text-brand-secondary transition-all duration-300"
-            >
-              <Link href="/contact">Contact</Link>
-            </Button>
+          <div className="hidden md:flex items-center">
             <Button asChild className="bg-brand-primary hover:bg-brand-secondary text-textd shadow-lg hover:shadow-glow transition-all duration-300">
               <Link href="/contact">Get Started</Link>
             </Button>
@@ -83,19 +76,25 @@ export default function SiteHeader() {
                 <span className="sr-only">Open menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] bg-ink border-brand-primary/20">
-              <div className="flex flex-col h-full">
-                <div className="flex items-center justify-between mb-8">
+            <SheetContent side="right" className="w-[320px] bg-ink border-brand-primary/20">
+              <SheetHeader className="px-6 py-4 border-b border-brand-primary/10">
+                <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+              </SheetHeader>
+              
+              <div className="flex flex-col h-full px-6">
+                {/* Logo Section */}
+                <div className="flex items-center justify-center py-6 border-b border-brand-primary/10">
                   <Logo variant="full" size="md" animated={false} />
                 </div>
                 
-                <nav className="flex-1">
-                  <div className="space-y-4">
+                {/* Navigation Section */}
+                <nav className="flex-1 py-6">
+                  <div className="space-y-1">
                     {navigation.map((item) => (
                       <Link
                         key={item.name}
                         href={item.href}
-                        className="block text-textd hover:text-brand-secondary transition-colors duration-200 py-2"
+                        className="block px-4 py-3 text-textd hover:text-brand-secondary hover:bg-brand-primary/5 rounded-lg transition-all duration-200 font-medium"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
                         {item.name}
@@ -104,19 +103,11 @@ export default function SiteHeader() {
                   </div>
                 </nav>
 
-                <div className="space-y-4 pt-8">
+                {/* CTA Section */}
+                <div className="py-6 border-t border-brand-primary/10">
                   <Button
                     asChild
-                    variant="outline"
-                    className="w-full border-brand-primary/50 text-brand-primary hover:bg-brand-primary/10 hover:border-brand-primary"
-                  >
-                    <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                      Contact
-                    </Link>
-                  </Button>
-                  <Button
-                    asChild
-                    className="w-full bg-brand-primary hover:bg-brand-secondary text-textd shadow-lg hover:shadow-glow transition-all duration-300"
+                    className="w-full h-12 bg-gradient-to-r from-brand-primary to-brand-secondary hover:from-brand-secondary hover:to-brand-primary text-textd shadow-lg hover:shadow-glow transition-all duration-300 font-medium"
                   >
                     <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
                       Get Started

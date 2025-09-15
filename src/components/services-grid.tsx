@@ -276,7 +276,7 @@ export default function ServicesGrid() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          From custom software development to cloud infrastructure and cybersecurity — we provide comprehensive technology solutions with ongoing partnership and support.
+          Discover our comprehensive range of technology services designed to accelerate your digital transformation and drive sustainable business growth.
         </motion.p>
       </motion.div>
 
