@@ -72,7 +72,7 @@ export default function ContactPage() {
               Contact Us
             </h1>
             <p className="text-xl text-brand-secondary max-w-3xl mx-auto">
-              Ready to transform your business with our Technology-as-a-Service? Let&apos;s discuss how we can help you achieve your goals.
+              Ready to transform your business with our Technology-as-a-Service? Let&apos;s discuss how we can help you achieve your goals through ongoing partnership.
             </p>
           </div>
         </Section>

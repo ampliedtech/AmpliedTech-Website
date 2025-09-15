@@ -1,3 +1,5 @@
+"use client";
+
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 import Section from "@/components/section";
@@ -15,7 +17,7 @@ export default function AboutPage() {
               About Amplied Technologies
             </h1>
             <p className="text-xl text-brand-secondary max-w-3xl mx-auto">
-              Your Partner in Digital Growth. We deliver secure, scalable, and innovative technology-as-a-service to help businesses worldwide accelerate their digital transformation.
+              Your dedicated technology partner delivering enterprise-grade software development, cloud infrastructure, and cybersecurity solutions. We provide ongoing support, predictable costs, and the expertise you need to accelerate your digital transformation.
             </p>
           </div>
         </Section>
@@ -29,13 +31,13 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-brand-secondary leading-relaxed" style={{ color: '#034078' }}>
                 <p>
-                  Amplied Technologies LLP was founded with a simple yet powerful vision: to democratize access to world-class technology solutions through our innovative Technology-as-a-Service (TaaS) model.
+                  Amplied Technologies LLP was founded with a simple yet powerful vision: to revolutionize how businesses access technology through our innovative Technology-as-a-Service (TaaS) model.
                 </p>
                 <p>
-                  Unlike traditional consultancies that deliver one-off projects and disappear, we provide ongoing, subscription-based technology services that grow with your business. Our approach ensures continuous innovation, predictable costs, and dedicated support.
+                  Unlike traditional consultancies that deliver one-off projects and disappear, we provide ongoing, subscription-based technology partnerships that evolve with your business. Our approach ensures continuous innovation, predictable costs, dedicated team availability, and proactive support.
                 </p>
                 <p>
-                  Based in India and serving clients worldwide, we combine deep technical expertise with a client-first mindset to deliver solutions that not only meet today&apos;s needs but also prepare you for tomorrow&apos;s challenges.
+                  Based in India and serving clients worldwide, we combine deep technical expertise with a partnership-first mindset to deliver solutions that not only meet today&apos;s needs but also continuously adapt to tomorrow&apos;s challenges.
                 </p>
               </div>
             </div>
@@ -68,8 +70,21 @@ export default function AboutPage() {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
-                  <div className="w-48 h-48 bg-gradient-to-br from-brand-primary/20 to-brand-secondary/20 rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-brand-primary font-bold text-4xl">NG</span>
+                  <div className="w-64 h-64 bg-gradient-to-br from-brand-primary/20 to-brand-secondary/20 rounded-full mx-auto flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/avatars/naveen.jpg" 
+                      alt="Naveen Goswami - Founder & CEO"
+                      className="w-full h-full object-cover rounded-full"
+                      onError={(e) => {
+                        // Fallback to initials if image fails to load
+                        e.currentTarget.style.display = 'none';
+                        const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
+                        if (nextElement) {
+                          nextElement.style.display = 'flex';
+                        }
+                      }}
+                    />
+                    <span className="text-brand-primary font-bold text-6xl hidden">NG</span>
                   </div>
                 </div>
                 
@@ -85,13 +100,13 @@ export default function AboutPage() {
                   
                   <div className="space-y-4 text-brand-secondary leading-relaxed" style={{ color: '#034078' }}>
                     <p>
-                      With over 15 years of experience in technology leadership and digital transformation, Naveen founded Amplied Technologies to bridge the gap between traditional consultancy and ongoing technology partnership.
+                      With over 22 years of experience in technology leadership and digital transformation, Naveen founded Amplied Technologies to bridge the gap between traditional consultancy and ongoing technology partnership.
                     </p>
                     <p>
-                      His vision is to make enterprise-grade technology accessible to businesses of all sizes through our innovative TaaS model, ensuring continuous innovation and predictable costs.
+                      His vision is to make enterprise-grade technology accessible to businesses of all sizes through our innovative TaaS model, ensuring continuous innovation, predictable costs, and dedicated team availability.
                     </p>
                     <p>
-                      &ldquo;We believe technology should be an enabler, not a barrier. Our mission is to help businesses focus on what they do best while we handle their technology needs with excellence and reliability.&rdquo;
+                      &ldquo;We believe technology should be an enabler, not a barrier. Our mission is to help businesses focus on what they do best while we handle their technology needs with excellence, reliability, and ongoing partnership.&rdquo;
                     </p>
                   </div>
                 </div>

@@ -7,56 +7,56 @@ import CTABand from "@/components/cta-band";
 
 const caseStudies = [
   {
-    company: "YappyApps",
-    industry: "Mobile App Development",
-    challenge: "Needed to scale their mobile app infrastructure to handle 100K+ users",
-    solution: "Implemented cloud-native architecture with auto-scaling and microservices",
+    company: "Spotlight Streaming",
+    industry: "Live Streaming Platform",
+    challenge: "Needed to scale their live streaming infrastructure to handle 100K+ concurrent viewers",
+    solution: "Implemented cloud-native architecture with auto-scaling and microservices for real-time streaming",
     results: [
       "99.9% uptime achieved",
       "50% reduction in infrastructure costs",
-      "3x faster app performance",
-      "Seamless scaling to 500K+ users"
+      "3x faster streaming performance",
+      "Seamless scaling to 500K+ concurrent viewers"
     ],
-    logo: "/logos/yappyapps.png"
+    logo: "/logos/spotlight.svg"
   },
   {
     company: "Shephertz Technologies",
-    industry: "Cloud Infrastructure",
-    challenge: "Required secure, compliant cloud infrastructure for enterprise clients",
-    solution: "Built multi-tenant cloud platform with advanced security and compliance features",
+    industry: "Product-Based Technology Company",
+    challenge: "Required ongoing technology support for diverse product suite spanning 15 years",
+    solution: "Provided comprehensive TaaS partnership supporting Backend-as-a-Service, MBaaS, and AI monitoring tools",
     results: [
-      "SOC2 Type II compliance achieved",
-      "Zero security incidents",
-      "40% faster deployment times",
-      "99.95% SLA maintained"
+      "Continuous product innovation",
+      "Zero downtime across all products",
+      "40% faster feature delivery",
+      "99.95% SLA maintained across all platforms"
     ],
     logo: "/logos/shephertz.png"
   },
   {
     company: "Witzeal Technologies",
-    industry: "Gaming Solutions",
-    challenge: "Needed to optimize game performance and reduce deployment time",
-    solution: "Implemented DevOps pipeline and cloud infrastructure optimization",
+    industry: "Real Money Gaming Platform",
+    challenge: "Needed to scale to 50+ million users across 20+ games while maintaining robust infrastructure",
+    solution: "Implemented comprehensive TaaS model with dedicated team and continuous optimization",
     results: [
-      "70% reduction in deployment time",
+      "Scaled to 50+ million users",
       "60% improvement in game performance",
       "Zero-downtime deployments",
-      "50% cost savings on infrastructure"
+      "50% cost savings through optimization"
     ],
-    logo: "/logos/witzeal.png"
+    logo: "/logos/witzeal.svg"
   },
   {
-    company: "Wealthians",
-    industry: "Fintech Platform",
-    challenge: "Required robust security and compliance for financial services platform",
-    solution: "Implemented comprehensive cybersecurity framework and compliance management",
+    company: "Teeoff Technologies",
+    industry: "AI Solutions Company",
+    challenge: "Required ongoing partnership to develop cutting-edge AI and AR technologies",
+    solution: "Provided dedicated TaaS team for AI development, AR implementation, and continuous innovation",
     results: [
-      "100% compliance with financial regulations",
-      "Zero security breaches",
-      "24/7 threat monitoring",
-      "Automated compliance reporting"
+      "Advanced AI and AR capabilities",
+      "Predictable development costs",
+      "Dedicated team always available",
+      "Continuous technology updates"
     ],
-    logo: "/logos/wealthians.png"
+    logo: "/logos/teeoff_large.png"
   }
 ];
 
@@ -73,7 +73,7 @@ export default function CustomersPage() {
               Our Customers
             </h1>
             <p className="text-xl text-brand-secondary max-w-3xl mx-auto">
-              We&apos;re proud to partner with innovative companies across various industries, helping them achieve their digital transformation goals.
+              We&apos;re proud to partner with forward-thinking companies across diverse industries, providing ongoing technology support that drives digital transformation and sustainable growth.
             </p>
           </div>
         </Section>
@@ -96,7 +96,7 @@ export default function CustomersPage() {
                 Success Stories
               </h2>
               <p className="text-xl text-brand-secondary max-w-3xl mx-auto">
-                Discover how we&apos;ve helped our clients achieve remarkable results through our Technology-as-a-Service approach
+                Discover how we&apos;ve helped our clients achieve remarkable results through our ongoing Technology-as-a-Service partnerships
               </p>
             </div>
 

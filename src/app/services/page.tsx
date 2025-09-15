@@ -216,80 +216,81 @@ function getServiceVisual(serviceTitle: string) {
 
 const detailedServices = [
   {
-    title: "Software Development",
-    description: "We build scalable, secure applications using modern technologies and agile methodologies. Our development process ensures continuous improvement and rapid delivery.",
+    title: "Custom Software Development",
+    description: "We build scalable, secure applications using modern technologies and agile methodologies. Our ongoing development process ensures continuous improvement and rapid delivery with dedicated team support.",
     features: [
-      "Custom web and mobile applications",
-      "Microservices architecture",
+      "Full-stack web and mobile applications",
+      "Microservices architecture design",
       "API development and integration",
       "Database design and optimization",
-      "Code review and quality assurance",
-      "Continuous integration and deployment"
+      "Ongoing code review and quality assurance",
+      "Continuous integration and deployment",
+      "Regular feature updates and maintenance"
     ],
     technologies: ["React", "Node.js", "Python", "PostgreSQL", "MongoDB", "Docker"]
   },
   {
-    title: "Game Development",
-    description: "Create immersive, engaging games across multiple platforms with cutting-edge graphics and smooth gameplay. From concept to launch, we handle every aspect of game development.",
+    title: "Data Analytics & AI",
+    description: "Transform your data into actionable insights with our comprehensive data analytics and AI solutions. We provide ongoing data management, analysis, and AI model development to drive business intelligence.",
     features: [
-      "2D and 3D game development",
-      "Multi-platform deployment",
-      "Real-time multiplayer functionality",
-      "Advanced graphics and animations",
-      "Game optimization and performance tuning",
-      "Post-launch support and updates"
+      "Data engineering and pipeline development",
+      "Machine learning model development",
+      "Business intelligence dashboards",
+      "Predictive analytics solutions",
+      "Data visualization and reporting",
+      "Ongoing model optimization and updates"
     ],
-    technologies: ["Unity", "Unreal Engine", "C#", "C++", "JavaScript", "WebGL"]
+    technologies: ["Python", "TensorFlow", "PyTorch", "Pandas", "Scikit-learn", "Tableau"]
   },
   {
-    title: "IT Consulting & Strategy",
-    description: "Strategic technology planning embedded in ongoing execution to drive your digital transformation. We help you make informed decisions about your technology investments.",
+    title: "Digital Transformation",
+    description: "Strategic technology planning embedded in ongoing execution to drive your digital transformation. We help you make informed decisions about your technology investments with continuous guidance.",
     features: [
-      "Digital transformation strategy",
-      "Technology roadmap development",
+      "Technology strategy development",
       "Process optimization and automation",
       "Legacy system modernization",
-      "Cloud migration planning",
-      "IT governance and compliance"
+      "Digital roadmap planning",
+      "Change management support",
+      "Ongoing strategic guidance"
     ],
     technologies: ["AWS", "Azure", "GCP", "Kubernetes", "Terraform", "Ansible"]
   },
   {
-    title: "Managed IT Services",
-    description: "Proactive monitoring, maximum uptime, and predictable costs for your entire IT infrastructure. Focus on your business while we handle your technology needs.",
+    title: "Technology-as-a-Service (TaaS)",
+    description: "Our flagship offering providing ongoing technology partnership with predictable costs, dedicated team availability, and continuous innovation. Focus on your business while we handle your technology needs.",
     features: [
-      "24/7 infrastructure monitoring",
+      "Dedicated technology team",
       "Predictable monthly costs",
-      "Proactive maintenance and updates",
-      "Help desk and technical support",
-      "Security monitoring and management",
-      "Backup and disaster recovery"
+      "Ongoing support and maintenance",
+      "Regular technology updates",
+      "Proactive monitoring and optimization",
+      "Continuous improvement and innovation"
     ],
-    technologies: ["Nagios", "Zabbix", "Prometheus", "Grafana", "ELK Stack", "Ansible"]
+    technologies: ["Full Stack", "Cloud Platforms", "DevOps", "Security", "Monitoring", "AI/ML"]
   },
   {
-    title: "Cybersecurity & Compliance",
-    description: "Continuous threat monitoring and compliance management to protect your business and data. Stay secure and compliant with our comprehensive security services.",
+    title: "Cybersecurity Solutions",
+    description: "Continuous threat monitoring and compliance management to protect your business and data. Stay secure and compliant with our comprehensive security services and ongoing protection.",
     features: [
       "Security assessment and auditing",
       "Threat detection and response",
-      "Compliance management (GDPR, HIPAA, SOC2)",
-      "Security training and awareness",
+      "Compliance management (SOC2, ISO)",
       "Penetration testing",
-      "Incident response planning"
+      "Incident response planning",
+      "Ongoing security monitoring"
     ],
     technologies: ["SIEM", "EDR", "WAF", "VPN", "PKI", "Security Frameworks"]
   },
   {
-    title: "Cloud Services & DevOps",
-    description: "Seamless cloud migration, automation, and rapid deployment for faster time-to-market. Modernize your infrastructure with our cloud and DevOps expertise.",
+    title: "Cloud Infrastructure & DevOps",
+    description: "Seamless cloud migration, automation, and rapid deployment for faster time-to-market. Modernize your infrastructure with our cloud and DevOps expertise and ongoing optimization.",
     features: [
       "Cloud migration and optimization",
       "CI/CD pipeline setup",
       "Infrastructure as Code (IaC)",
       "Container orchestration",
       "Monitoring and logging",
-      "Cost optimization"
+      "Ongoing cost optimization"
     ],
     technologies: ["AWS", "Azure", "GCP", "Kubernetes", "Docker", "Terraform"]
   }
@@ -335,7 +336,7 @@ export default function ServicesPage() {
               Our Services
             </h1>
             <p className="text-xl text-brand-secondary max-w-3xl mx-auto"  >
-              Comprehensive technology solutions designed to accelerate your digital transformation and drive business growth.
+              From custom software development to cloud infrastructure and cybersecurity — we provide comprehensive technology solutions with ongoing partnership and support.
             </p>
           </div>
         </Section>
@@ -353,7 +354,7 @@ export default function ServicesPage() {
                 Detailed Service Offerings
               </h2>
               <p className="text-xl text-brand-secondary max-w-3xl mx-auto" style={{ color: '#034078' }}>
-                Explore our comprehensive range of technology services tailored to your business needs
+                Explore our comprehensive range of Technology-as-a-Service offerings designed to grow with your business
               </p>
             </div>
 
