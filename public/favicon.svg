@@ -1,0 +1,45 @@
+<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="faviconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#034078" />
+      <stop offset="100%" stop-color="#1282a2" />
+    </linearGradient>
+    <linearGradient id="faviconInner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fefcfb" />
+      <stop offset="100%" stop-color="#e0e1dd" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main A shape with gradient -->
+  <path d="M6 26 L16 6 L26 26 L22 26 L16 16 L10 26 Z" fill="url(#faviconGradient)" stroke="#1282a2" stroke-width="0.5"/>
+  
+  <!-- Crossbar of the A -->
+  <rect x="11" y="21" width="10" height="2" fill="url(#faviconGradient)" stroke="#1282a2" stroke-width="0.3"/>
+  
+  <!-- Circuit board pattern inside the A - simplified for small size -->
+  <g>
+    <!-- Vertical line up the left leg -->
+    <line x1="11" y1="24" x2="11" y2="14" stroke="url(#faviconInner)" stroke-width="1" stroke-linecap="round"/>
+    
+    <!-- Horizontal line across the crossbar -->
+    <line x1="11" y1="22" x2="21" y2="22" stroke="url(#faviconInner)" stroke-width="1" stroke-linecap="round"/>
+    
+    <!-- Vertical line down the right leg -->
+    <line x1="21" y1="14" x2="21" y2="24" stroke="url(#faviconInner)" stroke-width="1" stroke-linecap="round"/>
+    
+    <!-- Extended line from bottom left node -->
+    <line x1="11" y1="24" x2="8" y2="24" stroke="url(#faviconInner)" stroke-width="1" stroke-linecap="round"/>
+    
+    <!-- Circuit nodes -->
+    <circle cx="11" cy="14" r="0.8" fill="url(#faviconInner)"/>
+    <circle cx="11" cy="22" r="0.8" fill="url(#faviconInner)"/>
+    <circle cx="21" cy="22" r="0.8" fill="url(#faviconInner)"/>
+    <circle cx="21" cy="14" r="0.8" fill="url(#faviconInner)"/>
+    <circle cx="11" cy="24" r="0.8" fill="url(#faviconInner)"/>
+    <circle cx="8" cy="24" r="0.8" fill="url(#faviconInner)"/>
+    
+    <!-- Central connection node -->
+    <circle cx="16" cy="22" r="1" fill="#034078"/>
+  </g>
+</svg>
