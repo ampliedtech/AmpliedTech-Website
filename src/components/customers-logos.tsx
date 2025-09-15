@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Star, Award, TrendingUp, Clock, Shield } from "lucide-react";
+import Image from "next/image";
 
 const customers = [
   {
@@ -129,23 +130,13 @@ export default function CustomersLogos() {
                 className="relative w-24 h-24 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg border border-gray-700"
                 whileHover={{ rotate: 5 }}
               >
-                <img 
+                <Image 
                   src={customer.logo} 
                   alt={`${customer.name} logo`}
-                  className="w-16 h-16 object-contain max-w-full max-h-full"
-                  style={{ maxWidth: '64px', maxHeight: '64px' }}
-                  onError={(e) => {
-                    // Fallback to first letter if logo fails to load
-                    e.currentTarget.style.display = 'none';
-                    const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
-                    if (nextElement) {
-                      nextElement.style.display = 'block';
-                    }
-                  }}
+                  width={64}
+                  height={64}
+                  className="object-contain"
                 />
-                <span className="text-brand-primary font-bold text-2xl hidden">
-                  {customer.name.charAt(0)}
-                </span>
                 
                 {/* Floating particles on hover */}
                 <motion.div

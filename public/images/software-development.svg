@@ -1,0 +1,47 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#034078;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#044078;stop-opacity:0.7" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8f9fa" rx="16" stroke="#034078" stroke-width="2"/>
+  
+  <!-- Code Editor Mockup -->
+  <rect x="50" y="50" width="300" height="200" fill="#2d2d2d" rx="8" stroke="#034078" stroke-width="4"/>
+  
+  <!-- Header Bar -->
+  <rect x="50" y="50" width="300" height="30" fill="#1a1a1a" rx="8"/>
+  <circle cx="65" cy="65" r="6" fill="#ff5f56"/>
+  <circle cx="80" cy="65" r="6" fill="#ffbd2e"/>
+  <circle cx="95" cy="65" r="6" fill="#27ca3f"/>
+  
+  <!-- Code Lines -->
+  <text x="60" y="85" fill="#569cd6" font-size="14" font-family="monospace" font-weight="bold">function buildApp() {</text>
+  <text x="80" y="105" fill="#dcdcaa" font-size="14" font-family="monospace" font-weight="bold">  return "Amazing!";</text>
+  <text x="60" y="125" fill="#569cd6" font-size="14" font-family="monospace" font-weight="bold">}</text>
+  <text x="60" y="145" fill="#ce9178" font-size="14" font-family="monospace" font-weight="bold">// TaaS Development</text>
+  <text x="60" y="165" fill="#ce9178" font-size="14" font-family="monospace" font-weight="bold">// Ongoing Support</text>
+  
+  <!-- Floating Elements -->
+  <circle cx="320" cy="100" r="8" fill="#034078" opacity="1">
+    <animate attributeName="cy" values="100;90;100" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="320" cy="150" r="6" fill="#044078" opacity="0.9">
+    <animate attributeName="cy" values="150;140;150" dur="2s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  <circle cx="320" cy="200" r="7" fill="#034078" opacity="0.9">
+    <animate attributeName="cy" values="200;190;200" dur="2.5s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+  
+  <!-- Success Indicator -->
+  <circle cx="320" cy="80" r="3" fill="#27ca3f">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" fill="#034078" font-size="18" font-weight="bold">Software Development</text>
+  
+</svg>

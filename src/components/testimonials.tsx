@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -110,23 +111,13 @@ export default function Testimonials() {
                   {/* Author section with enhanced design */}
                   <div className="flex items-center space-x-4 pt-6 border-t border-brand-secondary/10">
                     <div className="relative">
-                      <div className="w-16 h-16 bg-gradient-to-br from-brand-primary to-brand-secondary rounded-2xl flex items-center justify-center shadow-lg overflow-hidden">
-                        <img 
+                      <div className="w-16 h-16 bg-gradient-to-br from-brand-primary to-brand-secondary rounded-2xl flex items-center justify-center shadow-lg overflow-hidden relative">
+                        <Image 
                           src={testimonial.avatar} 
                           alt={`${testimonial.name} avatar`}
-                          className="w-full h-full object-cover rounded-2xl"
-                          onError={(e) => {
-                            // Fallback to first letter if image fails to load
-                            e.currentTarget.style.display = 'none';
-                            const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
-                            if (nextElement) {
-                              nextElement.style.display = 'flex';
-                            }
-                          }}
+                          fill
+                          className="object-cover rounded-2xl"
                         />
-                        <span className="text-white font-bold text-xl hidden">
-                          {testimonial.name.charAt(0)}
-                        </span>
                       </div>
                       {/* <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-white rounded-full border-2 border-white flex items-center justify-center">
                         <div className="w-3 h-3 bg-green-500 rounded-full"></div>

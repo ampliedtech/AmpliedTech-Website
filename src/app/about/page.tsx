@@ -3,6 +3,7 @@
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 import Section from "@/components/section";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
@@ -43,18 +44,14 @@ export default function AboutPage() {
             </div>
 
             <div className="relative">
-              <div className="w-full h-96 bg-gradient-to-br from-brand-primary/20 to-brand-secondary/20 rounded-2xl border border-brand-secondary/20 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-24 h-24 bg-brand-primary/30 rounded-full mx-auto flex items-center justify-center">
-                    <div className="w-12 h-12 bg-brand-primary rounded-lg"></div>
-                  </div>
-                  <p className="text-brand-secondary text-lg font-medium" style={{ color: '#034078' }}>
-                    Technology as a Service
-                  </p>
-                  <p className="text-brand-secondary/70 text-sm" style={{ color: '#034078' }}>
-                    Not Consultancy
-                  </p>
-                </div>
+              <div className="w-full h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl border border-brand-secondary/20 overflow-hidden shadow-lg relative">
+                <Image 
+                  src="/images/taas-concept.svg" 
+                  alt="Technology as a Service Concept"
+                  fill
+                  className="object-contain p-4"
+                  priority
+                />
               </div>
             </div>
           </div>
@@ -70,21 +67,14 @@ export default function AboutPage() {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
-                  <div className="w-64 h-64 bg-gradient-to-br from-brand-primary/20 to-brand-secondary/20 rounded-full mx-auto flex items-center justify-center overflow-hidden">
-                    <img 
+                  <div className="w-64 h-64 bg-gradient-to-br from-brand-primary/20 to-brand-secondary/20 rounded-full mx-auto flex items-center justify-center overflow-hidden relative">
+                    <Image 
                       src="/avatars/naveen.jpg" 
                       alt="Naveen Goswami - Founder & CEO"
-                      className="w-full h-full object-cover rounded-full"
-                      onError={(e) => {
-                        // Fallback to initials if image fails to load
-                        e.currentTarget.style.display = 'none';
-                        const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
-                        if (nextElement) {
-                          nextElement.style.display = 'flex';
-                        }
-                      }}
+                      fill
+                      className="object-cover rounded-full"
+                      priority
                     />
-                    <span className="text-brand-primary font-bold text-6xl hidden">NG</span>
                   </div>
                 </div>
                 

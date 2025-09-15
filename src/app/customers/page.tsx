@@ -1,9 +1,12 @@
+"use client";
+
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 import Section from "@/components/section";
 import CustomersLogos from "@/components/customers-logos";
 import Testimonials from "@/components/testimonials";
 import CTABand from "@/components/cta-band";
+import Image from "next/image";
 
 const caseStudies = [
   {
@@ -149,20 +152,14 @@ export default function CustomersPage() {
                   </div>
 
                   <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                    <div className="w-full h-80 bg-gradient-to-br from-brand-primary/10 to-brand-secondary/10 rounded-2xl border border-brand-secondary/20 flex items-center justify-center">
-                      <div className="text-center space-y-4">
-                        <div className="w-24 h-24 bg-brand-primary/20 rounded-full mx-auto flex items-center justify-center">
-                          <span className="text-brand-primary font-bold text-2xl">
-                            {study.company.charAt(0)}
-                          </span>
-                        </div>
-                        <p className="text-brand-secondary text-lg font-medium">
-                          {study.company}
-                        </p>
-                        <p className="text-brand-secondary/70 text-sm">
-                          {study.industry}
-                        </p>
-                      </div>
+                    <div className="w-full h-80 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl border border-brand-secondary/20 overflow-hidden shadow-lg relative">
+                      <Image 
+                        src={`/images/${study.company.toLowerCase().replace(/\s+/g, '-')}.svg`}
+                        alt={`${study.company} - ${study.industry}`}
+                        fill
+                        className="object-contain p-4"
+                        priority
+                      />
                     </div>
                   </div>
                 </div>

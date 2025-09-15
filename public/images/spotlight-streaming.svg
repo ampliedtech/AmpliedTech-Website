@@ -1,0 +1,42 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#034078;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#044078;stop-opacity:0.4" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg7)" rx="16"/>
+  
+  <!-- Streaming Platform -->
+  <rect x="50" y="80" width="300" height="140" fill="#1a1a1a" rx="8" stroke="#034078" stroke-width="2"/>
+  
+  <!-- Video Player -->
+  <rect x="70" y="100" width="260" height="100" fill="#000" rx="4"/>
+  
+  <!-- Play Button -->
+  <circle cx="200" cy="150" r="25" fill="#034078" opacity="0.8"/>
+  <path d="M190 140 L190 160 L210 150 Z" fill="white"/>
+  
+  <!-- Live Indicator -->
+  <circle cx="320" cy="110" r="6" fill="#ff0000">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  <text x="330" y="115" fill="#ff0000" font-size="10" font-weight="bold">LIVE</text>
+  
+  <!-- Viewer Count -->
+  <text x="200" y="220" text-anchor="middle" fill="#034078" font-size="14" font-weight="bold">500K+ Concurrent Viewers</text>
+  
+  <!-- Streaming Waves -->
+  <path d="M100 250 Q120 240 140 250 Q160 260 180 250" stroke="#034078" stroke-width="2" fill="none" opacity="0.6">
+    <animate attributeName="d" values="M100 250 Q120 240 140 250 Q160 260 180 250;M100 250 Q120 260 140 250 Q160 240 180 250;M100 250 Q120 240 140 250 Q160 260 180 250" dur="2s" repeatCount="indefinite"/>
+  </path>
+  <path d="M220 250 Q240 240 260 250 Q280 260 300 250" stroke="#044078" stroke-width="2" fill="none" opacity="0.6">
+    <animate attributeName="d" values="M220 250 Q240 260 260 250 Q280 240 300 250;M220 250 Q240 240 260 250 Q280 260 300 250;M220 250 Q240 260 260 250 Q280 240 300 250" dur="2s" repeatCount="indefinite" begin="1s"/>
+  </path>
+  
+  <!-- Labels -->
+  <text x="200" y="50" text-anchor="middle" fill="#034078" font-size="16" font-weight="bold">Spotlight Streaming</text>
+  <text x="200" y="280" text-anchor="middle" fill="#034078" font-size="12">Live Streaming Platform</text>
+</svg>

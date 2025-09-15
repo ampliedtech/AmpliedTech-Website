@@ -1,0 +1,59 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg13" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#034078;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#044078;stop-opacity:0.4" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8f9fa" rx="16" stroke="#034078" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" fill="#034078" font-size="18" font-weight="bold">Cybersecurity Solutions</text>
+  
+  <!-- Shield -->
+  <path d="M200 80 L160 120 L160 200 Q160 240 200 240 Q240 240 240 200 L240 120 Z" fill="#034078" opacity="0.8" stroke="#044078" stroke-width="3"/>
+  
+  <!-- Inner Shield -->
+  <path d="M200 100 L170 130 L170 190 Q170 220 200 220 Q230 220 230 190 L230 130 Z" fill="#044078" opacity="0.6"/>
+  
+  <!-- Lock Icon -->
+  <rect x="185" y="150" width="30" height="25" fill="white" rx="3"/>
+  <path d="M195 150 L195 140 Q195 135 200 135 Q205 135 205 140 L205 150" stroke="white" stroke-width="2" fill="none"/>
+  
+  <!-- Security Indicators -->
+  <circle cx="120" cy="120" r="8" fill="#27ca3f" opacity="0.8">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="280" cy="120" r="8" fill="#27ca3f" opacity="0.8">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+  <circle cx="120" cy="200" r="8" fill="#27ca3f" opacity="0.8">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  <circle cx="280" cy="200" r="8" fill="#27ca3f" opacity="0.8">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" begin="1.5s"/>
+  </circle>
+  
+  <!-- Threat Detection Lines -->
+  <path d="M80 100 L120 100" stroke="#ff5f56" stroke-width="2" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M280 100 L320 100" stroke="#ff5f56" stroke-width="2" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
+  </path>
+  
+  <!-- Security Tools -->
+  <rect x="80" y="180" width="60" height="40" fill="#034078" opacity="0.6" rx="4"/>
+  <text x="110" y="200" text-anchor="middle" fill="white" font-size="10" font-weight="bold">SOC2</text>
+  <text x="110" y="210" text-anchor="middle" fill="white" font-size="10">Compliance</text>
+  
+  <rect x="260" y="180" width="60" height="40" fill="#044078" opacity="0.6" rx="4"/>
+  <text x="290" y="200" text-anchor="middle" fill="white" font-size="10" font-weight="bold">ISO</text>
+  <text x="290" y="210" text-anchor="middle" fill="white" font-size="10">27001</text>
+  
+  <!-- Labels -->
+  <text x="200" y="50" text-anchor="middle" fill="#034078" font-size="16" font-weight="bold">Cybersecurity Solutions</text>
+  <text x="200" y="270" text-anchor="middle" fill="#034078" font-size="12">Protected & Compliant</text>
+</svg>
