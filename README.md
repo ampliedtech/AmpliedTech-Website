@@ -77,7 +77,7 @@ npm start
 
 For questions about this website, contact:
 - Email: info@ampliedtech.com
-- Website: https://amplied.tech
+- Website: https://ampliedtech.com
 
 ---
 

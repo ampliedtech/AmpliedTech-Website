@@ -39,10 +39,10 @@ const faqs = [
   },
   {
     question: "How is TaaS different from traditional consultancy?",
-    answer: "Traditional consultancy delivers projects and leaves. TaaS provides ongoing partnership with continuous support, regular improvements, predictable costs, and dedicated team availability. It&apos;s like having an in-house tech team without the overhead."
+    answer: "Traditional consultancy delivers projects and leaves. TaaS provides ongoing partnership with continuous support, regular improvements, predictable costs, and dedicated team availability. It's like having an in-house tech team without the overhead."
   },
   {
-    question: "What&apos;s included in your TaaS offering?",
+    question: "What's included in your TaaS offering?",
     answer: "Our TaaS includes development, maintenance, monitoring, support, updates, security management, and strategic guidance. Everything you need to keep your technology running smoothly and growing with your business."
   },
   {

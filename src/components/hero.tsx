@@ -220,7 +220,7 @@ export default function Hero() {
                 }}
                 transition={{ duration: 3, repeat: Infinity, delay: 0 }}
               >
-                Innovate.
+                Build.
               </motion.span>{" "}
               <motion.span 
                 className="text-cyan-400"
@@ -233,7 +233,7 @@ export default function Hero() {
                 }}
                 transition={{ duration: 3, repeat: Infinity, delay: 1 }}
               >
-                Protect.
+                Secure.
               </motion.span>{" "}
               <motion.span 
                 className="text-white"
@@ -246,7 +246,7 @@ export default function Hero() {
                 }}
                 transition={{ duration: 3, repeat: Infinity, delay: 2 }}
               >
-                Grow.
+                Scale.
               </motion.span>
             </motion.h1>
             
@@ -256,7 +256,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              We deliver secure, scalable, and innovative technology-as-a-service — from software development to cloud, DevOps, and cybersecurity — helping businesses worldwide accelerate their digital transformation.
+              Your dedicated technology partner delivering enterprise-grade software development, cloud infrastructure, and cybersecurity solutions. We provide ongoing support, predictable costs, and the expertise you need to accelerate your digital transformation.
             </motion.p>
           </motion.div>
 
@@ -321,8 +321,8 @@ export default function Hero() {
                   <Zap className="h-10 w-10 text-cyan-400" />
                 </motion.div>
               </motion.div>
-              <h3 className="text-xl font-semibold text-white">Innovate</h3>
-              <p className="text-slate-400">Cutting-edge technology solutions that drive innovation and competitive advantage.</p>
+              <h3 className="text-xl font-semibold text-white">Build</h3>
+              <p className="text-slate-400">Custom software development and digital solutions tailored to your business needs.</p>
             </motion.div>
             
             <motion.div 
@@ -351,8 +351,8 @@ export default function Hero() {
                   <Shield className="h-10 w-10 text-cyan-400" />
                 </motion.div>
               </motion.div>
-              <h3 className="text-xl font-semibold text-white">Protect</h3>
-              <p className="text-slate-400">Enterprise-grade security and compliance to safeguard your digital assets.</p>
+              <h3 className="text-xl font-semibold text-white">Secure</h3>
+              <p className="text-slate-400">Comprehensive cybersecurity solutions and compliance to protect your business.</p>
             </motion.div>
             
             <motion.div 
@@ -381,8 +381,8 @@ export default function Hero() {
                   <TrendingUp className="h-10 w-10 text-cyan-400" />
                 </motion.div>
               </motion.div>
-              <h3 className="text-xl font-semibold text-white">Grow</h3>
-              <p className="text-slate-400">Scalable solutions that grow with your business and accelerate digital transformation.</p>
+              <h3 className="text-xl font-semibold text-white">Scale</h3>
+              <p className="text-slate-400">Cloud infrastructure and DevOps solutions that scale with your business growth.</p>
             </motion.div>
           </motion.div>
         </div>

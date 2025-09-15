@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://amplied.tech",
+    url: "https://ampliedtech.com",
     siteName: "Amplied Technologies LLP",
     title: "Amplied Technologies LLP - Technology as a Service",
     description: "We deliver secure, scalable, and innovative technology-as-a-service — from software development to cloud, DevOps, and cybersecurity — helping businesses worldwide accelerate their digital transformation.",
@@ -57,6 +57,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.svg?v=3" type="image/svg+xml" />
+        <link rel="shortcut icon" href="/favicon.svg?v=3" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/favicon.svg?v=3" />
+        <meta name="theme-color" content="#034078" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -64,10 +68,10 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Amplied Technologies LLP",
-              "url": "https://amplied.tech",
-              "logo": "https://amplied.tech/logo.png",
+              "url": "https://ampliedtech.com",
+              "logo": "https://ampliedtech.com/logo.svg",
               "description": "We deliver secure, scalable, and innovative technology-as-a-service — from software development to cloud, DevOps, and cybersecurity — helping businesses worldwide accelerate their digital transformation.",
-              "foundingDate": "2024",
+              "foundingDate": "2025",
               "founder": {
                 "@type": "Person",
                 "name": "Naveen Goswami"

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import Logo from "@/components/logo";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -39,11 +40,8 @@ export default function SiteHeader() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 group">
-            <div className="w-8 h-8 bg-gradient-to-br from-brand-primary to-brand-secondary rounded-lg flex items-center justify-center group-hover:shadow-glow transition-all duration-300">
-              <span className="text-textd font-bold text-lg">A</span>
-            </div>
-            <span className="text-textd font-bold text-xl group-hover:text-brand-secondary transition-colors duration-300">Amplied</span>
+          <Link href="/" className="group">
+            <Logo variant="full" size="md" animated={true} />
           </Link>
 
           {/* Desktop Navigation */}
@@ -88,12 +86,7 @@ export default function SiteHeader() {
             <SheetContent side="right" className="w-[300px] bg-ink border-brand-primary/20">
               <div className="flex flex-col h-full">
                 <div className="flex items-center justify-between mb-8">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-8 h-8 bg-brand-primary rounded-lg flex items-center justify-center">
-                      <span className="text-textd font-bold text-lg">A</span>
-                    </div>
-                    <span className="text-textd font-bold text-xl">Amplied</span>
-                  </div>
+                  <Logo variant="full" size="md" animated={false} />
                 </div>
                 
                 <nav className="flex-1">
