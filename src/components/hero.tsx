@@ -158,39 +158,32 @@ export default function Hero() {
           }}
         />
         
-        {/* Floating data particles */}
-        {Array.from({ length: 12 }).map((_, i) => {
-          // Use deterministic positioning based on index to avoid hydration mismatch
-          const positions = [
-            { left: 10, top: 20 }, { left: 25, top: 5 }, { left: 40, top: 35 },
-            { left: 60, top: 15 }, { left: 75, top: 45 }, { left: 85, top: 25 },
-            { left: 15, top: 60 }, { left: 35, top: 80 }, { left: 55, top: 70 },
-            { left: 80, top: 65 }, { left: 5, top: 40 }, { left: 90, top: 85 }
-          ];
-          const pos = positions[i] || { left: 50, top: 50 };
-          
-          return (
-            <motion.div
-              key={i}
-              className="absolute w-2 h-2 bg-cyan-400/30 rounded-full"
-              style={{
-                left: `${pos.left}%`,
-                top: `${pos.top}%`,
-              }}
-              animate={{
-                y: [0, -30, 0],
-                opacity: [0, 1, 0],
-                scale: [0.5, 1, 0.5],
-              }}
-              transition={{
-                duration: 4 + (i * 0.2),
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: i * 0.3,
-              }}
-            />
-          );
-        })}
+        {/* Simplified floating elements for better performance */}
+        <motion.div
+          className="absolute top-1/4 left-1/4 w-2 h-2 bg-cyan-400/30 rounded-full"
+          animate={{
+            y: [0, -20, 0],
+            opacity: [0, 1, 0],
+          }}
+          transition={{
+            duration: 3,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        />
+        <motion.div
+          className="absolute top-3/4 right-1/4 w-2 h-2 bg-cyan-400/30 rounded-full"
+          animate={{
+            y: [0, -15, 0],
+            opacity: [0, 1, 0],
+          }}
+          transition={{
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1,
+          }}
+        />
       </div>
       
       {/* Content */}

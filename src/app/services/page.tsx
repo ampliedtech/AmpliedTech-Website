@@ -17,7 +17,8 @@ function getServiceVisual(serviceTitle: string) {
           <Image 
             src="/images/software-development.svg" 
             alt="Custom Software Development"
-            fill
+            width={400}
+            height={300}
             className="object-contain p-4"
             priority
           />
@@ -30,9 +31,9 @@ function getServiceVisual(serviceTitle: string) {
           <Image 
             src="/images/data-analytics-and-ai.svg" 
             alt="Data Analytics & AI"
-            fill
+            width={400}
+            height={300}
             className="object-contain p-4"
-            priority
           />
         </div>
       );
@@ -43,9 +44,9 @@ function getServiceVisual(serviceTitle: string) {
           <Image 
             src="/images/digital-transformation.svg" 
             alt="Digital Transformation"
-            fill
+            width={400}
+            height={300}
             className="object-contain p-4"
-            priority
           />
         </div>
       );
@@ -56,9 +57,9 @@ function getServiceVisual(serviceTitle: string) {
           <Image 
             src="/images/taas-concept.svg" 
             alt="Technology as a Service"
-            fill
+            width={400}
+            height={300}
             className="object-contain p-4"
-            priority
           />
         </div>
       );
@@ -69,9 +70,9 @@ function getServiceVisual(serviceTitle: string) {
           <Image 
             src="/images/cybersecurity-solutions.svg" 
             alt="Cybersecurity Solutions"
-            fill
+            width={400}
+            height={300}
             className="object-contain p-4"
-            priority
           />
         </div>
       );
@@ -82,9 +83,9 @@ function getServiceVisual(serviceTitle: string) {
           <Image 
             src="/images/cloud-infrastructure-and-devops.svg" 
             alt="Cloud Infrastructure & DevOps"
-            fill
+            width={400}
+            height={300}
             className="object-contain p-4"
-            priority
           />
         </div>
       );

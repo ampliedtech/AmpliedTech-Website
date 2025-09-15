@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { SEO, COMPANY_INFO } from "@/constants";
+import PerformanceMonitor from "@/components/performance-monitor";
+import Analytics from "@/components/analytics";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -8,33 +11,36 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Amplied Technologies LLP - Technology as a Service",
-  description: "We deliver secure, scalable, and innovative technology-as-a-service — from software development to cloud, DevOps, and cybersecurity — helping businesses worldwide accelerate their digital transformation.",
-  keywords: ["technology as a service", "software development", "cloud services", "DevOps", "cybersecurity", "digital transformation"],
-  authors: [{ name: "Amplied Technologies LLP" }],
-  creator: "Amplied Technologies LLP",
-  publisher: "Amplied Technologies LLP",
+  title: SEO.DEFAULT_TITLE,
+  description: SEO.DEFAULT_DESCRIPTION,
+  keywords: SEO.KEYWORDS,
+  authors: [{ name: COMPANY_INFO.NAME }],
+  creator: COMPANY_INFO.NAME,
+  publisher: COMPANY_INFO.NAME,
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ampliedtech.com",
-    siteName: "Amplied Technologies LLP",
-    title: "Amplied Technologies LLP - Technology as a Service",
-    description: "We deliver secure, scalable, and innovative technology-as-a-service — from software development to cloud, DevOps, and cybersecurity — helping businesses worldwide accelerate their digital transformation.",
+    url: SEO.SITE_URL,
+    siteName: SEO.SITE_NAME,
+    title: SEO.DEFAULT_TITLE,
+    description: SEO.DEFAULT_DESCRIPTION,
     images: [
       {
-        url: "/og-image.jpg",
+        url: `${SEO.SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Amplied Technologies LLP - Technology as a Service",
+        alt: SEO.DEFAULT_TITLE,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Amplied Technologies LLP - Technology as a Service",
-    description: "We deliver secure, scalable, and innovative technology-as-a-service — from software development to cloud, DevOps, and cybersecurity — helping businesses worldwide accelerate their digital transformation.",
-    images: ["/og-image.jpg"],
+    title: SEO.DEFAULT_TITLE,
+    description: SEO.DEFAULT_DESCRIPTION,
+    images: [`${SEO.SITE_URL}/og-image.jpg`],
+  },
+  alternates: {
+    canonical: SEO.SITE_URL,
   },
   robots: {
     index: true,
@@ -67,14 +73,14 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Amplied Technologies LLP",
-              "url": "https://ampliedtech.com",
-              "logo": "https://ampliedtech.com/logo.svg",
-              "description": "We deliver secure, scalable, and innovative technology-as-a-service — from software development to cloud, DevOps, and cybersecurity — helping businesses worldwide accelerate their digital transformation.",
-              "foundingDate": "2025",
+              "name": COMPANY_INFO.NAME,
+              "url": SEO.SITE_URL,
+              "logo": `${SEO.SITE_URL}/logo.svg`,
+              "description": SEO.DEFAULT_DESCRIPTION,
+              "foundingDate": COMPANY_INFO.FOUNDING_YEAR,
               "founder": {
                 "@type": "Person",
-                "name": "Naveen Goswami"
+                "name": COMPANY_INFO.FOUNDER
               },
               "address": {
                 "@type": "PostalAddress",
@@ -92,6 +98,8 @@ export default function RootLayout({
       <body
         className={`${inter.variable} font-sans antialiased`}
       >
+        <PerformanceMonitor />
+        <Analytics />
         {children}
       </body>
     </html>

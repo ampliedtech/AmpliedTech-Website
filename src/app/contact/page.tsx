@@ -6,30 +6,31 @@ import Section from "@/components/section";
 import ContactForm from "@/components/contact-form";
 import CTABand from "@/components/cta-band";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { CONTACT_INFO } from "@/constants";
 
 const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    value: "info@ampliedtech.com",
+    value: CONTACT_INFO.EMAIL,
     description: "Send us an email anytime",
   },
   {
     icon: Phone,
     title: "Phone",
-    value: "+91 98765 43210",
+    value: CONTACT_INFO.PHONE,
     description: "Call us during business hours",
   },
   {
     icon: MapPin,
     title: "Location",
-    value: "India",
+    value: CONTACT_INFO.LOCATION,
     description: "Serving clients worldwide",
   },
   {
     icon: Clock,
     title: "Business Hours",
-    value: "24/7 Support",
+    value: CONTACT_INFO.BUSINESS_HOURS,
     description: "Always here to help",
   },
 ];

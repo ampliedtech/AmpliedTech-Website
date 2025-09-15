@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, Twitter, Github } from "lucide-react";
 import Logo from "@/components/logo";
+import { COMPANY_INFO, CONTACT_INFO, SOCIAL_LINKS } from "@/constants";
 
 const footerLinks = {
   company: [
@@ -21,9 +22,9 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { name: "LinkedIn", href: "https://www.linkedin.com/in/ampliedtechnologies/", icon: Linkedin },
-  { name: "Twitter", href: "https://x.com/ampliedtech", icon: Twitter },
-  { name: "GitHub", href: "https://github.com/ampliedtech", icon: Github },
+  { name: "LinkedIn", href: SOCIAL_LINKS.LINKEDIN, icon: Linkedin },
+  { name: "Twitter", href: SOCIAL_LINKS.TWITTER, icon: Twitter },
+  { name: "GitHub", href: SOCIAL_LINKS.GITHUB, icon: Github },
 ];
 
 export default function SiteFooter() {
@@ -37,7 +38,7 @@ export default function SiteFooter() {
               <Logo variant="full" size="md" animated={false} />
             </div>
             <p className="text-brand-secondary/80 text-sm mb-6 max-w-xs">
-              Your Partner in Digital Growth.
+              {COMPANY_INFO.TAGLINE}
               <br />
               We deliver secure, scalable, and innovative technology-as-a-service.
             </p>
@@ -99,10 +100,10 @@ export default function SiteFooter() {
               <div className="flex items-center space-x-2 text-brand-secondary text-sm">
                 <Mail className="h-4 w-4" />
                 <a
-                  href="mailto:info@ampliedtech.com"
+                  href={`mailto:${CONTACT_INFO.EMAIL}`}
                   className="hover:text-textd transition-colors duration-200"
                 >
-                  info@ampliedtech.com
+                  {CONTACT_INFO.EMAIL}
                 </a>
               </div>
               <Button
@@ -119,7 +120,7 @@ export default function SiteFooter() {
         <div className="border-t border-brand-primary/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-brand-secondary text-sm">
-              © 2025 Amplied Technologies LLP. All rights reserved.
+              © {COMPANY_INFO.FOUNDING_YEAR} {COMPANY_INFO.NAME}. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               {footerLinks.legal.map((item) => (

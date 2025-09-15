@@ -52,7 +52,8 @@ export default function AboutPage() {
                   <Image 
                     src="/images/taas-concept.svg" 
                     alt="Technology as a Service Concept"
-                    fill
+                    width={500}
+                    height={400}
                     className="object-contain p-4"
                     priority
                   />
@@ -76,7 +77,8 @@ export default function AboutPage() {
                     <Image 
                       src="/avatars/naveen.jpg" 
                       alt="Naveen Goswami - Founder & CEO"
-                      fill
+                      width={256}
+                      height={256}
                       className="object-cover rounded-full"
                       priority
                     />

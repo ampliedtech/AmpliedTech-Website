@@ -4,17 +4,12 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Logo from "@/components/logo";
+import { NAVIGATION_ITEMS } from "@/constants";
 
-const navigation = [
-  { name: "Home", href: "/" },
-  { name: "Services", href: "/services" },
-  { name: "How It Works", href: "/#how-it-works" },
-  { name: "Customers", href: "/customers" },
-  { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
-];
+// Use navigation from constants
+const navigation = NAVIGATION_ITEMS;
 
 export default function SiteHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -71,9 +66,11 @@ export default function SiteHeader() {
                 variant="ghost"
                 size="sm"
                 className="md:hidden text-textd"
+                aria-label="Toggle mobile menu"
+                aria-expanded={isMobileMenuOpen}
               >
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Open menu</span>
+                {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                <span className="sr-only">{isMobileMenuOpen ? 'Close menu' : 'Open menu'}</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[320px] bg-ink border-brand-primary/20">

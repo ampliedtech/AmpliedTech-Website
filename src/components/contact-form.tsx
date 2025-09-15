@@ -9,6 +9,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Copy, Check } from "lucide-react";
 import { toast } from "sonner";
+import { CONTACT_INFO } from "@/constants";
+import { trackEvent } from "@/components/analytics";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -52,8 +54,15 @@ Message:
 ${formData.message}
     `);
 
-    const mailtoLink = `mailto:info@ampliedtech.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:${CONTACT_INFO.EMAIL}?subject=${subject}&body=${body}`;
     
+    // Track form submission
+    trackEvent('contact_form_submitted', {
+      form_type: 'contact',
+      has_company: !!formData.company,
+      has_phone: !!formData.phone,
+    });
+
     // Open mailto
     window.location.href = mailtoLink;
     
@@ -65,9 +74,16 @@ ${formData.message}
 
   const copyEmail = async () => {
     try {
-      await navigator.clipboard.writeText("info@ampliedtech.com");
+      await navigator.clipboard.writeText(CONTACT_INFO.EMAIL);
       setCopied(true);
       toast.success("Email address copied to clipboard!");
+      
+      // Track email copy event
+      trackEvent('email_copied', {
+        action: 'copy_email',
+        location: 'contact_form',
+      });
+      
       setTimeout(() => setCopied(false), 2000);
     } catch {
       toast.error("Failed to copy email address");
@@ -214,7 +230,7 @@ ${formData.message}
                 </div>
                 <div className="flex-1">
                   <div className="font-semibold text-text" style={{ color: '#044078' }}>Email us</div>
-                  <div className="text-brand-secondary">info@ampliedtech.com</div>
+                  <div className="text-brand-secondary">{CONTACT_INFO.EMAIL}</div>
                 </div>
                 <Button
                   variant="outline"

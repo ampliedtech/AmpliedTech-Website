@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { trackEvent } from "@/components/analytics";
 
 export default function CTABand() {
   return (
@@ -70,7 +71,14 @@ export default function CTABand() {
               size="lg"
               className="bg-white text-brand-primary hover:bg-white/90 text-lg px-8 py-6 font-semibold shadow-lg hover:shadow-glow transition-all duration-300"
             >
-              <Link href="/contact" className="flex items-center space-x-2">
+              <Link 
+                href="/contact" 
+                className="flex items-center space-x-2"
+                onClick={() => trackEvent('cta_clicked', { 
+                  cta_type: 'start_partnership',
+                  location: 'cta_band'
+                })}
+              >
                 <span>Start Your Partnership</span>
                 <ArrowRight className="h-5 w-5" />
               </Link>
@@ -82,7 +90,15 @@ export default function CTABand() {
               size="lg"
               className="border-white/50 text-white hover:bg-white/10 hover:border-white text-lg px-8 py-6 font-semibold backdrop-blur-sm transition-all duration-300"
             >
-              <Link href="/services">View Our Solutions</Link>
+              <Link 
+                href="/services"
+                onClick={() => trackEvent('cta_clicked', { 
+                  cta_type: 'view_solutions',
+                  location: 'cta_band'
+                })}
+              >
+                View Our Solutions
+              </Link>
             </Button>
           </motion.div>
 

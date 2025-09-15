@@ -1,14 +1,28 @@
+import dynamic from "next/dynamic";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 import Hero from "@/components/hero";
 import ServicesGrid from "@/components/services-grid";
 import HowItWorks from "@/components/how-it-works";
 import WhyAmplied from "@/components/why-amplied";
-import CustomersLogos from "@/components/customers-logos";
-import Testimonials from "@/components/testimonials";
-import TechStack from "@/components/tech-stack";
-import CTABand from "@/components/cta-band";
 import Section from "@/components/section";
+
+// Lazy load heavy components
+const CustomersLogos = dynamic(() => import("@/components/customers-logos"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse rounded-lg" />,
+});
+
+const Testimonials = dynamic(() => import("@/components/testimonials"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse rounded-lg" />,
+});
+
+const TechStack = dynamic(() => import("@/components/tech-stack"), {
+  loading: () => <div className="h-64 bg-gray-100 animate-pulse rounded-lg" />,
+});
+
+const CTABand = dynamic(() => import("@/components/cta-band"), {
+  loading: () => <div className="h-32 bg-gray-100 animate-pulse rounded-lg" />,
+});
 
 export default function Home() {
   return (
