@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, Twitter, Github } from "lucide-react";
+import Logo from "@/components/logo";
 
 const footerLinks = {
   company: [
@@ -21,8 +22,8 @@ const footerLinks = {
 
 const socialLinks = [
   { name: "LinkedIn", href: "https://linkedin.com/company/amplied", icon: Linkedin },
-  { name: "Twitter", href: "https://twitter.com/amplied", icon: Twitter },
-  { name: "GitHub", href: "https://github.com/amplied", icon: Github },
+  { name: "Twitter", href: "https://x.com/ampliedtech", icon: Twitter },
+  { name: "GitHub", href: "https://github.com/ampliedtech", icon: Github },
 ];
 
 export default function SiteFooter() {
@@ -32,11 +33,8 @@ export default function SiteFooter() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-brand-primary to-brand-secondary rounded-lg flex items-center justify-center shadow-glow">
-                <span className="text-textd font-bold text-lg">A</span>
-              </div>
-              <span className="text-textd font-bold text-xl">Amplied</span>
+            <div className="mb-4">
+              <Logo variant="full" size="md" animated={false} />
             </div>
             <p className="text-brand-secondary/80 text-sm mb-6 max-w-xs">
               Your Partner in Digital Growth. We deliver secure, scalable, and innovative technology-as-a-service.
@@ -99,7 +97,7 @@ export default function SiteFooter() {
               <div className="flex items-center space-x-2 text-brand-secondary text-sm">
                 <Mail className="h-4 w-4" />
                 <a
-                  href="mailto:@info@ampliedtech.com"
+                  href="mailto:info@ampliedtech.com"
                   className="hover:text-textd transition-colors duration-200"
                 >
                   info@ampliedtech.com
@@ -119,7 +117,7 @@ export default function SiteFooter() {
         <div className="border-t border-brand-primary/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-brand-secondary text-sm">
-              © 2024 Amplied Technologies LLP. All rights reserved.
+              © 2025 Amplied Technologies LLP. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               {footerLinks.legal.map((item) => (

@@ -43,8 +43,8 @@ export default function CTABand() {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Let&apos;s build your future with{" "}
-            <span className="text-white">Technology as a Service</span>
+            Ready to transform your business with{" "}
+            <span className="text-white">Technology as a Service?</span>
           </motion.h2>
           
           <motion.p
@@ -54,8 +54,8 @@ export default function CTABand() {
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            Ready to transform your business with our comprehensive technology solutions? 
-            Get started today and experience the difference of true partnership.
+            Join forward-thinking companies that have embraced our TaaS model for predictable costs, 
+            ongoing support, and continuous innovation. Start your technology partnership today.
           </motion.p>
 
           <motion.div
@@ -71,7 +71,7 @@ export default function CTABand() {
               className="bg-white text-brand-primary hover:bg-white/90 text-lg px-8 py-6 font-semibold shadow-lg hover:shadow-glow transition-all duration-300"
             >
               <Link href="/contact" className="flex items-center space-x-2">
-                <span>Get Started Today</span>
+                <span>Start Your Partnership</span>
                 <ArrowRight className="h-5 w-5" />
               </Link>
             </Button>
@@ -82,7 +82,7 @@ export default function CTABand() {
               size="lg"
               className="border-white/50 text-white hover:bg-white/10 hover:border-white text-lg px-8 py-6 font-semibold backdrop-blur-sm transition-all duration-300"
             >
-              <Link href="/services">Explore Our Services</Link>
+              <Link href="/services">View Our Solutions</Link>
             </Button>
           </motion.div>
 
@@ -96,15 +96,15 @@ export default function CTABand() {
           >
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-white rounded-full" />
-              <span className="text-sm">No setup fees</span>
+              <span className="text-sm">Predictable monthly costs</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-white rounded-full" />
-              <span className="text-sm">30-day money-back guarantee</span>
+              <span className="text-sm">Dedicated team always available</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-white rounded-full" />
-              <span className="text-sm">24/7 support</span>
+              <span className="text-sm">Continuous technology updates</span>
             </div>
           </motion.div>
         </div>

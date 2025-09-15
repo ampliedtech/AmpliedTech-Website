@@ -1,0 +1,42 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#034078;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#044078;stop-opacity:0.4" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg8)" rx="16"/>
+  
+  <!-- Gaming Interface -->
+  <rect x="50" y="80" width="300" height="140" fill="#1a1a1a" rx="8" stroke="#034078" stroke-width="2"/>
+  
+  <!-- Game Scene -->
+  <rect x="70" y="100" width="260" height="100" fill="#2a2a2a" rx="4"/>
+  
+  <!-- Game Elements -->
+  <circle cx="150" cy="140" r="15" fill="#034078" opacity="0.8">
+    <animate attributeName="cx" values="150;160;150" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="250" cy="160" r="12" fill="#044078" opacity="0.8">
+    <animate attributeName="cy" values="160;150;160" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Score Display -->
+  <rect x="280" y="110" width="40" height="30" fill="#034078" opacity="0.9" rx="4"/>
+  <text x="300" y="130" text-anchor="middle" fill="white" font-size="12" font-weight="bold">50M+</text>
+  
+  <!-- Gaming Controller -->
+  <rect x="100" y="220" width="80" height="40" fill="#034078" opacity="0.8" rx="20"/>
+  <circle cx="120" cy="240" r="8" fill="white" opacity="0.6"/>
+  <circle cx="160" cy="240" r="8" fill="white" opacity="0.6"/>
+  
+  <!-- Real Money Indicator -->
+  <text x="200" y="220" text-anchor="middle" fill="#034078" font-size="14" font-weight="bold">Real Money Gaming</text>
+  <text x="200" y="240" text-anchor="middle" fill="#034078" font-size="12">20+ Games</text>
+  
+  <!-- Labels -->
+  <text x="200" y="50" text-anchor="middle" fill="#034078" font-size="16" font-weight="bold">Witzeal Technologies</text>
+  <text x="200" y="280" text-anchor="middle" fill="#034078" font-size="12">Gaming Platform</text>
+</svg>

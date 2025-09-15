@@ -18,51 +18,51 @@ import { useRouter, usePathname } from "next/navigation";
 const services = [
   {
     icon: Code,
-    title: "Software Development",
-    description: "Scalable, secure applications built with modern technologies and agile methodologies for continuous improvement.",
-    features: ["Agile Development", "Modern Tech Stack", "Continuous Integration"],
+    title: "Custom Software Development",
+    description: "End-to-end software solutions built with modern technologies, from concept to deployment and ongoing maintenance.",
+    features: ["Full-Stack Development", "Mobile Applications", "API Development", "Legacy Modernization"],
     gradient: "from-blue-500/10 via-purple-500/5 to-cyan-500/10",
     iconGradient: "from-blue-500 to-purple-600"
   },
   {
-    icon: Gamepad2,
-    title: "Game Development",
-    description: "Immersive, engaging games across multiple platforms with cutting-edge graphics and smooth gameplay.",
-    features: ["Multi-platform", "3D Graphics", "Real-time Multiplayer"],
-    gradient: "from-green-500/10 via-emerald-500/5 to-teal-500/10",
-    iconGradient: "from-green-500 to-emerald-600"
-  },
-  {
-    icon: Lightbulb,
-    title: "IT Consulting & Strategy",
-    description: "Strategic technology planning embedded in ongoing execution to drive your digital transformation.",
-    features: ["Digital Strategy", "Technology Roadmap", "Process Optimization"],
-    gradient: "from-yellow-500/10 via-orange-500/5 to-red-500/10",
-    iconGradient: "from-yellow-500 to-orange-600"
-  },
-  {
-    icon: Monitor,
-    title: "Managed IT Services",
-    description: "Proactive monitoring, maximum uptime, and predictable costs for your entire IT infrastructure.",
-    features: ["24/7 Monitoring", "Predictable Costs", "Proactive Support"],
-    gradient: "from-indigo-500/10 via-blue-500/5 to-purple-500/10",
-    iconGradient: "from-indigo-500 to-blue-600"
+    icon: Cloud,
+    title: "Cloud Infrastructure & DevOps",
+    description: "Scalable cloud solutions with automated deployment pipelines and infrastructure management for optimal performance.",
+    features: ["AWS/Azure/GCP", "Container Orchestration", "CI/CD Pipelines", "Infrastructure as Code"],
+    gradient: "from-cyan-500/10 via-sky-500/5 to-blue-500/10",
+    iconGradient: "from-cyan-500 to-sky-600"
   },
   {
     icon: Shield,
-    title: "Cybersecurity & Compliance",
-    description: "Continuous threat monitoring and compliance management to protect your business and data.",
-    features: ["Threat Detection", "Compliance Management", "Security Audits"],
+    title: "Cybersecurity Solutions",
+    description: "Comprehensive security services including threat assessment, compliance management, and 24/7 monitoring.",
+    features: ["Security Audits", "Compliance (SOC2, ISO)", "Penetration Testing", "Incident Response"],
     gradient: "from-red-500/10 via-pink-500/5 to-rose-500/10",
     iconGradient: "from-red-500 to-pink-600"
   },
   {
-    icon: Cloud,
-    title: "Cloud Services & DevOps",
-    description: "Seamless cloud migration, automation, and rapid deployment for faster time-to-market.",
-    features: ["Cloud Migration", "CI/CD Pipelines", "Infrastructure as Code"],
-    gradient: "from-cyan-500/10 via-sky-500/5 to-blue-500/10",
-    iconGradient: "from-cyan-500 to-sky-600"
+    icon: Monitor,
+    title: "Technology-as-a-Service (TaaS)",
+    description: "Dedicated technology partnership with ongoing support, predictable costs, and continuous improvement.",
+    features: ["Dedicated Team", "Predictable Costs", "Ongoing Support", "Regular Improvements"],
+    gradient: "from-indigo-500/10 via-blue-500/5 to-purple-500/10",
+    iconGradient: "from-indigo-500 to-blue-600"
+  },
+  {
+    icon: Lightbulb,
+    title: "Digital Transformation",
+    description: "Strategic technology consulting to modernize your business processes and accelerate digital adoption.",
+    features: ["Technology Strategy", "Process Optimization", "Digital Roadmap", "Change Management"],
+    gradient: "from-yellow-500/10 via-orange-500/5 to-red-500/10",
+    iconGradient: "from-yellow-500 to-orange-600"
+  },
+  {
+    icon: Gamepad2,
+    title: "Data Analytics & AI",
+    description: "Intelligent data solutions and AI-powered insights to drive business growth and operational efficiency.",
+    features: ["Data Engineering", "Machine Learning", "Business Intelligence", "Predictive Analytics"],
+    gradient: "from-green-500/10 via-emerald-500/5 to-teal-500/10",
+    iconGradient: "from-green-500 to-emerald-600"
   }
 ];
 
@@ -268,7 +268,7 @@ export default function ServicesGrid() {
             backgroundClip: "text",
           }}
         >
-          Core Services
+          Our Technology Services
         </motion.h2>
         <motion.p 
           className="text-xl max-w-3xl mx-auto text-gray-600"
@@ -276,7 +276,7 @@ export default function ServicesGrid() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Comprehensive technology solutions designed to accelerate your digital transformation
+          Discover our comprehensive range of technology services designed to accelerate your digital transformation and drive sustainable business growth.
         </motion.p>
       </motion.div>
 

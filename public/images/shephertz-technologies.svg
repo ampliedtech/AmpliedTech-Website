@@ -1,0 +1,52 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#034078;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#044078;stop-opacity:0.4" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg9)" rx="16"/>
+  
+  <!-- Product Suite -->
+  <rect x="50" y="80" width="300" height="140" fill="white" rx="8" stroke="#034078" stroke-width="2" opacity="0.9"/>
+  
+  <!-- Product Icons -->
+  <rect x="70" y="100" width="60" height="40" fill="#034078" opacity="0.8" rx="4"/>
+  <text x="100" y="125" text-anchor="middle" fill="white" font-size="10" font-weight="bold">BaaS</text>
+  
+  <rect x="140" y="100" width="60" height="40" fill="#044078" opacity="0.8" rx="4"/>
+  <text x="170" y="125" text-anchor="middle" fill="white" font-size="10" font-weight="bold">MBaaS</text>
+  
+  <rect x="210" y="100" width="60" height="40" fill="#034078" opacity="0.8" rx="4"/>
+  <text x="240" y="125" text-anchor="middle" fill="white" font-size="10" font-weight="bold">PaaS</text>
+  
+  <rect x="280" y="100" width="60" height="40" fill="#044078" opacity="0.8" rx="4"/>
+  <text x="310" y="125" text-anchor="middle" fill="white" font-size="10" font-weight="bold">AI</text>
+  
+  <!-- Gaming Engine -->
+  <rect x="70" y="150" width="80" height="50" fill="#034078" opacity="0.6" rx="4"/>
+  <text x="110" y="175" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Gaming</text>
+  <text x="110" y="190" text-anchor="middle" fill="white" font-size="10">Engine</text>
+  
+  <!-- Marketing Tool -->
+  <rect x="160" y="150" width="80" height="50" fill="#044078" opacity="0.6" rx="4"/>
+  <text x="200" y="175" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Marketing</text>
+  <text x="200" y="190" text-anchor="middle" fill="white" font-size="10">Automation</text>
+  
+  <!-- BPO Monitoring -->
+  <rect x="250" y="150" width="80" height="50" fill="#034078" opacity="0.6" rx="4"/>
+  <text x="290" y="175" text-anchor="middle" fill="white" font-size="12" font-weight="bold">BPO</text>
+  <text x="290" y="190" text-anchor="middle" fill="white" font-size="10">Monitoring</text>
+  
+  <!-- Connection Lines -->
+  <path d="M100 140 L100 100" stroke="#034078" stroke-width="2" opacity="0.4"/>
+  <path d="M170 140 L170 100" stroke="#034078" stroke-width="2" opacity="0.4"/>
+  <path d="M240 140 L240 100" stroke="#034078" stroke-width="2" opacity="0.4"/>
+  <path d="M310 140 L310 100" stroke="#034078" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Labels -->
+  <text x="200" y="50" text-anchor="middle" fill="#034078" font-size="16" font-weight="bold">Shephertz Technologies</text>
+  <text x="200" y="270" text-anchor="middle" fill="#034078" font-size="12">15 Years of Product Innovation</text>
+</svg>
