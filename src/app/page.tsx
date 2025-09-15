@@ -12,7 +12,7 @@ import Section from "@/components/section";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen ">
       <SiteHeader />
       
       <main>
