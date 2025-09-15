@@ -21,7 +21,7 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { name: "LinkedIn", href: "https://linkedin.com/company/amplied", icon: Linkedin },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/ampliedtechnologies/", icon: Linkedin },
   { name: "Twitter", href: "https://x.com/ampliedtech", icon: Twitter },
   { name: "GitHub", href: "https://github.com/ampliedtech", icon: Github },
 ];
@@ -37,7 +37,9 @@ export default function SiteFooter() {
               <Logo variant="full" size="md" animated={false} />
             </div>
             <p className="text-brand-secondary/80 text-sm mb-6 max-w-xs">
-              Your Partner in Digital Growth. We deliver secure, scalable, and innovative technology-as-a-service.
+              Your Partner in Digital Growth.
+              <br />
+              We deliver secure, scalable, and innovative technology-as-a-service.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((item) => {

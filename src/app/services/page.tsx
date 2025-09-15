@@ -242,53 +242,60 @@ export default function ServicesPage() {
               </p>
             </div>
 
-            <div className="space-y-12">
+            <div className="space-y-16">
               {detailedServices.map((service, index) => (
                 <div
                   key={service.title}
                   id={service.title.toLowerCase().replace(/\s+/g, '-').replace(/&/g, 'and')}
-                  className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ color: '#034078' }}
+                  className="max-w-6xl mx-auto"
+                  style={{ color: '#034078' }}
                 >
-                  <div className={`space-y-6 ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                    <h3 className="text-3xl font-bold text-text" style={{ color: '#044078' }}>
+                  <div className="text-center space-y-8 mb-12">
+                    <h3 className="text-4xl lg:text-5xl font-bold text-text" style={{ color: '#044078' }}>
                       {service.title}
                     </h3>
-                    <p className="text-lg text-brand-secondary leading-relaxed" style={{ color: '#034078' }}>
+                    <p className="text-xl text-brand-secondary max-w-4xl mx-auto leading-relaxed" style={{ color: '#034078' }}>
                       {service.description}
                     </p>
-                    
-                    <div className="space-y-4">
-                      <h4 className="text-xl font-semibold text-text" style={{ color: '#044078' }}>What we deliver:</h4>
-                      <ul className="space-y-2">
-                        {service.features.map((feature, featureIndex) => (
-                          <li key={featureIndex} className="flex items-start space-x-3" style={{ color: '#034078' }}>
-                            <div className="w-2 h-2 bg-brand-primary rounded-full mt-2 flex-shrink-0" />
-                            <span className="text-brand-secondary" style={{ color: '#034078' }}>{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                  </div>
+                  
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div className={`space-y-6 ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
+                      <div className="space-y-6 text-center lg:text-left">
+                        <div className="space-y-4">
+                          <h4 className="text-2xl font-semibold text-text" style={{ color: '#044078' }}>What we deliver:</h4>
+                          <ul className="space-y-3">
+                            {service.features.map((feature, featureIndex) => (
+                              <li key={featureIndex} className="flex items-start space-x-3" style={{ color: '#034078' }}>
+                                <div className="w-2 h-2 bg-brand-primary rounded-full mt-2 flex-shrink-0" />
+                                <span className="text-brand-secondary" style={{ color: '#034078' }}>{feature}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
 
-                    <div className="space-y-4">
-                      <h4 className="text-xl font-semibold text-text">Technologies we use:</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {service.technologies.map((tech, techIndex) => (
-                          <span
-                            key={techIndex}
-                            className="px-3 py-1 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium"
-                          >
-                            {tech}
-                          </span>
-                        ))}
+                        <div className="space-y-4">
+                          <h4 className="text-2xl font-semibold text-text">Technologies we use:</h4>
+                          <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
+                            {service.technologies.map((tech, techIndex) => (
+                              <span
+                                key={techIndex}
+                                className="px-4 py-2 bg-brand-primary/10 text-brand-primary rounded-full text-sm font-medium"
+                              >
+                                {tech}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                    <div className="w-full h-80 rounded-2xl border border-brand-secondary/20 relative overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 shadow-lg">
-                      {/* Service-specific animated content */}
-                      <div className="w-full h-full relative">
-                        {getServiceVisual(service.title)}
+                    <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
+                      <div className="w-full h-80 rounded-2xl border border-brand-secondary/20 relative overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 shadow-lg">
+                        {/* Service-specific animated content */}
+                        <div className="w-full h-full relative">
+                          {getServiceVisual(service.title)}
+                        </div>
                       </div>
                     </div>
                   </div>

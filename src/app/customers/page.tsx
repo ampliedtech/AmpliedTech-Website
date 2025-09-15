@@ -103,63 +103,67 @@ export default function CustomersPage() {
               </p>
             </div>
 
-            <div className="space-y-12">
+            <div className="space-y-16">
               {caseStudies.map((study, index) => (
                 <div
                   key={study.company}
-                  className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+                  className="max-w-6xl mx-auto"
                 >
-                  <div className={`space-y-6 ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                    <div className="flex items-center space-x-4 mb-6">
+                  <div className="text-center space-y-8 mb-12">
+                    <div className="flex items-center justify-center space-x-4 mb-6">
                       <div className="w-16 h-16 bg-gradient-to-br from-brand-primary/20 to-brand-secondary/20 rounded-xl flex items-center justify-center">
                         <span className="text-brand-primary font-bold text-xl">
                           {study.company.charAt(0)}
                         </span>
                       </div>
                       <div>
-                        <h3 className="text-2xl font-bold text-text">
+                        <h3 className="text-3xl lg:text-4xl font-bold text-text">
                           {study.company}
                         </h3>
-                        <p className="text-brand-secondary">
+                        <p className="text-xl text-brand-secondary">
                           {study.industry}
                         </p>
                       </div>
                     </div>
+                  </div>
+                  
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div className={`space-y-6 ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
+                      <div className="space-y-6 text-center lg:text-left">
+                        <div className="space-y-4">
+                          <h4 className="text-2xl font-semibold text-text">Challenge:</h4>
+                          <p className="text-lg text-brand-secondary leading-relaxed">{study.challenge}</p>
+                        </div>
+                        
+                        <div className="space-y-4">
+                          <h4 className="text-2xl font-semibold text-text">Solution:</h4>
+                          <p className="text-lg text-brand-secondary leading-relaxed">{study.solution}</p>
+                        </div>
 
-                    <div className="space-y-4">
-                      <div>
-                        <h4 className="text-lg font-semibold text-text mb-2">Challenge:</h4>
-                        <p className="text-brand-secondary">{study.challenge}</p>
-                      </div>
-                      
-                      <div>
-                        <h4 className="text-lg font-semibold text-text mb-2">Solution:</h4>
-                        <p className="text-brand-secondary">{study.solution}</p>
-                      </div>
-
-                      <div>
-                        <h4 className="text-lg font-semibold text-text mb-2">Results:</h4>
-                        <ul className="space-y-2">
-                          {study.results.map((result, resultIndex) => (
-                            <li key={resultIndex} className="flex items-start space-x-3">
-                              <div className="w-2 h-2 bg-brand-primary rounded-full mt-2 flex-shrink-0" />
-                              <span className="text-brand-secondary">{result}</span>
-                            </li>
-                          ))}
-                        </ul>
+                        <div className="space-y-4">
+                          <h4 className="text-2xl font-semibold text-text">Results:</h4>
+                          <ul className="space-y-3">
+                            {study.results.map((result, resultIndex) => (
+                              <li key={resultIndex} className="flex items-start space-x-3">
+                                <div className="w-2 h-2 bg-brand-primary rounded-full mt-2 flex-shrink-0" />
+                                <span className="text-brand-secondary">{result}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                    <div className="w-full h-80 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl border border-brand-secondary/20 overflow-hidden shadow-lg relative">
-                      <Image 
-                        src={`/images/${study.company.toLowerCase().replace(/\s+/g, '-')}.svg`}
-                        alt={`${study.company} - ${study.industry}`}
-                        fill
-                        className="object-contain p-4"
-                        priority
-                      />
+                    <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
+                      <div className="w-full h-80 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl border border-brand-secondary/20 overflow-hidden shadow-lg relative">
+                        <Image 
+                          src={`/images/${study.company.toLowerCase().replace(/\s+/g, '-')}.svg`}
+                          alt={`${study.company} - ${study.industry}`}
+                          fill
+                          className="object-contain p-4"
+                          priority
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
