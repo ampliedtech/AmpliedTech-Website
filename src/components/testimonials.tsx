@@ -6,31 +6,31 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Kundan Kishore",
-    company: "Wealthians",
-    role: "CTO",
-    content: "Amplied Technologies has been instrumental in our digital transformation. Their Technology-as-a-Service model provided us with the flexibility and expertise we needed to scale our fintech platform. The team's dedication and technical excellence are unmatched.",
+    name: "Ankit Nautiyal",
+    company: "Teeoff Technologies",
+    role: "CEO & Founder",
+    content: "Amplied's TaaS model has been transformative for our AI solutions company. Their ongoing partnership has enabled us to develop cutting-edge AI and AR technologies while maintaining focus on innovation. The dedicated team approach and predictable costs have been game-changers for our growth.",
     rating: 5,
-    avatar: "/avatars/kundan.jpg",
-    industry: "Fintech"
+    avatar: "/avatars/ankit.jpg",
+    industry: "Artificial Intelligence"
   },
   {
     name: "Ankur Singh",
     company: "Witzeal Technologies",
-    role: "Founder & CEO",
-    content: "Working with Amplied has been a game-changer for our gaming company. Their cloud infrastructure and DevOps expertise helped us reduce deployment time by 70% and improve our game performance significantly. Highly recommended!",
+    role: "CEO & Founder",
+    content: "Amplied's TaaS model has been instrumental in supporting our real money gaming platform. Their ongoing partnership helped us scale to 50+ million users across 20+ games while maintaining robust infrastructure. The dedicated team approach and continuous optimization have been crucial for our success in the competitive gaming market.",
     rating: 5,
     avatar: "/avatars/ankur.jpg",
-    industry: "Gaming"
+    industry: "Gaming Technology"
   },
   {
     name: "Siddhartha Chandurkar",
     company: "Shephertz Technologies",
-    role: "VP Engineering",
-    content: "The cybersecurity and compliance services from Amplied gave us peace of mind. Their proactive monitoring and regular security audits helped us maintain the highest security standards while focusing on our core business growth.",
+    role: "CEO & Founder",
+    content: "Amplied's TaaS model has been essential for our product-based technology company. Their ongoing partnership has supported our diverse product suite over 15 years - from Backend-as-a-Service to AI monitoring tools. The dedicated team approach ensures our platforms remain robust and innovative while we focus on product development.",
     rating: 5,
     avatar: "/avatars/siddhartha.jpg",
-    industry: "Technology"
+    industry: "Technology Products"
   }
 ];
 
@@ -110,11 +110,23 @@ export default function Testimonials() {
                   {/* Author section with enhanced design */}
                   <div className="flex items-center space-x-4 pt-6 border-t border-brand-secondary/10">
                     <div className="relative">
-                      <div className="w-16 h-16 bg-gradient-to-br from-brand-primary to-brand-secondary rounded-2xl flex items-center justify-center shadow-lg">
-                        <span className="text-white font-bold text-xl">
+                      <div className="w-16 h-16 bg-gradient-to-br from-brand-primary to-brand-secondary rounded-2xl flex items-center justify-center shadow-lg overflow-hidden">
+                        <img 
+                          src={testimonial.avatar} 
+                          alt={`${testimonial.name} avatar`}
+                          className="w-full h-full object-cover rounded-2xl"
+                          onError={(e) => {
+                            // Fallback to first letter if image fails to load
+                            e.currentTarget.style.display = 'none';
+                            const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
+                            if (nextElement) {
+                              nextElement.style.display = 'flex';
+                            }
+                          }}
+                        />
+                        <span className="text-white font-bold text-xl hidden">
                           {testimonial.name.charAt(0)}
                         </span>
-                        
                       </div>
                       {/* <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-white rounded-full border-2 border-white flex items-center justify-center">
                         <div className="w-3 h-3 bg-green-500 rounded-full"></div>
