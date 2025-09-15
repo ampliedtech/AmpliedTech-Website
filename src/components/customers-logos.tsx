@@ -1,65 +1,59 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Star, Award, TrendingUp, Clock, Shield, CheckCircle } from "lucide-react";
+import { Star, Award, TrendingUp, Clock, Shield } from "lucide-react";
 
 const customers = [
   {
-    name: "YappyApps",
-    logo: "/logos/yappyapps.png",
-    description: "Mobile App Development",
+    name: "Spotlight Streaming",
+    logo: "/logos/spotlight.svg",
+    description: "Live Streaming Events Platform",
     industry: "Technology",
-    testimonial: "Amplied delivered exceptional mobile solutions that exceeded our expectations.",
+    testimonial: "Amplied's TaaS model helped us build a robust live streaming platform where broadcasters create events and viewers purchase tickets seamlessly. Their ongoing support ensures our platform runs flawlessly.",
     rating: 5,
-    projectType: "Mobile Development"
+    projectType: "Live Streaming Platform"
   },
   {
     name: "Shephertz Technologies",
     logo: "/logos/shephertz.png", 
-    description: "Cloud Infrastructure",
-    industry: "Cloud Services",
-    testimonial: "Their cloud expertise helped us scale our infrastructure seamlessly.",
+    description: "Product-Based Technology Company",
+    industry: "Technology Products",
+    testimonial: "Amplied's TaaS model has been instrumental in supporting our diverse product suite over 15 years - from Backend-as-a-Service to AI monitoring tools. Their ongoing partnership ensures our platforms remain robust and innovative.",
     rating: 5,
-    projectType: "Cloud Migration"
+    projectType: "Multi-Product Development"
   },
   {
     name: "Witzeal Technologies",
-    logo: "/logos/witzeal.png",
-    description: "Gaming Solutions",
-    industry: "Gaming",
-    testimonial: "Innovative gaming solutions that gave us a competitive edge in the market.",
+    logo: "/logos/witzeal.svg",
+    description: "Skill-Based Gaming Platform",
+    industry: "Gaming Technology",
+    testimonial: "Amplied's TaaS model has been instrumental in supporting our BigCash and Big Sports platforms, helping us scale to 50+ million users across 20+ games. Their ongoing partnership ensures our gaming infrastructure remains robust and innovative.",
     rating: 5,
-    projectType: "Gaming Platform"
+    projectType: "Gaming Platform Development"
   },
   {
-    name: "Wealthians",
-    logo: "/logos/wealthians.png",
-    description: "Fintech Platform",
-    industry: "Financial Technology",
-    testimonial: "Secure and scalable fintech solutions that our users trust completely.",
+    name: "Teeoff Technologies",
+    logo: "/logos/teeoff_large.png",
+    description: "AI Solutions Provider",
+    industry: "Artificial Intelligence",
+    testimonial: "Amplied's TaaS model has been instrumental in supporting our AI and AR technology development. Their ongoing partnership ensures our solutions remain cutting-edge and innovative.",
     rating: 5,
-    projectType: "Fintech Development"
+    projectType: "AI & AR Development"
   }
 ];
 
 const stats = [
   {
-    value: "50+",
-    label: "Projects Delivered",
-    icon: CheckCircle,
-    description: "Successfully completed projects across various industries"
-  },
-  {
     value: "99.9%",
     label: "Uptime Guarantee",
     icon: Shield,
-    description: "Reliable infrastructure with enterprise-grade availability"
+    description: "Enterprise-grade reliability with proactive monitoring"
   },
   {
     value: "24/7",
-    label: "Support Available",
+    label: "Dedicated Support",
     icon: Clock,
-    description: "Round-the-clock technical support and maintenance"
+    description: "Round-the-clock support from your dedicated team"
   }
 ];
 
@@ -86,7 +80,7 @@ export default function CustomersLogos() {
         </motion.div>
         
         <h2 className="text-4xl lg:text-6xl font-bold text-text" style={{ color: '#044078' }}>
-          Trusted by Industry{" "}
+          Trusted Technology{" "}
           <motion.span
             className="bg-gradient-to-r from-brand-primary to-brand-secondary bg-clip-text text-transparent"
             animate={{
@@ -101,13 +95,13 @@ export default function CustomersLogos() {
               backgroundSize: "200% 200%",
             }}
           >
-            Leaders
+            Partners
           </motion.span>
         </h2>
         
         <p className="text-xl text-brand-secondary max-w-4xl mx-auto leading-relaxed" style={{ color: '#034078' }}>
-          We&apos;re proud to partner with innovative companies across various industries, 
-          delivering cutting-edge solutions that drive digital transformation and business growth.
+          We&apos;re proud to partner with forward-thinking companies across diverse industries, 
+          providing ongoing technology support that drives digital transformation and sustainable growth.
         </p>
       </motion.div>
 
@@ -132,10 +126,24 @@ export default function CustomersLogos() {
               
               {/* Logo container with enhanced styling */}
               <motion.div
-                className="relative w-24 h-24 bg-gradient-to-br from-brand-primary/10 to-brand-secondary/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                className="relative w-24 h-24 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg border border-gray-700"
                 whileHover={{ rotate: 5 }}
               >
-                <span className="text-brand-primary font-bold text-2xl">
+                <img 
+                  src={customer.logo} 
+                  alt={`${customer.name} logo`}
+                  className="w-16 h-16 object-contain max-w-full max-h-full"
+                  style={{ maxWidth: '64px', maxHeight: '64px' }}
+                  onError={(e) => {
+                    // Fallback to first letter if logo fails to load
+                    e.currentTarget.style.display = 'none';
+                    const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
+                    if (nextElement) {
+                      nextElement.style.display = 'block';
+                    }
+                  }}
+                />
+                <span className="text-brand-primary font-bold text-2xl hidden">
                   {customer.name.charAt(0)}
                 </span>
                 
@@ -143,7 +151,7 @@ export default function CustomersLogos() {
                 <motion.div
                   className="absolute inset-0 rounded-2xl bg-gradient-to-br from-brand-primary/20 to-brand-secondary/20 opacity-0 group-hover:opacity-100"
                   animate={{
-                    scale: [1, 1.1, 1],
+                    scale: [1, 1.05, 1],
                     opacity: [0, 0.3, 0],
                   }}
                   transition={{
@@ -198,10 +206,9 @@ export default function CustomersLogos() {
         transition={{ duration: 0.6, delay: 0.4 }}
         viewport={{ once: true }}
       >
-        {/* Background decoration */}
         <div className="absolute inset-0 bg-gradient-to-r from-brand-primary/5 via-transparent to-brand-secondary/5 rounded-3xl" />
         
-        <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
+        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}
@@ -251,19 +258,21 @@ export default function CustomersLogos() {
       >
         <div className="bg-gradient-to-r from-brand-primary/10 to-brand-secondary/10 rounded-2xl p-8 max-w-4xl mx-auto">
           <h3 className="text-2xl font-bold text-text mb-4" style={{ color: '#044078' }}>
-            Ready to Join Our Success Stories?
+            Ready to Become Our Next Success Story?
           </h3>
           <p className="text-brand-secondary mb-6" style={{ color: '#034078' }}>
-            Let&apos;s discuss how we can help accelerate your digital transformation journey.
+            Join our growing family of technology partners and experience the benefits of ongoing support, predictable costs, and continuous innovation.
           </p>
-          <motion.div
-            className="inline-flex items-center space-x-2 text-brand-primary font-semibold"
-            whileHover={{ x: 5 }}
+          <motion.a
+            href="/contact"
+            className="inline-flex items-center space-x-2 bg-gradient-to-r from-brand-primary to-brand-secondary text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg transition-all duration-300"
+            whileHover={{ x: 5, scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             transition={{ duration: 0.2 }}
           >
-            <span>Get Started Today</span>
+            <span>Start Your Partnership</span>
             <TrendingUp className="h-4 w-4" />
-          </motion.div>
+          </motion.a>
         </div>
       </motion.div>
     </div>

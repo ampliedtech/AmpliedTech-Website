@@ -1,0 +1,61 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with gradient -->
+  <circle cx="32" cy="32" r="30" fill="url(#gradient1)" stroke="url(#gradient2)" stroke-width="2"/>
+  
+  <!-- Spotlight beam effect -->
+  <path d="M32 8 L40 20 L32 16 L24 20 Z" fill="url(#gradient3)" opacity="0.8"/>
+  <path d="M32 8 L36 14 L32 12 L28 14 Z" fill="url(#gradient4)" opacity="0.6"/>
+  
+  <!-- Camera/video icon -->
+  <rect x="20" y="24" width="24" height="16" rx="3" fill="url(#gradient5)" stroke="url(#gradient6)" stroke-width="1.5"/>
+  <circle cx="32" cy="32" r="6" fill="url(#gradient7)"/>
+  <circle cx="32" cy="32" r="4" fill="url(#gradient8)"/>
+  
+  <!-- Live indicator -->
+  <circle cx="44" cy="28" r="3" fill="#ff4444"/>
+  <text x="44" y="30" text-anchor="middle" fill="white" font-size="6" font-weight="bold">LIVE</text>
+  
+  <!-- Streaming waves -->
+  <path d="M12 40 Q16 36 20 40 T28 40" stroke="url(#gradient9)" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M36 40 Q40 36 44 40 T52 40" stroke="url(#gradient9)" stroke-width="2" fill="none" opacity="0.5"/>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f3460;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#533483;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff8c00;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffff00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffd700;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ecf0f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bdc3c7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9b59b6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>
