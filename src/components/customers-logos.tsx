@@ -118,7 +118,7 @@ export default function CustomersLogos() {
             viewport={{ once: true }}
             whileHover={{ y: -8 }}
           >
-            <div className="relative bg-white rounded-3xl border border-brand-secondary/10 p-8 h-full flex flex-col items-center text-center space-y-6 group-hover:shadow-2xl group-hover:border-brand-primary/20 transition-all duration-500">
+            <div className="relative bg-gradient-to-r from-brand-primary/10 to-brand-secondary/10 rounded-xl border border-brand-secondary/10 p-8 h-full flex flex-col items-center text-center space-y-6 group-hover:shadow-2xl group-hover:border-brand-primary/20 transition-all duration-500">
               {/* Background gradient on hover */}
               <motion.div
                 className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 to-brand-secondary/5 h-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"
@@ -177,13 +177,13 @@ export default function CustomersLogos() {
               </div>
               
               {/* Testimonial quote - always visible */}
-              <div className="w-full relative z-10">
+              {/* <div className="w-full relative z-10">
                 <div className="bg-gradient-to-r from-brand-primary/10 to-brand-secondary/10 rounded-xl p-4 mt-4">
                   <p className="text-xs text-brand-secondary italic leading-relaxed" style={{ color: '#034078' }}>
                     &ldquo;{customer.testimonial}&rdquo;
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </motion.div>
         ))}

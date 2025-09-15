@@ -4,6 +4,7 @@ import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 import Section from "@/components/section";
 import Image from "next/image";
+import { motion } from 'framer-motion';
 
 export default function AboutPage() {
   return (
@@ -39,26 +40,26 @@ export default function AboutPage() {
               <div className="space-y-6 text-center lg:text-left">
                 <div className="space-y-4 text-brand-secondary leading-relaxed" style={{ color: '#034078' }}>
                   <p>
-                    Unlike traditional consultancies that deliver one-off projects and disappear, we provide ongoing, subscription-based technology partnerships that evolve with your business. Our approach ensures continuous innovation, predictable costs, dedicated team availability, and proactive support.
+                    Unlike traditional consultancies that deliver <strong>one-off projects</strong> and disappear, we provide ongoing, <strong>subscription-based technology partnerships</strong> that evolve with your business. Our approach ensures <strong>continuous innovation, predictable costs, dedicated team availability,</strong> and <strong>proactive support</strong>.
                   </p>
                   <p>
-                    Based in India and serving clients worldwide, we combine deep technical expertise with a partnership-first mindset to deliver solutions that not only meet today&apos;s needs but also continuously adapt to tomorrow&apos;s challenges.
+                    Based in India and serving clients worldwide, we combine deep technical expertise with a <strong>partnership-first mindset</strong> to deliver solutions that not only meet today&apos;s needs but also continuously adapt to tomorrow&apos;s challenges.
                   </p>
                 </div>
               </div>
 
               <div className="relative">
-                <div className="w-full h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl border border-brand-secondary/20 overflow-hidden shadow-lg relative">
-                  <Image 
-                    src="/images/taas-concept.svg" 
-                    alt="Technology as a Service Concept"
-                    width={500}
-                    height={400}
-                    className="object-contain p-4"
-                    priority
-                  />
-                </div>
-              </div>
+  <div className="w-full h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl border border-brand-secondary/20 overflow-hidden shadow-lg relative hover:shadow-2xl">
+    <Image 
+      src="/images/story.png" 
+      alt="Technology as a Service Concept"
+      fill
+      className="object-cover hover:scale-110 transition-transform duration-500"
+      priority
+    />
+  </div>
+</div>
+
             </div>
           </div>
         </Section>
@@ -72,17 +73,62 @@ export default function AboutPage() {
               </h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div className="space-y-6 text-center">
-                  <div className="w-64 h-64 bg-gradient-to-br from-brand-primary/20 to-brand-secondary/20 rounded-full mx-auto flex items-center justify-center overflow-hidden relative">
-                    <Image 
-                      src="/avatars/naveen.jpg" 
-                      alt="Naveen Goswami - Founder & CEO"
-                      width={256}
-                      height={256}
-                      className="object-cover rounded-full"
-                      priority
-                    />
-                  </div>
+                <div className="space-y-6 text-center p-6">
+                  
+                <motion.div>
+  <div className="relative group">
+    <div className="w-full 
+                    max-w-xs     /* Mobile */
+                    sm:max-w-sm /* Small tablets */
+                    md:max-w-md /* Tablets */
+                    lg:max-w-lg /* Laptops */
+                    xl:max-w-xl /* Large screens */
+                    aspect-square mx-auto relative overflow-hidden">
+      
+      {/* Glowing gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#034078] to-[#044078] rounded-2xl blur-3xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
+
+      {/* Main container with glass effect */}
+      <div className="relative w-full h-full 
+                      bg-gradient-to-br from-[#034078]/10 to-[#044078]/10 
+                      rounded-2xl border border-white/20 
+                      p-4 sm:p-6 md:p-8 lg:p-10 
+                      group-hover:bg-white/20 transition-all duration-500">
+        
+        <div className="w-full h-full bg-white/10 backdrop-blur-xl rounded-xl flex items-center justify-center relative overflow-hidden">
+          {/* Profile image */}
+          <img 
+            src="/images/naveen_img.png"
+            alt="Profile"
+            className="w-28 h-28   /* mobile */
+                       sm:w-40 sm:h-40   /* tablet */
+                       md:w-56 md:h-56   /* bigger tablet */
+                       lg:w-72 lg:h-72   /* laptop */
+                       xl:w-96 xl:h-96   /* large desktop */
+                       object-cover rounded-full 
+                       group-hover:scale-110 transition-transform duration-500"
+          />
+
+          {/* Animated accent circles */}
+          <div className="absolute top-2 right-2 
+                          sm:top-4 sm:right-4 
+                          w-3 h-3 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-8 lg:h-8 
+                          bg-gradient-to-br from-[#044078] to-[#034078] 
+                          rounded-full animate-bounce"></div>
+
+          <div className="absolute bottom-4 left-4 
+                          w-2 h-2 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 
+                          bg-gradient-to-br from-[#044078] to-[#034078] 
+                          rounded-full animate-bounce"></div>
+
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</motion.div>
+
+
                 </div>
                 
                 <div className="space-y-6 text-center md:text-left">
@@ -97,13 +143,13 @@ export default function AboutPage() {
                   
                   <div className="space-y-4 text-brand-secondary leading-relaxed" style={{ color: '#034078' }}>
                     <p>
-                      With over 22 years of experience in technology leadership and digital transformation, Naveen founded Amplied Technologies to bridge the gap between traditional consultancy and ongoing technology partnership.
+                      With over <strong>22 years of experience</strong> in technology leadership and digital transformation, <strong>Naveen</strong> founded <strong>Amplied Technologies</strong> to bridge the gap between traditional consultancy and ongoing technology partnership.
                     </p>
                     <p>
-                      His vision is to make enterprise-grade technology accessible to businesses of all sizes through our innovative TaaS model, ensuring continuous innovation, predictable costs, and dedicated team availability.
+                      His vision is to make <strong>enterprise-grade technology</strong> accessible to businesses of all sizes through our <strong>innovative TaaS model, ensuring continuous innovation, predictable costs, and dedicated team availability</strong>.
                     </p>
                     <p className="italic text-lg">
-                      &ldquo;We believe technology should be an enabler, not a barrier. Our mission is to help businesses focus on what they do best while we handle their technology needs with excellence, reliability, and ongoing partnership.&rdquo;
+                      <strong>&ldquo; </strong>believe technology should be an enabler, not a barrier. Our mission is to help businesses focus on what they do best while we handle their technology needs with excellence, reliability, and ongoing partnership.<strong>&rdquo;</strong>
                     </p>
                   </div>
                 </div>

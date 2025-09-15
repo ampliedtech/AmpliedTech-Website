@@ -55,7 +55,7 @@ function getServiceVisual(serviceTitle: string) {
       return (
         <div className="relative w-full h-full">
           <Image 
-            src="/images/taas-concept.svg" 
+            src="/images/naveen_img.png" 
             alt="Technology as a Service"
             width={400}
             height={300}
