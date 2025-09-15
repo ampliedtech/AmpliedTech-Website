@@ -2,42 +2,42 @@
 
 import { motion } from "framer-motion";
 import { 
-  UserPlus, 
-  Wrench, 
-  TrendingUp, 
-  HeadphonesIcon,
+  Handshake, 
+  Search, 
+  Rocket, 
+  RefreshCw,
   ArrowRight
 } from "lucide-react";
 
 const steps = [
   {
-    icon: UserPlus,
-    title: "Onboard",
-    description: "We understand your business goals and technical requirements through comprehensive discovery sessions.",
+    icon: Handshake,
+    title: "Partnership Setup",
+    description: "We establish a dedicated technology partnership, understanding your goals and setting up our ongoing collaboration framework.",
     color: "from-blue-500 to-cyan-500",
     bgColor: "bg-blue-50",
     iconColor: "text-blue-600"
   },
   {
-    icon: Wrench,
-    title: "Build",
-    description: "Our expert team develops and deploys your technology solutions using agile methodologies and best practices.",
+    icon: Search,
+    title: "Discovery & Planning",
+    description: "Comprehensive analysis of your current technology landscape and creation of a strategic roadmap for digital transformation.",
     color: "from-emerald-500 to-teal-500",
     bgColor: "bg-emerald-50",
     iconColor: "text-emerald-600"
   },
   {
-    icon: TrendingUp,
-    title: "Scale",
-    description: "We help you scale your solutions as your business grows, ensuring performance and reliability.",
+    icon: Rocket,
+    title: "Implementation",
+    description: "Rapid development and deployment of your technology solutions using modern tools and agile methodologies.",
     color: "from-purple-500 to-indigo-500",
     bgColor: "bg-purple-50",
     iconColor: "text-purple-600"
   },
   {
-    icon: HeadphonesIcon,
-    title: "Ongoing Support",
-    description: "Continuous monitoring, maintenance, and optimization to keep your technology running smoothly.",
+    icon: RefreshCw,
+    title: "Continuous Partnership",
+    description: "Ongoing support, monitoring, and continuous improvement to ensure your technology evolves with your business needs.",
     color: "from-orange-500 to-red-500",
     bgColor: "bg-orange-50",
     iconColor: "text-orange-600"
@@ -55,13 +55,13 @@ export default function HowItWorks() {
         viewport={{ once: true }}
       >
         <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-brand-primary/10 to-brand-secondary/10 rounded-full">
-          <span className="text-brand-primary font-semibold text-sm uppercase tracking-wide">Our Process</span>
+          <span className="text-brand-primary font-semibold text-sm uppercase tracking-wide">Our Approach</span>
         </div>
         <h2 className="text-4xl lg:text-6xl font-bold text-text" style={{ color: '#044078' }}>
-          How It Works
+          How We Partner With You
         </h2>
         <p className="text-xl  max-w-4xl mx-auto leading-relaxed" style={{ color: '#034078' }}>
-          Our proven 4-step process ensures seamless technology implementation and ongoing success
+          Our Technology-as-a-Service model provides ongoing partnership, predictable costs, and continuous innovation
         </p>
       </motion.div>
 
