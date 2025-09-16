@@ -42,34 +42,36 @@ export default function ContactForm() {
       return;
     }
 
-    // Create mailto link
-    const subject = encodeURIComponent("New Inquiry from Website");
-    const body = encodeURIComponent(`
-Name: ${formData.name}
-Email: ${formData.email}
-Company: ${formData.company || "Not provided"}
-Phone: ${formData.phone || "Not provided"}
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-Message:
-${formData.message}
-    `);
+      const result = await response.json();
 
-    const mailtoLink = `mailto:${CONTACT_INFO.EMAIL}?subject=${subject}&body=${body}`;
-    
-    // Track form submission
-    trackEvent('contact_form_submitted', {
-      form_type: 'contact',
-      has_company: !!formData.company,
-      has_phone: !!formData.phone,
-    });
-
-    // Open mailto
-    window.location.href = mailtoLink;
-    
-    // Show success toast
-    toast.success("Email client opened! Please send the email to complete your inquiry.");
-    
-    setIsSubmitting(false);
+      if (response.ok) {
+        toast.success("Message sent successfully! We'll get back to you soon.");
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          phone: "",
+          message: ""
+        });
+      } else {
+        toast.error(result.error || "Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+      toast.error("Failed to send message. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const copyEmail = async () => {
@@ -205,7 +207,7 @@ ${formData.message}
                   disabled={isSubmitting}
                   className="w-full bg-brand-primary hover:brightness-110 text-textd text-lg py-6"
                 >
-                  {isSubmitting ? "Opening Email..." : "Send Message"}
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
               </form>
             </CardContent>
