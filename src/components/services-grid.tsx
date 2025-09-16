@@ -173,12 +173,12 @@ function ServiceCard({ service, index }: { service: typeof services[0], index: n
             
             <div className="space-y-4">
               <motion.h3
-                className="text-2xl font-bold text-text group-hover:text-brand-primary transition-colors duration-300"
+                className="text-2xl font-bold text-[#044078] group-hover:text-brand-primary transition-colors duration-300"
                 whileHover={{ x: 5 }}
               >
                 {service.title}
               </motion.h3>
-              <p className="leading-relaxed text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
+              <p className="leading-relaxed text-[#034078] group-hover:text-[#034078] transition-colors duration-300">
                 {service.description}
               </p>
             </div>
@@ -188,7 +188,7 @@ function ServiceCard({ service, index }: { service: typeof services[0], index: n
               {service.features.map((feature, featureIndex) => (
                 <motion.div
                   key={featureIndex}
-                  className="flex items-center space-x-3 text-sm group-hover:text-brand-primary transition-colors duration-300"
+                  className="flex items-center space-x-3 text-[#034078] text-sm group-hover:text-brand-primary transition-colors duration-300"
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ 
@@ -255,7 +255,7 @@ export default function ServicesGrid() {
         viewport={{ once: true }}
       >
         <motion.h2 
-          className="text-4xl lg:text-5xl font-bold text-text"
+          className="text-4xl lg:text-5xl font-bold text-text leading-[1.3] inline-block"
           whileInView={{ 
             backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
           }}
@@ -266,12 +266,13 @@ export default function ServicesGrid() {
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
             backgroundClip: "text",
+            paddingBottom: "0.1em", 
           }}
         >
           Our Technology Services
         </motion.h2>
         <motion.p 
-          className="text-xl max-w-3xl mx-auto text-gray-600"
+          className="text-xl max-w-3xl mx-auto text-[#034078]"
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}

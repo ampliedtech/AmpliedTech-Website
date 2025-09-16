@@ -95,7 +95,14 @@ export default function CustomersPage() {
         <Section background="light">
           <div className="space-y-16">
             <div className="text-center space-y-4">
-              <h2 className="text-4xl lg:text-5xl font-bold text-text">
+              <h2 className="text-4xl lg:text-5xl font-bold text-[#044078] " style={{
+            background: "linear-gradient(90deg, #0a1128 0%, #034078 50%, #1282a2 100%)",
+            backgroundSize: "200% 100%",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            backgroundClip: "text",
+            paddingBottom: "0.1em", 
+          }}>
                 Success Stories
               </h2>
               <p className="text-xl text-brand-secondary max-w-3xl mx-auto">
@@ -111,16 +118,22 @@ export default function CustomersPage() {
                 >
                   <div className="text-center space-y-8 mb-12">
                     <div className="flex items-center justify-center space-x-4 mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-br from-brand-primary/20 to-brand-secondary/20 rounded-xl flex items-center justify-center">
+                      <div className="w-16 h-16 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl flex items-center justify-center">
                         <span className="text-brand-primary font-bold text-xl">
-                          {study.company.charAt(0)}
+                        <Image 
+                  src={study.logo} 
+                  alt={`${study.company} logo`}
+                  width={64}
+                  height={64}
+                  className="object-contain p-2"
+                />
                         </span>
                       </div>
                       <div>
-                        <h3 className="text-3xl lg:text-4xl font-bold text-text">
+                        <h3 className="text-3xl lg:text-4xl font-bold text-brand-primary">
                           {study.company}
                         </h3>
-                        <p className="text-xl text-brand-secondary">
+                        <p className="text-xl text-left text-[#034078]">
                           {study.industry}
                         </p>
                       </div>
@@ -131,17 +144,17 @@ export default function CustomersPage() {
                     <div className={`space-y-6 ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
                       <div className="space-y-6 text-center lg:text-left">
                         <div className="space-y-4">
-                          <h4 className="text-2xl font-semibold text-text">Challenge:</h4>
+                          <h4 className="text-2xl font-semibold text-brand-primary">Challenge:</h4>
                           <p className="text-lg text-brand-secondary leading-relaxed">{study.challenge}</p>
                         </div>
                         
                         <div className="space-y-4">
-                          <h4 className="text-2xl font-semibold text-text">Solution:</h4>
+                          <h4 className="text-2xl font-semibold text-brand-primary">Solution:</h4>
                           <p className="text-lg text-brand-secondary leading-relaxed">{study.solution}</p>
                         </div>
 
                         <div className="space-y-4">
-                          <h4 className="text-2xl font-semibold text-text">Results:</h4>
+                          <h4 className="text-2xl font-semibold text-brand-primary">Results:</h4>
                           <ul className="space-y-3">
                             {study.results.map((result, resultIndex) => (
                               <li key={resultIndex} className="flex items-start space-x-3">
@@ -155,12 +168,12 @@ export default function CustomersPage() {
                     </div>
 
                     <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                      <div className="w-full h-80 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl border border-brand-secondary/20 overflow-hidden shadow-lg relative">
+                      <div className="w-full h-80 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl drop-shadow-2xl border border-brand-secondary/20 overflow-hidden shadow-lg relative hover:scale-110 transition-transform duration-500">
                         <Image 
-                          src={`/images/${study.company.toLowerCase().replace(/\s+/g, '-')}.svg`}
+                          src={`/images/${study.company.toLowerCase().replace(/\s+/g, '-')}.png`}
                           alt={`${study.company} - ${study.industry}`}
                           fill
-                          className="object-contain p-4"
+                          className="object-cover hover:scale-110 transition-transform duration-500"
                           priority
                         />
                       </div>

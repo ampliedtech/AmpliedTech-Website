@@ -49,7 +49,7 @@ export default function AboutPage() {
               </div>
 
               <div className="relative">
-  <div className="w-full h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl border border-brand-secondary/20 overflow-hidden shadow-lg relative hover:shadow-2xl">
+  <div className="w-full h-96 bg-gradient-to-br from-gray-50 drop-shadow-2xl to-gray-100 rounded-2xl border border-brand-secondary/20 overflow-hidden shadow-lg relative hover:shadow-2xl hover:scale-110 transition-transform duration-500">
     <Image 
       src="/images/story.png" 
       alt="Technology as a Service Concept"
@@ -100,7 +100,7 @@ export default function AboutPage() {
           <img 
             src="/images/naveen_img.png"
             alt="Profile"
-            className="w-28 h-28   /* mobile */
+            className="w-45 h-45   /* mobile */
                        sm:w-40 sm:h-40   /* tablet */
                        md:w-56 md:h-56   /* bigger tablet */
                        lg:w-72 lg:h-72   /* laptop */
@@ -112,12 +112,12 @@ export default function AboutPage() {
           {/* Animated accent circles */}
           <div className="absolute top-2 right-2 
                           sm:top-4 sm:right-4 
-                          w-3 h-3 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-8 lg:h-8 
+                          w-6 h-6 sm:w-6 sm:h-6 md:w-6 md:h-6 lg:w-8 lg:h-8 
                           bg-gradient-to-br from-[#044078] to-[#034078] 
                           rounded-full animate-bounce"></div>
 
           <div className="absolute bottom-4 left-4 
-                          w-2 h-2 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 
+                          w-5 h-5 sm:w-5 sm:h-5 md:w-5 md:h-5 lg:w-6 lg:h-6 
                           bg-gradient-to-br from-[#044078] to-[#034078] 
                           rounded-full animate-bounce"></div>
 
@@ -149,7 +149,7 @@ export default function AboutPage() {
                       His vision is to make <strong>enterprise-grade technology</strong> accessible to businesses of all sizes through our <strong>innovative TaaS model, ensuring continuous innovation, predictable costs, and dedicated team availability</strong>.
                     </p>
                     <p className="italic text-lg">
-                      <strong>&ldquo; </strong>believe technology should be an enabler, not a barrier. Our mission is to help businesses focus on what they do best while we handle their technology needs with excellence, reliability, and ongoing partnership.<strong>&rdquo;</strong>
+                      <strong>&ldquo; </strong>I believe technology should be an enabler, not a barrier. Our mission is to help businesses focus on what they do best while we handle their technology needs with excellence, reliability, and ongoing partnership.<strong>&rdquo;</strong>
                     </p>
                   </div>
                 </div>

@@ -81,7 +81,7 @@ export default function Testimonials() {
               className="group"
             >
               <Card className="h-full hover:shadow-2xl transition-all duration-500 border-0 bg-white backdrop-blur-sm group-hover:scale-105 group-hover:-translate-y-2">
-                <CardContent className="p-8 space-y-6 relative overflow-hidden">
+                <CardContent className="p-8 space-y-6 relative overflow-hidden flex flex-col justify-between h-full">
                   {/* Decorative background pattern */}
                   <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-brand-primary/5 to-brand-secondary/5 rounded-full -translate-y-16 translate-x-16"></div>
                   
@@ -91,16 +91,10 @@ export default function Testimonials() {
                   </div>
 
                   {/* Industry badge */}
-                  <div className="inline-block px-3 py-1 bg-brand-primary/10 text-brand-primary text-xs font-semibold rounded-full">
-                    {testimonial.industry}
+                  <div className="inline-block  text-brand-primary text-xs font-semibold ">
+                    <div className="bg-brand-primary/10 px-3 py-1 rounded-full">{testimonial.industry}</div>
                   </div>
 
-                  {/* Rating with enhanced stars */}
-                  {/* <div className="flex space-x-1">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="h-6 w-6 text-amber-400 fill-current drop-shadow-sm" />
-                    ))}
-                  </div> */}
 
                   {/* Content with improved typography */}
                   <blockquote className="text-brand-secondary leading-relaxed text-lg relative">
@@ -109,9 +103,9 @@ export default function Testimonials() {
                   </blockquote>
 
                   {/* Author section with enhanced design */}
-                  <div className="flex items-center space-x-4 pt-6 border-t border-brand-secondary/10">
+                  <div className="flex items-center space-x-4 pt-6 border-t border-brand-secondary/10  mt-6">
                     <div className="relative">
-                      <div className="w-16 h-16 bg-gradient-to-br from-brand-primary to-brand-secondary rounded-2xl flex items-center justify-center shadow-lg overflow-hidden relative">
+                      <div className="w-16 h-16 bg-gradient-to-br from-brand-primary border-2  border-brand-primary to-brand-secondary rounded-2xl flex items-center justify-center shadow-lg overflow-hidden relative">
                         <Image 
                           src={testimonial.avatar} 
                           alt={`${testimonial.name} avatar`}
