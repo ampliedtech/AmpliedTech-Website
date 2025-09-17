@@ -91,18 +91,18 @@ export default function CustomersPage() {
           <Testimonials />
         </Section>
 
-        {/* Case Studies */}
+        {/* Success Stories */}
         <Section background="light">
-          <div className="space-y-16">
-            <div className="text-center space-y-4">
-              <h2 className="text-4xl lg:text-5xl font-bold text-[#044078] " style={{
-            background: "linear-gradient(90deg, #0a1128 0%, #034078 50%, #1282a2 100%)",
-            backgroundSize: "200% 100%",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            backgroundClip: "text",
-            paddingBottom: "0.1em", 
-          }}>
+          <div className="space-y-20">
+            <div className="text-center space-y-6">
+              <h2 className="text-4xl lg:text-5xl font-bold" style={{
+                background: "linear-gradient(90deg, #0a1128 0%, #034078 50%, #1282a2 100%)",
+                backgroundSize: "200% 100%",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+                paddingBottom: "0.1em", 
+              }}>
                 Success Stories
               </h2>
               <p className="text-xl text-brand-secondary max-w-3xl mx-auto">
@@ -110,73 +110,73 @@ export default function CustomersPage() {
               </p>
             </div>
 
-            <div className="space-y-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {caseStudies.map((study, index) => (
                 <div
                   key={study.company}
-                  className="max-w-6xl mx-auto"
+                  className="bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-100"
                 >
-                  <div className="text-center space-y-8 mb-12">
-                    <div className="flex items-center justify-center space-x-4 mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl flex items-center justify-center">
-                        <span className="text-brand-primary font-bold text-xl">
+                  {/* Header with Logo and Company Info */}
+                  <div className="p-8 pb-6">
+                    <div className="flex items-center space-x-4 mb-6">
+                      <div className="w-16 h-16 bg-white rounded-2xl shadow-md flex items-center justify-center border border-gray-100">
                         <Image 
-                  src={study.logo} 
-                  alt={`${study.company} logo`}
-                  width={64}
-                  height={64}
-                  className="object-contain p-2"
-                />
-                        </span>
+                          src={study.logo} 
+                          alt={`${study.company} logo`}
+                          width={48}
+                          height={48}
+                          className="object-contain"
+                        />
                       </div>
-                      <div>
-                        <h3 className="text-3xl lg:text-4xl font-bold text-brand-primary">
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-bold text-brand-primary">
                           {study.company}
                         </h3>
-                        <p className="text-xl text-left text-[#034078]">
+                        <p className="text-lg text-brand-secondary font-medium">
                           {study.industry}
                         </p>
                       </div>
                     </div>
                   </div>
-                  
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div className={`space-y-6 ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                      <div className="space-y-6 text-center lg:text-left">
-                        <div className="space-y-4">
-                          <h4 className="text-2xl font-semibold text-brand-primary">Challenge:</h4>
-                          <p className="text-lg text-brand-secondary leading-relaxed">{study.challenge}</p>
-                        </div>
-                        
-                        <div className="space-y-4">
-                          <h4 className="text-2xl font-semibold text-brand-primary">Solution:</h4>
-                          <p className="text-lg text-brand-secondary leading-relaxed">{study.solution}</p>
-                        </div>
 
-                        <div className="space-y-4">
-                          <h4 className="text-2xl font-semibold text-brand-primary">Results:</h4>
-                          <ul className="space-y-3">
-                            {study.results.map((result, resultIndex) => (
-                              <li key={resultIndex} className="flex items-start space-x-3">
-                                <div className="w-2 h-2 bg-brand-primary rounded-full mt-2 flex-shrink-0" />
-                                <span className="text-brand-secondary">{result}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
+                  {/* Content */}
+                  <div className="px-8 pb-8 space-y-6">
+                    {/* Challenge */}
+                    <div className="space-y-3">
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                        <h4 className="text-lg font-semibold text-brand-primary">Challenge</h4>
                       </div>
+                      <p className="text-brand-secondary leading-relaxed pl-4">
+                        {study.challenge}
+                      </p>
                     </div>
 
-                    <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                      <div className="w-full h-80 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl drop-shadow-2xl border border-brand-secondary/20 overflow-hidden shadow-lg relative hover:scale-110 transition-transform duration-500">
-                        <Image 
-                          src={`/images/${study.company.toLowerCase().replace(/\s+/g, '-')}.png`}
-                          alt={`${study.company} - ${study.industry}`}
-                          fill
-                          className="object-cover hover:scale-110 transition-transform duration-500"
-                          priority
-                        />
+                    {/* Solution */}
+                    <div className="space-y-3">
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                        <h4 className="text-lg font-semibold text-brand-primary">Solution</h4>
                       </div>
+                      <p className="text-brand-secondary leading-relaxed pl-4">
+                        {study.solution}
+                      </p>
+                    </div>
+
+                    {/* Results */}
+                    <div className="space-y-3">
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                        <h4 className="text-lg font-semibold text-brand-primary">Results</h4>
+                      </div>
+                      <ul className="space-y-2 pl-4">
+                        {study.results.map((result, resultIndex) => (
+                          <li key={resultIndex} className="flex items-start space-x-3">
+                            <div className="w-1.5 h-1.5 bg-brand-primary rounded-full mt-2.5 flex-shrink-0" />
+                            <span className="text-brand-secondary text-sm leading-relaxed">{result}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
                 </div>

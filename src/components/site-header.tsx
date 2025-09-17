@@ -26,7 +26,7 @@ export default function SiteHeader() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 ${
         isScrolled
           ? "bg-ink/90 backdrop-blur-md border-b border-brand-primary/20 shadow-lg"
           : "bg-transparent"
@@ -36,7 +36,7 @@ export default function SiteHeader() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="group">
-            <Logo variant="full" size="md" animated={true} />
+            <Logo variant="full" size="md" animated={false} />
           </Link>
 
           {/* Desktop Navigation */}
@@ -45,7 +45,7 @@ export default function SiteHeader() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-textd hover:text-brand-secondary transition-colors duration-200"
+                className="text-textd hover:text-brand-secondary"
               >
                 {item.name}
               </Link>
@@ -54,7 +54,7 @@ export default function SiteHeader() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center">
-            <Button asChild className="bg-brand-primary hover:bg-brand-secondary text-textd shadow-lg hover:shadow-glow transition-all duration-300">
+            <Button asChild className="bg-brand-primary hover:bg-brand-secondary text-textd shadow-lg hover:shadow-glow">
               <Link href="/contact">Get Started</Link>
             </Button>
           </div>
@@ -91,7 +91,7 @@ export default function SiteHeader() {
                       <Link
                         key={item.name}
                         href={item.href}
-                        className="block px-4 py-3 text-textd hover:text-brand-secondary hover:bg-brand-primary/5 rounded-lg transition-all duration-200 font-medium"
+                        className="block px-4 py-3 text-textd hover:text-brand-secondary hover:bg-brand-primary/5 rounded-lg font-medium"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
                         {item.name}
@@ -104,7 +104,7 @@ export default function SiteHeader() {
                 <div className="py-6 border-t border-brand-primary/10">
                   <Button
                     asChild
-                    className="w-full h-12 bg-gradient-to-r from-brand-primary to-brand-secondary hover:from-brand-secondary hover:to-brand-primary text-textd shadow-lg hover:shadow-glow transition-all duration-300 font-medium"
+                    className="w-full h-12 bg-gradient-to-r from-brand-primary to-brand-secondary hover:from-brand-secondary hover:to-brand-primary text-textd shadow-lg hover:shadow-glow font-medium"
                   >
                     <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
                       Get Started
