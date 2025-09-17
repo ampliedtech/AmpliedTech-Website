@@ -110,78 +110,91 @@ export default function CustomersPage() {
               </p>
             </div>
 
-            <div className="space-y-16">
-              {caseStudies.map((study, index) => (
-                <div
-                  key={study.company}
-                  className="max-w-6xl mx-auto"
-                >
-                  <div className="text-center space-y-8 mb-12">
-                    <div className="flex items-center justify-center space-x-4 mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl flex items-center justify-center">
-                        <span className="text-brand-primary font-bold text-xl">
-                        <Image 
-                  src={study.logo} 
-                  alt={`${study.company} logo`}
-                  width={64}
-                  height={64}
-                  className="object-contain p-2"
-                />
-                        </span>
-                      </div>
-                      <div>
-                        <h3 className="text-3xl lg:text-4xl font-bold text-brand-primary">
-                          {study.company}
-                        </h3>
-                        <p className="text-xl text-left text-[#034078]">
-                          {study.industry}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div className={`space-y-6 ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                      <div className="space-y-6 text-center lg:text-left">
-                        <div className="space-y-4">
-                          <h4 className="text-2xl font-semibold text-brand-primary">Challenge:</h4>
-                          <p className="text-lg text-brand-secondary leading-relaxed">{study.challenge}</p>
-                        </div>
-                        
-                        <div className="space-y-4">
-                          <h4 className="text-2xl font-semibold text-brand-primary">Solution:</h4>
-                          <p className="text-lg text-brand-secondary leading-relaxed">{study.solution}</p>
-                        </div>
+            <div className="space-y-16 px-4 sm:px-6 lg:px-8">
+  {caseStudies.map((study, index) => (
+    <div key={study.company} className="max-w-6xl mx-auto">
+      {/* Header */}
+      <div className="text-center space-y-8 mb-12">
+        <div className="flex flex-col sm:flex-row items-center justify-center sm:space-x-4 mb-6 space-y-4 sm:space-y-0">
+          <div className="w-16 h-16 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl flex items-center justify-center">
+            <Image
+              src={study.logo}
+              alt={`${study.company} logo`}
+              width={64}
+              height={64}
+              className="object-contain p-2"
+            />
+          </div>
+          <div>
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-primary">
+              {study.company}
+            </h3>
+            <p className="text-base sm:text-lg lg:text-xl text-left text-[#034078]">
+              {study.industry}
+            </p>
+          </div>
+        </div>
+      </div>
 
-                        <div className="space-y-4">
-                          <h4 className="text-2xl font-semibold text-brand-primary">Results:</h4>
-                          <ul className="space-y-3">
-                            {study.results.map((result, resultIndex) => (
-                              <li key={resultIndex} className="flex items-start space-x-3">
-                                <div className="w-2 h-2 bg-brand-primary rounded-full mt-2 flex-shrink-0" />
-                                <span className="text-brand-secondary">{result}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                      <div className="w-full h-80 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl drop-shadow-2xl border border-brand-secondary/20 overflow-hidden shadow-lg relative hover:scale-110 transition-transform duration-500">
-                        <Image 
-                          src={`/images/${study.company.toLowerCase().replace(/\s+/g, '-')}.png`}
-                          alt={`${study.company} - ${study.industry}`}
-                          fill
-                          className="object-cover hover:scale-110 transition-transform duration-500"
-                          priority
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
+      {/* Content Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center ">
+        {/* Text Section */}
+        <div className={`space-y-6 bg-gray-100 p-6 rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500 ${index % 2 === 1 ? "md:order-2" : ""}`}>
+          <div className="space-y-6 text-center md:text-left">
+            <div className="space-y-4">
+              <h4 className="text-xl sm:text-2xl font-semibold text-brand-primary">
+                Challenge:
+              </h4>
+              <p className="text-base sm:text-lg text-brand-secondary leading-relaxed">
+                {study.challenge}
+              </p>
             </div>
+
+            <div className="space-y-4">
+              <h4 className="text-xl sm:text-2xl font-semibold text-brand-primary">
+                Solution:
+              </h4>
+              <p className="text-base sm:text-lg text-brand-secondary leading-relaxed">
+                {study.solution}
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <h4 className="text-xl sm:text-2xl font-semibold text-brand-primary">
+                Results:
+              </h4>
+              <ul className="space-y-3">
+                {study.results.map((result, resultIndex) => (
+                  <li
+                    key={resultIndex}
+                    className="flex items-start space-x-3 text-sm sm:text-base"
+                  >
+                    <div className="w-2 h-2 bg-brand-primary rounded-full mt-2 flex-shrink-0" />
+                    <span className="text-brand-secondary">{result}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Image Section */}
+        <div className={`${index % 2 === 1 ? "md:order-1" : ""}`}>
+          <div className="w-full h-60 sm:h-72 md:h-80 lg:h-96 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl drop-shadow-2xl border border-brand-secondary/20 overflow-hidden shadow-lg relative hover:scale-105 transition-transform duration-500">
+            <Image
+              src={`/images/${study.company.toLowerCase().replace(/\s+/g, "-")}.png`}
+              alt={`${study.company} - ${study.industry}`}
+              fill
+              className="object-cover hover:scale-110 transition-transform duration-500"
+              priority
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
           </div>
         </Section>
 

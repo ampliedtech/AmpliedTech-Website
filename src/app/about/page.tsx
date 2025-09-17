@@ -86,27 +86,27 @@ export default function AboutPage() {
                     aspect-square mx-auto relative overflow-hidden">
       
       {/* Glowing gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#034078] to-[#044078] rounded-2xl blur-3xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#034078] to-[#044078] rounded-2xl  opacity-30 group-hover:opacity-50 transition-opacity duration-500"><div className="blur-3xl"></div></div>
 
       {/* Main container with glass effect */}
       <div className="relative w-full h-full 
                       bg-gradient-to-br from-[#034078]/10 to-[#044078]/10 
                       rounded-2xl border border-white/20 
-                      p-4 sm:p-6 md:p-8 lg:p-10 
+                      p-4 sm:p-6 md:p-8 lg:p-10 flex items-center justify-center overflow-hidden
                       group-hover:bg-white/20 transition-all duration-500">
         
-        <div className="w-full h-full bg-white/10 backdrop-blur-xl rounded-xl flex items-center justify-center relative overflow-hidden">
+        {/* <div className="w-full h-full bg-white/10 backdrop-blur-xl rounded-xl flex items-center justify-center relative overflow-hidden"> */}
           {/* Profile image */}
           <img 
             src="/images/naveen_img.png"
             alt="Profile"
-            className="w-45 h-45   /* mobile */
-                       sm:w-40 sm:h-40   /* tablet */
-                       md:w-56 md:h-56   /* bigger tablet */
-                       lg:w-72 lg:h-72   /* laptop */
-                       xl:w-96 xl:h-96   /* large desktop */
+            className="w-48 h-48   /* mobile */
+                       sm:w-60 sm:h-60   /* tablet */
+                       md:w-60 md:h-60   /* bigger tablet */
+                       lg:w-84 lg:h-84  /* laptop */
+                       xl:w-110 xl:h-110   /* large desktop */
                        object-cover rounded-full 
-                       group-hover:scale-110 transition-transform duration-500"
+                       group-hover:scale-105 transition-transform duration-500"
           />
 
           {/* Animated accent circles */}
@@ -122,7 +122,7 @@ export default function AboutPage() {
                           rounded-full animate-bounce"></div>
 
          
-        </div>
+        {/* </div> */}
       </div>
     </div>
   </div>

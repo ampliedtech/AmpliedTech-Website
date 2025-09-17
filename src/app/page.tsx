@@ -40,7 +40,7 @@ export default function Home() {
           <HowItWorks />
         </Section>
         
-        <Section background="surface">
+        <Section background="surface" className="bg-gray-100">
           <WhyAmplied />
         </Section>
         
