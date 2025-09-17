@@ -36,7 +36,7 @@ const steps = [
   },
   {
     icon: RefreshCw,
-    title: "Continuous Partnership",
+    title: "Ongoing Partnership",
     description: "Ongoing support, monitoring, and continuous improvement to ensure your technology evolves with your business needs.",
     color: "from-orange-500 to-red-500",
     bgColor: "bg-orange-50",
@@ -111,9 +111,11 @@ export default function HowItWorks() {
 
                     {/* Content */}
                     <div className="text-center space-y-4">
-                      <h3 className="text-2xl font-bold text-text group-hover:text-brand-primary transition-colors duration-300" style={{ color: '#044078' }}>
-                        {step.title}
-                      </h3>
+                      <div className="h-16 flex items-center justify-center">
+                        <h3 className="text-xl sm:text-2xl font-bold text-text group-hover:text-brand-primary transition-colors duration-300 whitespace-nowrap sm:whitespace-nowrap" style={{ color: '#044078' }}>
+                          {step.title}
+                        </h3>
+                      </div>
                       <p className="text-brand-secondary leading-relaxed text-base" style={{ color: '#034078' }}>
                         {step.description}
                       </p>
