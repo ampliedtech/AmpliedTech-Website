@@ -135,8 +135,7 @@ export default function CustomersLogos() {
                   alt={`${customer.name} logo`}
                   width={64}
                   height={64}
-                  className="object-contain w-full h-full"
-                  style={{ width: 'auto', height: 'auto' }}
+                  className="object-contain"
                 />
                 
                 {/* Floating particles on hover */}

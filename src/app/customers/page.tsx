@@ -125,8 +125,7 @@ export default function CustomersPage() {
                           alt={`${study.company} logo`}
                           width={48}
                           height={48}
-                          className="object-contain w-full h-full"
-                          style={{ width: 'auto', height: 'auto' }}
+                          className="object-contain"
                         />
                       </div>
                       <div className="flex-1">
