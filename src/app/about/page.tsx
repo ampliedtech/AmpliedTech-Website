@@ -31,14 +31,14 @@ export default function AboutPage() {
               <h2 className="text-4xl lg:text-5xl font-bold text-text" style={{ color: '#044078' }}>
                 Our Story
               </h2>
-              <p className="text-xl text-brand-secondary max-w-4xl mx-auto leading-relaxed" style={{ color: '#034078' }}>
+              <p className="text-2xl text-brand-secondary max-w-4xl mx-auto leading-relaxed" style={{ color: '#034078' }}>
                 Founded with a vision to revolutionize how businesses access technology through our innovative Technology-as-a-Service (TaaS) model.
               </p>
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6 text-center lg:text-left">
-                <div className="space-y-4 text-brand-secondary leading-relaxed" style={{ color: '#034078' }}>
+                <div className="space-y-4 text-xl text-brand-secondary leading-relaxed" style={{ color: '#034078' }}>
                   <p>
                     Unlike traditional consultancies that deliver <strong>one-off projects</strong> and disappear, we provide ongoing, <strong>subscription-based technology partnerships</strong> that evolve with your business. Our approach ensures <strong>continuous innovation, predictable costs, dedicated team availability,</strong> and <strong>proactive support</strong>.
                   </p>
@@ -136,12 +136,12 @@ export default function AboutPage() {
                     <h3 className="text-3xl font-bold text-text mb-2" style={{ color: '#044078' }}>
                       Naveen Goswami
                     </h3>
-                    <p className="text-xl text-brand-secondary" style={{ color: '#034078' }}>
+                    <p className="text-2xl text-brand-secondary" style={{ color: '#034078' }}>
                       Founder & CEO
                     </p>
                   </div>
                   
-                  <div className="space-y-4 text-brand-secondary leading-relaxed" style={{ color: '#034078' }}>
+                  <div className="space-y-4 text-xl text-brand-secondary leading-relaxed" style={{ color: '#034078' }}>
                     <p>
                       With over <strong>22 years of experience</strong> in technology leadership and digital transformation, <strong>Naveen</strong> founded <strong>Amplied Technologies</strong> to bridge the gap between traditional consultancy and ongoing technology partnership.
                     </p>

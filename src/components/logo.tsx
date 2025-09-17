@@ -14,7 +14,7 @@ export default function Logo({
   variant = "full", 
   size = "md", 
   className,
-  animated = true 
+  animated = false 
 }: LogoProps) {
   const sizeClasses = {
     sm: {
