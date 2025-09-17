@@ -74,13 +74,13 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
               viewport={{ once: true }}
               className="group"
             >
-              <Card className="h-full hover:shadow-2xl transition-all duration-500 border-0 bg-white backdrop-blur-sm group-hover:scale-105 group-hover:-translate-y-2">
+              <Card className="h-full hover:shadow-2xl transition-all duration-300 border-0 bg-white backdrop-blur-sm group-hover:scale-102 group-hover:-translate-y-1">
                 <CardContent className="p-8 space-y-6 relative overflow-hidden flex flex-col justify-between h-full">
                   {/* Decorative background pattern */}
                   <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-brand-primary/5 to-brand-secondary/5 rounded-full -translate-y-16 translate-x-16"></div>
@@ -109,8 +109,10 @@ export default function Testimonials() {
                         <Image 
                           src={testimonial.avatar} 
                           alt={`${testimonial.name} avatar`}
-                          fill
+                          width={64}
+                          height={64}
                           className="object-cover rounded-2xl"
+                          priority={index < 2}
                         />
                       </div>
                       {/* <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-white rounded-full border-2 border-white flex items-center justify-center">
@@ -152,7 +154,7 @@ export default function Testimonials() {
             <div className="text-brand-secondary font-medium" style={{ color: '#ffffff' }}>Successful Projects</div>
           </div>
           <div className="text-center space-y-2">
-            <div className="text-4xl font-bold text-brand-primary" style={{ color: '#ffffff' }}>5.0</div>
+            <div className="text-4xl font-bold text-brand-primary" style={{ color: '#ffffff' }}>4.9</div>
             <div className="text-brand-secondary font-medium" style={{ color: '#ffffff' }}>Average Rating</div>
           </div>
         </motion.div>

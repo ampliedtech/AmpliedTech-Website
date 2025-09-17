@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle, SheetDescription } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
 import Logo from "@/components/logo";
 import { NAVIGATION_ITEMS } from "@/constants";
@@ -14,12 +14,17 @@ const navigation = NAVIGATION_ITEMS;
 export default function SiteHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
 
+    // Set initial scroll state
+    handleScroll();
+    
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -27,7 +32,7 @@ export default function SiteHeader() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 ${
-        isScrolled
+        isClient && isScrolled
           ? "bg-ink/90 backdrop-blur-md border-b border-brand-primary/20 shadow-lg"
           : "bg-transparent"
       }`}
@@ -76,6 +81,9 @@ export default function SiteHeader() {
             <SheetContent side="right" className="w-[320px] bg-ink border-brand-primary/20">
               <SheetHeader className="px-6 py-4 border-b border-brand-primary/10">
                 <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+                <SheetDescription className="sr-only">
+                  Mobile navigation menu with links to all pages and a call-to-action button.
+                </SheetDescription>
               </SheetHeader>
               
               <div className="flex flex-col h-full px-6">

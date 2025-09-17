@@ -18,172 +18,54 @@ export default function Hero() {
           }}></div>
         </div>
         
-        {/* Floating tech icons */}
+        {/* Simplified floating tech icons - reduced from 7 to 3 for better performance */}
         <motion.div
           className="absolute top-20 left-10 text-cyan-400/20"
           animate={{
-            y: [0, -20, 0],
-            rotate: [0, 5, 0],
-          }}
-          transition={{
-            duration: 6,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        >
-          <Code className="h-8 w-8" />
-        </motion.div>
-        
-        <motion.div
-          className="absolute top-32 right-20 text-blue-400/20"
-          animate={{
-            y: [0, 15, 0],
-            rotate: [0, -3, 0],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 1,
-          }}
-        >
-          <Cloud className="h-10 w-10" />
-        </motion.div>
-        
-        <motion.div
-          className="absolute top-1/2 left-16 text-cyan-400/15"
-          animate={{
-            y: [0, -25, 0],
-            x: [0, 10, 0],
-          }}
-          transition={{
-            duration: 7,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 2,
-          }}
-        >
-          <Shield className="h-6 w-6" />
-        </motion.div>
-        
-        <motion.div
-          className="absolute top-1/3 right-32 text-blue-400/15"
-          animate={{
-            y: [0, 20, 0],
-            rotate: [0, 8, 0],
-          }}
-          transition={{
-            duration: 9,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 0.5,
-          }}
-        >
-          <Database className="h-7 w-7" />
-        </motion.div>
-        
-        <motion.div
-          className="absolute bottom-1/3 left-24 text-cyan-400/20"
-          animate={{
-            y: [0, -15, 0],
-            x: [0, -8, 0],
-          }}
-          transition={{
-            duration: 5,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 3,
-          }}
-        >
-          <Cpu className="h-8 w-8" />
-        </motion.div>
-
-        <motion.div
-          className="absolute bottom-3/10 left-384 text-cyan-400/20"
-          animate={{
-            y: [0, -25, 0],
-            x: [0, -18, 0],
-          }}
-          transition={{
-            duration: 5,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 3,
-          }}
-        >
-          <Cpu className="h-8 w-8" />
-        </motion.div>
-        
-        <motion.div
-          className="absolute bottom-20 right-16 text-blue-400/15"
-          animate={{
-            y: [0, 18, 0],
-            rotate: [0, -5, 0],
-          }}
-          transition={{
-            duration: 6.5,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 1.5,
-          }}
-        >
-          <Network className="h-9 w-9" />
-        </motion.div>
-        
-        {/* Animated gradient orbs */}
-        <motion.div
-          className="absolute top-1/4 right-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"
-          animate={{
-            scale: [1, 1.1, 1],
-            opacity: [0.3, 0.6, 0.3],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-        
-        <motion.div
-          className="absolute bottom-1/4 left-0 w-80 h-80 bg-cyan-500/5 rounded-full blur-3xl"
-          animate={{
-            scale: [1, 1.2, 1],
-            opacity: [0.2, 0.5, 0.2],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 2,
-          }}
-        />
-        
-        {/* Simplified floating elements for better performance */}
-        <motion.div
-          className="absolute top-1/4 left-1/4 w-2 h-2 bg-cyan-400/30 rounded-full"
-          animate={{
-            y: [0, -20, 0],
-            opacity: [0, 1, 0],
-          }}
-          transition={{
-            duration: 3,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-        <motion.div
-          className="absolute top-3/4 right-1/4 w-2 h-2 bg-cyan-400/30 rounded-full"
-          animate={{
-            y: [0, -15, 0],
-            opacity: [0, 1, 0],
+            y: [0, -10, 0],
           }}
           transition={{
             duration: 4,
             repeat: Infinity,
             ease: "easeInOut",
+          }}
+        >
+          <Code className="h-6 w-6" />
+        </motion.div>
+        
+        <motion.div
+          className="absolute top-32 right-20 text-blue-400/20"
+          animate={{
+            y: [0, 8, 0],
+          }}
+          transition={{
+            duration: 5,
+            repeat: Infinity,
+            ease: "easeInOut",
             delay: 1,
           }}
-        />
+        >
+          <Cloud className="h-8 w-8" />
+        </motion.div>
+        
+        <motion.div
+          className="absolute bottom-20 right-16 text-blue-400/15"
+          animate={{
+            y: [0, 10, 0],
+          }}
+          transition={{
+            duration: 6,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2,
+          }}
+        >
+          <Network className="h-7 w-7" />
+        </motion.div>
+        
+        {/* Static gradient orbs for better performance */}
+        <div className="absolute top-1/4 right-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 left-0 w-80 h-80 bg-cyan-500/5 rounded-full blur-3xl"></div>
       </div>
       
       {/* Content */}
@@ -196,52 +78,11 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="space-y-12"
           >
-            <motion.h1
-              className="text-6xl lg:text-7xl font-bold leading-tight tracking-tight"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              <motion.span 
-                className="text-white"
-                animate={{ 
-                  textShadow: [
-                    "0 0 0px rgba(255,255,255,0)",
-                    "0 0 20px rgba(255,255,255,0.3)",
-                    "0 0 0px rgba(255,255,255,0)"
-                  ]
-                }}
-                transition={{ duration: 3, repeat: Infinity, delay: 0 }}
-              >
-                Build.
-              </motion.span>{" "}
-              <motion.span 
-                className="text-cyan-400"
-                animate={{ 
-                  textShadow: [
-                    "0 0 0px rgba(34,211,238,0)",
-                    "0 0 30px rgba(34,211,238,0.5)",
-                    "0 0 0px rgba(34,211,238,0)"
-                  ]
-                }}
-                transition={{ duration: 3, repeat: Infinity, delay: 1 }}
-              >
-                Secure.
-              </motion.span>{" "}
-              <motion.span 
-                className="text-white"
-                animate={{ 
-                  textShadow: [
-                    "0 0 0px rgba(255,255,255,0)",
-                    "0 0 20px rgba(255,255,255,0.3)",
-                    "0 0 0px rgba(255,255,255,0)"
-                  ]
-                }}
-                transition={{ duration: 3, repeat: Infinity, delay: 2 }}
-              >
-                Scale.
-              </motion.span>
-            </motion.h1>
+            <h1 className="text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
+              <span className="text-white">Build.</span>{" "}
+              <span className="text-cyan-400">Secure.</span>{" "}
+              <span className="text-white">Scale.</span>
+            </h1>
             
             <motion.p
               className="text-xl lg:text-2xl text-slate-300 leading-relaxed max-w-4xl mx-auto"
@@ -296,24 +137,9 @@ export default function Hero() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
-              <motion.div 
-                className="w-20 h-20 bg-cyan-500/10 rounded-2xl flex items-center justify-center mx-auto group-hover:bg-cyan-500/20 transition-colors duration-300"
-                animate={{
-                  boxShadow: [
-                    "0 0 0px rgba(34,211,238,0)",
-                    "0 0 20px rgba(34,211,238,0.3)",
-                    "0 0 0px rgba(34,211,238,0)"
-                  ]
-                }}
-                transition={{ duration: 3, repeat: Infinity, delay: 0 }}
-              >
-                <motion.div
-                  animate={{ rotate: [0, 360] }}
-                  transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-                >
-                  <Zap className="h-10 w-10 text-cyan-400" />
-                </motion.div>
-              </motion.div>
+            <div className="w-20 h-20 bg-cyan-500/10 rounded-2xl flex items-center justify-center mx-auto group-hover:bg-cyan-500/20 transition-colors duration-300">
+              <Zap className="h-10 w-10 text-cyan-400" />
+            </div>
               <h3 className="text-xl font-semibold text-white">Build</h3>
               <p className="text-slate-400">Custom software development and digital solutions tailored to your business needs.</p>
             </motion.div>
@@ -323,27 +149,9 @@ export default function Hero() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
-              <motion.div 
-                className="w-20 h-20 bg-cyan-500/10 rounded-2xl flex items-center justify-center mx-auto group-hover:bg-cyan-500/20 transition-colors duration-300"
-                animate={{
-                  boxShadow: [
-                    "0 0 0px rgba(34,211,238,0)",
-                    "0 0 20px rgba(34,211,238,0.3)",
-                    "0 0 0px rgba(34,211,238,0)"
-                  ]
-                }}
-                transition={{ duration: 3, repeat: Infinity, delay: 1 }}
-              >
-                <motion.div
-                  animate={{ 
-                    scale: [1, 1.1, 1],
-                    rotate: [0, 5, 0, -5, 0]
-                  }}
-                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                >
-                  <Shield className="h-10 w-10 text-cyan-400" />
-                </motion.div>
-              </motion.div>
+            <div className="w-20 h-20 bg-cyan-500/10 rounded-2xl flex items-center justify-center mx-auto group-hover:bg-cyan-500/20 transition-colors duration-300">
+              <Shield className="h-10 w-10 text-cyan-400" />
+            </div>
               <h3 className="text-xl font-semibold text-white">Secure</h3>
               <p className="text-slate-400">Comprehensive cybersecurity solutions and compliance to protect your business.</p>
             </motion.div>
@@ -353,27 +161,9 @@ export default function Hero() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
-              <motion.div 
-                className="w-20 h-20 bg-cyan-500/10 rounded-2xl flex items-center justify-center mx-auto group-hover:bg-cyan-500/20 transition-colors duration-300"
-                animate={{
-                  boxShadow: [
-                    "0 0 0px rgba(34,211,238,0)",
-                    "0 0 20px rgba(34,211,238,0.3)",
-                    "0 0 0px rgba(34,211,238,0)"
-                  ]
-                }}
-                transition={{ duration: 3, repeat: Infinity, delay: 2 }}
-              >
-                <motion.div
-                  animate={{ 
-                    y: [0, -5, 0],
-                    scale: [1, 1.05, 1]
-                  }}
-                  transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                >
-                  <TrendingUp className="h-10 w-10 text-cyan-400" />
-                </motion.div>
-              </motion.div>
+            <div className="w-20 h-20 bg-cyan-500/10 rounded-2xl flex items-center justify-center mx-auto group-hover:bg-cyan-500/20 transition-colors duration-300">
+              <TrendingUp className="h-10 w-10 text-cyan-400" />
+            </div>
               <h3 className="text-xl font-semibold text-white">Scale</h3>
               <p className="text-slate-400">Cloud infrastructure and DevOps solutions that scale with your business growth.</p>
             </motion.div>

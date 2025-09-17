@@ -28,14 +28,14 @@ export const ANIMATION_DURATIONS = {
 // Contact Information
 export const CONTACT_INFO = {
   EMAIL: 'info@ampliedtech.com',
-  PHONE: '+91 98765 43210',
-  LOCATION: 'India',
+  PHONE: '+91 88518 99162',
+  LOCATION: 'Gurugram, India',
   BUSINESS_HOURS: '24/7 Support',
 } as const;
 
 // Social Links
 export const SOCIAL_LINKS = {
-  LINKEDIN: 'https://linkedin.com/company/ampliedtech',
+  LINKEDIN: 'https://www.linkedin.com/in/ampliedtechnologies?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
   TWITTER: 'https://twitter.com/ampliedtech',
   GITHUB: 'https://github.com/ampliedtech',
 } as const;

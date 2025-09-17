@@ -7,21 +7,21 @@ import HowItWorks from "@/components/how-it-works";
 import WhyAmplied from "@/components/why-amplied";
 import Section from "@/components/section";
 
-// Lazy load heavy components
+// Lazy load heavy components with optimized loading states
 const CustomersLogos = dynamic(() => import("@/components/customers-logos"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse rounded-lg" />,
+  loading: () => <div className="h-96 bg-gray-100/50 rounded-lg" />,
 });
 
 const Testimonials = dynamic(() => import("@/components/testimonials"), {
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse rounded-lg" />,
+  loading: () => <div className="h-96 bg-gray-100/50 rounded-lg" />,
 });
 
 const TechStack = dynamic(() => import("@/components/tech-stack"), {
-  loading: () => <div className="h-64 bg-gray-100 animate-pulse rounded-lg" />,
+  loading: () => <div className="h-64 bg-gray-100/50 rounded-lg" />,
 });
 
 const CTABand = dynamic(() => import("@/components/cta-band"), {
-  loading: () => <div className="h-32 bg-gray-100 animate-pulse rounded-lg" />,
+  loading: () => <div className="h-32 bg-gray-100/50 rounded-lg" />,
 });
 
 export default function Home() {

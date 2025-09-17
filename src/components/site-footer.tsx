@@ -42,7 +42,7 @@ export default function SiteFooter() {
               <br />
               We deliver secure, scalable, and innovative technology-as-a-service.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               {socialLinks.map((item) => {
                 const Icon = item.icon;
                 return (
@@ -56,7 +56,7 @@ export default function SiteFooter() {
                   </a>
                 );
               })}
-            </div>
+            </div> */}
           </div>
 
           {/* Company Links */}

@@ -88,29 +88,45 @@ export default function Section({
       script.src = "/finisher-header.es5.min.js"; // Place file in /public
       script.async = true;
       script.onload = () => {
-        if (window.FinisherHeader) {
-          new window.FinisherHeader({
-            count: 6,
-            size: { min: 1100, max: 1300, pulse: 0 },
-            speed: {
-              x: { min: 0.1, max: 0.5 },
-              y: { min: 0.1, max: 0.5 },
-            },
-            colors: {
-              background: "#121b2f",
-              particles: ["#02314f", "#03395c", "#045284"],
-            },
-            blending: "overlay",
-            opacity: { center: 1, edge: 0.1 },
-            skew: 0,
-            shapes: ["c"],
-          });
-        }
+        // Wait for the DOM element to be available
+        const initFinisher = () => {
+          const finisherElement = document.querySelector('.finisher-header');
+          if (finisherElement && window.FinisherHeader) {
+            try {
+              new window.FinisherHeader({
+                count: 6,
+                size: { min: 1100, max: 1300, pulse: 0 },
+                speed: {
+                  x: { min: 0.1, max: 0.5 },
+                  y: { min: 0.1, max: 0.5 },
+                },
+                colors: {
+                  background: "#121b2f",
+                  particles: ["#02314f", "#03395c", "#045284"],
+                },
+                blending: "overlay",
+                opacity: { center: 1, edge: 0.1 },
+                skew: 0,
+                shapes: ["c"],
+              });
+            } catch (error) {
+              console.warn('Finisher Header initialization failed:', error);
+            }
+          } else if (!finisherElement) {
+            // Retry after a short delay if element not found
+            setTimeout(initFinisher, 100);
+          }
+        };
+        
+        // Initialize immediately or after a short delay
+        setTimeout(initFinisher, 50);
       };
       document.body.appendChild(script);
 
       return () => {
-        document.body.removeChild(script);
+        if (document.body.contains(script)) {
+          document.body.removeChild(script);
+        }
       };
     }
   }, [background]);

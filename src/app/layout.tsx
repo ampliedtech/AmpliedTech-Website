@@ -97,6 +97,7 @@ export default function RootLayout({
       </head>
       <body
         className={`${inter.variable} font-sans antialiased`}
+        suppressHydrationWarning={true}
       >
         <PerformanceMonitor />
         <Analytics />

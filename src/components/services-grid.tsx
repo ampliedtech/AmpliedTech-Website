@@ -135,108 +135,48 @@ function ServiceCard({ service, index }: { service: typeof services[0], index: n
             whileHover={{ opacity: 1 }}
           />
           
-          {/* Floating particles effect */}
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            {[...Array(6)].map((_, i) => (
-              <motion.div
-                key={i}
-                className="absolute w-1 h-1 bg-brand-primary/20 rounded-full"
-                style={{
-                  left: `${20 + i * 15}%`,
-                  top: `${30 + (i % 2) * 40}%`,
-                }}
-                animate={{
-                  y: [0, -20, 0],
-                  opacity: [0, 1, 0],
-                }}
-                transition={{
-                  duration: 3 + i * 0.5,
-                  repeat: Infinity,
-                  delay: i * 0.3,
-                }}
-              />
-            ))}
-          </div>
 
           <CardContent className="relative p-8 space-y-6 z-10">
-            {/* Icon with enhanced animation */}
-            <motion.div
-              className={`w-20 h-20 bg-gradient-to-br ${service.iconGradient} rounded-3xl flex items-center justify-center group-hover:shadow-2xl group-hover:shadow-brand-primary/25 transition-all duration-500`}
-              whileHover={{
-                scale: 1.1,
-                rotate: [0, -5, 5, 0],
-              }}
-              transition={{ duration: 0.6 }}
-            >
+            {/* Icon with simplified animation */}
+            <div className={`w-20 h-20 bg-gradient-to-br ${service.iconGradient} rounded-3xl flex items-center justify-center group-hover:shadow-2xl group-hover:shadow-brand-primary/25 transition-all duration-300`}>
               <Icon className="h-10 w-10 text-white group-hover:scale-110 transition-transform duration-300" />
-            </motion.div>
+            </div>
             
             <div className="space-y-4">
-              <motion.h3
-                className="text-2xl font-bold text-[#044078] group-hover:text-brand-primary transition-colors duration-300"
-                whileHover={{ x: 5 }}
-              >
+              <h3 className="text-2xl font-bold text-[#044078] group-hover:text-brand-primary transition-colors duration-300">
                 {service.title}
-              </motion.h3>
+              </h3>
               <p className="leading-relaxed text-[#034078] group-hover:text-[#034078] transition-colors duration-300">
                 {service.description}
               </p>
             </div>
 
-            {/* Enhanced features list with staggered animation */}
+            {/* Simplified features list */}
             <div className="space-y-3">
               {service.features.map((feature, featureIndex) => (
-                <motion.div
+                <div
                   key={featureIndex}
                   className="flex items-center space-x-3 text-[#034078] text-sm group-hover:text-brand-primary transition-colors duration-300"
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ 
-                    duration: 0.4, 
-                    delay: (index * 0.1) + (featureIndex * 0.1) + 0.3 
-                  }}
-                  whileHover={{ x: 5 }}
                 >
-                  <motion.div
-                    className="w-2 h-2 bg-gradient-to-r from-brand-primary to-brand-secondary rounded-full flex-shrink-0"
-                    whileHover={{ scale: 1.5 }}
-                    transition={{ duration: 0.2 }}
-                  />
+                  <div className="w-2 h-2 bg-gradient-to-r from-brand-primary to-brand-secondary rounded-full flex-shrink-0" />
                   <span className="font-medium">{feature}</span>
-                  <motion.div
-                    className="ml-auto opacity-0 group-hover:opacity-100"
-                    initial={{ opacity: 0, x: -10 }}
-                    whileHover={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.2 }}
-                  >
+                  <div className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <CheckCircle className="h-4 w-4 text-green-500" />
-                  </motion.div>
-                </motion.div>
+                  </div>
+                </div>
               ))}
             </div>
 
             {/* Call to action button */}
-            <motion.div
-              className="pt-4"
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: (index * 0.1) + 0.6 }}
-            >
-              <motion.button
+            <div className="pt-4">
+              <button
                 onClick={handleLearnMore}
-                className="flex items-center space-x-2 text-brand-primary font-semibold text-sm group-hover:text-brand-secondary transition-colors duration-300 cursor-pointer"
-                whileHover={{ x: 5 }}
-                whileTap={{ scale: 0.95 }}
+                className="flex items-center space-x-2 text-brand-primary font-semibold text-sm group-hover:text-brand-secondary transition-colors duration-300 cursor-pointer hover:translate-x-1"
               >
                 <span>Learn More</span>
-                <motion.div
-                  animate={{ x: isHovered ? 5 : 0 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <ArrowRight className="h-4 w-4" />
-                </motion.div>
-              </motion.button>
-            </motion.div>
+                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+              </button>
+            </div>
           </CardContent>
         </Card>
       </motion.div>

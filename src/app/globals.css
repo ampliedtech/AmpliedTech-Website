@@ -25,4 +25,38 @@ html {
     background-color: var(--color-surface);
     color: var(--color-text);
   }
+  
+  /* Performance optimizations */
+  .motion-safe {
+    will-change: transform, opacity;
+  }
+  
+  .motion-reduce {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  /* Optimize animations for better performance */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .group-hover\:scale-102:hover {
+    transform: scale(1.02);
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  /* Reduce motion for users who prefer it */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 }
