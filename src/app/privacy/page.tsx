@@ -25,8 +25,8 @@ export default function PrivacyPage() {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none space-y-8">
               <div className="bg-white rounded-2xl border border-brand-secondary/15 p-8 space-y-6">
-                <h2 className="text-2xl font-bold text-text">Information We Collect</h2>
-                <div className="space-y-4 text-brand-secondary">
+                <h2 className="text-2xl font-bold text-text" style={{ color: "#034078" }}>Information We Collect</h2>
+                <div className="space-y-4 text-brand-secondary" style={{ color: "#044078" }}>
                   <p>We collect information you provide directly to us, such as when you:</p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
                     <li>Fill out our contact form</li>
@@ -39,8 +39,8 @@ export default function PrivacyPage() {
               </div>
 
               <div className="bg-white rounded-2xl border border-brand-secondary/15 p-8 space-y-6">
-                <h2 className="text-2xl font-bold text-text">How We Use Your Information</h2>
-                <div className="space-y-4 text-brand-secondary">
+                <h2 className="text-2xl font-bold text-text" style={{ color: "#034078" }}>How We Use Your Information</h2>
+                <div className="space-y-4 text-brand-secondary" style={{ color: "#044078" }}>
                   <p>We use the information we collect to:</p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
                     <li>Respond to your inquiries and provide customer support</li>
@@ -52,8 +52,8 @@ export default function PrivacyPage() {
               </div>
 
               <div className="bg-white rounded-2xl border border-brand-secondary/15 p-8 space-y-6">
-                <h2 className="text-2xl font-bold text-text">Information Sharing</h2>
-                <div className="space-y-4 text-brand-secondary">
+                <h2 className="text-2xl font-bold text-text" style={{ color: "#034078" }}>Information Sharing</h2>
+                <div className="space-y-4 text-brand-secondary" style={{ color: "#044078" }}>
                   <p>We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except:</p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
                     <li>To comply with legal requirements</li>
@@ -64,15 +64,15 @@ export default function PrivacyPage() {
               </div>
 
               <div className="bg-white rounded-2xl border border-brand-secondary/15 p-8 space-y-6">
-                <h2 className="text-2xl font-bold text-text">Data Security</h2>
-                <div className="space-y-4 text-brand-secondary">
+                <h2 className="text-2xl font-bold text-text" style={{ color: "#034078" }}>Data Security</h2>
+                <div className="space-y-4 text-brand-secondary" style={{ color: "#044078" }}>
                   <p>We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure.</p>
                 </div>
               </div>
 
               <div className="bg-white rounded-2xl border border-brand-secondary/15 p-8 space-y-6">
-                <h2 className="text-2xl font-bold text-text">Your Rights</h2>
-                <div className="space-y-4 text-brand-secondary">
+                <h2 className="text-2xl font-bold text-text" style={{ color: "#034078" }}>Your Rights</h2>
+                <div className="space-y-4 text-brand-secondary" style={{ color: "#044078" }}>
                   <p>You have the right to:</p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
                     <li>Access your personal information</li>
@@ -84,19 +84,19 @@ export default function PrivacyPage() {
               </div>
 
               <div className="bg-white rounded-2xl border border-brand-secondary/15 p-8 space-y-6">
-                <h2 className="text-2xl font-bold text-text">Contact Us</h2>
-                <div className="space-y-4 text-brand-secondary">
+                <h2 className="text-2xl font-bold text-text" style={{ color: "#034078" }}>Contact Us</h2>
+                <div className="space-y-4 text-brand-secondary" style={{ color: "#044078" }}>
                   <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-                  <div className="bg-surface rounded-xl p-4">
+                  <div className="bg-surface rounded-xl p-4" style={{ color: "#044078" }}>
                     <p><strong>Email:</strong> info@ampliedtech.com</p>
-                    <p><strong>Phone:</strong> +91 98765 43210</p>
+                    <p><strong>Phone:</strong> +91 88518 99162</p>
                   </div>
                 </div>
               </div>
 
               <div className="bg-white rounded-2xl border border-brand-secondary/15 p-8 space-y-6">
-                <h2 className="text-2xl font-bold text-text">Changes to This Policy</h2>
-                <div className="space-y-4 text-brand-secondary">
+                <h2 className="text-2xl font-bold text-text" style={{ color: "#034078" }}>Changes to This Policy</h2>
+                <div className="space-y-4 text-brand-secondary" style={{ color: "#044078" }}>
                   <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &ldquo;Last updated&rdquo; date below.</p>
                   <p><strong>Last updated:</strong> January 2025</p>
                 </div>
