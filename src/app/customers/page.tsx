@@ -114,12 +114,12 @@ export default function CustomersPage() {
               {caseStudies.map((study, index) => (
                 <div
                   key={study.company}
-                  className="bg-white rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 overflow-hidden"
+                  className="bg-white  rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 overflow-hidden"
                 >
                   {/* Header with Logo and Company Info */}
-                  <div className="p-8 pb-6">
+                  <div className="p-8  mt-5 pb-6">
                     <div className="flex items-center space-x-4 mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-br from-brand-primary to-brand-secondary rounded-xl flex items-center justify-center shadow-lg">
+                      <div className="w-16 h-16 bg-text/90 rounded-xl flex items-center justify-center shadow-lg">
                         <Image 
                           src={study.logo} 
                           alt={`${study.company} logo`}
