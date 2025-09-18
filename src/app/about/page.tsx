@@ -38,7 +38,7 @@ export default function AboutPage() {
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6 text-center lg:text-left">
-                <div className="space-y-4 text-xl text-brand-secondary leading-relaxed" style={{ color: '#034078' }}>
+                <div className="space-y-4 text-xl text-brand-secondary leading-relaxed text-justify" style={{ color: '#034078' }}>
                   <p>
                     Unlike traditional consultancies that deliver <strong>one-off projects</strong> and disappear, we provide ongoing, <strong>subscription-based technology partnerships</strong> that evolve with your business. Our approach ensures <strong>continuous innovation, predictable costs, dedicated team availability,</strong> and <strong>proactive support</strong>.
                   </p>
@@ -78,39 +78,41 @@ export default function AboutPage() {
                 <motion.div>
   <div className="relative group">
     <div className="w-full 
-                    max-w-xs     /* Mobile */
-                    sm:max-w-sm /* Small tablets */
+                    max-w-sm     /* Mobile */
+                    sm:max-w-md /* Small tablets */
                     md:max-w-md /* Tablets */
                     lg:max-w-lg /* Laptops */
                     xl:max-w-xl /* Large screens */
                     aspect-square mx-auto relative overflow-hidden">
       
       {/* Glowing gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#034078] to-[#044078] rounded-2xl  opacity-30 group-hover:opacity-50 transition-opacity duration-500"><div className="blur-3xl"></div></div>
+      {/* <div className="absolute inset-0 bg-gradient-to-br from-[#034078] to-[#044078] rounded-full  opacity-50 group-hover:opacity-60 transition-opacity duration-500"><div className=""></div></div> */}
 
       {/* Main container with glass effect */}
       <div className="relative w-full h-full 
-                      bg-gradient-to-br from-[#034078]/10 to-[#044078]/10 
-                      rounded-2xl border border-white/20 
-                      p-4 sm:p-6 md:p-8 lg:p-10 flex items-center justify-center overflow-hidden
-                      group-hover:bg-white/20 transition-all duration-500">
+                     
+                      p-2 sm:p-6 md:p-8 lg:p-12 flex items-center justify-center overflow-hidden
+                      group-hover: transition-all duration-500">
         
-        {/* <div className="w-full h-full bg-white/10 backdrop-blur-xl rounded-xl flex items-center justify-center relative overflow-hidden"> */}
+      
           {/* Profile image */}
-          <img 
-            src="/images/naveen_img.png"
-            alt="Profile"
-            className="w-48 h-48   /* mobile */
-                       sm:w-60 sm:h-60   /* tablet */
-                       md:w-60 md:h-60   /* bigger tablet */
-                       lg:w-84 lg:h-84  /* laptop */
-                       xl:w-110 xl:h-110   /* large desktop */
-                       object-cover rounded-full 
-                       group-hover:scale-105 transition-transform duration-500"
-          />
+          <div className="p-[18px] rounded-full bg-gradient-to-br from-[#034078]/80 to-[#044078]  group-hover:scale-102  tansition-trasform duration-500">
+  <img 
+    src="/images/naveen_bg.png"
+    alt="Profile"
+    className="w-48 h-48   /* mobile */
+               sm:w-48 sm:h-48   /* tablet */
+               md:w-48 md:h-48   /* bigger tablet */
+               lg:w-70 lg:h-70  /* laptop */
+               xl:w-94 xl:h-94   /* large desktop */
+               object-cover rounded-full 
+               group-hover:scale-105 transition-transform duration-500"
+  />
+</div>
+
 
           {/* Animated accent circles */}
-          <div className="absolute top-2 right-2 
+          {/* <div className="absolute top-2 right-2 
                           sm:top-4 sm:right-4 
                           w-6 h-6 sm:w-6 sm:h-6 md:w-6 md:h-6 lg:w-8 lg:h-8 
                           bg-gradient-to-br from-[#044078] to-[#034078] 
@@ -119,7 +121,7 @@ export default function AboutPage() {
           <div className="absolute bottom-4 left-4 
                           w-5 h-5 sm:w-5 sm:h-5 md:w-5 md:h-5 lg:w-6 lg:h-6 
                           bg-gradient-to-br from-[#044078] to-[#034078] 
-                          rounded-full animate-bounce"></div>
+                          rounded-full animate-bounce"></div> */}
 
          
         {/* </div> */}
@@ -141,7 +143,7 @@ export default function AboutPage() {
                     </p>
                   </div>
                   
-                  <div className="space-y-4 text-xl text-brand-secondary leading-relaxed" style={{ color: '#034078' }}>
+                  <div className="space-y-4 text-xl text-brand-secondary leading-relaxed text-justify" style={{ color: '#034078' }}>
                     <p>
                       With over <strong>22 years of experience</strong> in technology leadership and digital transformation, <strong>Naveen</strong> founded <strong>Amplied Technologies</strong> to bridge the gap between traditional consultancy and ongoing technology partnership.
                     </p>
