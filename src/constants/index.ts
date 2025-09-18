@@ -44,10 +44,10 @@ export const SOCIAL_LINKS = {
 export const NAVIGATION_ITEMS = [
   { name: 'Home', href: '/' },
   { name: 'Services', href: '/services' },
-  { name: 'How It Works', href: '/#how-it-works' },
+  // { name: 'How It Works', href: '/#how-it-works' },
   { name: 'Customers', href: '/customers' },
   { name: 'About', href: '/about' },
-  { name: 'Contact', href: '/contact' },
+  // { name: 'Contact', href: '/contact' },
 ] as const;
 
 // Company Information

@@ -17,7 +17,7 @@ const customers = [
   {
     name: "Shephertz Technologies",
     logo: "/logos/shephertz.png", 
-    description: "Product-Based Technology Company",
+    description: "Product-Based Company",
     industry: "Technology Products",
     testimonial: "Amplied's TaaS model has been instrumental in supporting our diverse product suite over 15 years - from Backend-as-a-Service to AI monitoring tools. Their ongoing partnership ensures our platforms remain robust and innovative.",
     rating: 5,
