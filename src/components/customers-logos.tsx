@@ -164,13 +164,9 @@ export default function CustomersLogos() {
                     {customer.description}
                   </p>
                   
-                  <div className="flex items-center justify-center space-x-1">
-                    {[...Array(customer.rating)].map((_, i) => (
-                      <Star key={i} className="h-3 w-3 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
+                 
                   
-                  <p className="text-xs text-gray-500 uppercase tracking-wide" style={{ color: '#034078' }}>
+                  <p className="text-xs text-gray-500 uppercase tracking-wide bg-[#034078]/70 p-1 rounded-xl" style={{ color: '#ffffff' }}>
                     {customer.industry}
                   </p>
                 </div>

@@ -4,6 +4,7 @@ import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 import Section from "@/components/section";
 import ServicesGrid from "@/components/services-grid";
+import HowItWorks from "@/components/how-it-works";
 import CTABand from "@/components/cta-band";
 import { useEffect } from "react";
 import Image from "next/image";
@@ -274,6 +275,11 @@ export default function ServicesPage() {
         {/* Services Overview */}
         <Section background="surface">
           <ServicesGrid />
+        </Section>
+
+        {/* how it works */}
+        <Section id="how-it-works" className="bg-[#eaecf0]">
+          <HowItWorks />
         </Section>
 
         {/* Detailed Services */}

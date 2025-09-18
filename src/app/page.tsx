@@ -36,9 +36,9 @@ export default function Home() {
           <ServicesGrid />
         </Section>
         
-        <Section id="how-it-works" background="light">
+        {/* <Section id="how-it-works" background="light">
           <HowItWorks />
-        </Section>
+        </Section> */}
         
         <Section background="surface" className="bg-gray-100">
           <WhyAmplied />
