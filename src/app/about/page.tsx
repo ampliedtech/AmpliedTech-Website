@@ -19,7 +19,7 @@ export default function AboutPage() {
               About Amplied Technologies
             </h1>
             <p className="text-xl text-brand-secondary max-w-3xl mx-auto">
-              Your dedicated technology partner delivering enterprise-grade software development, cloud infrastructure, and cybersecurity solutions. We provide ongoing support, predictable costs, and the expertise you need to accelerate your digital transformation.
+              Your trusted technology partner for enterprise software, cloud infrastructure, and cybersecurity. We deliver Technology-as-a-Service with ongoing support, predictable costs, and the expertise to drive your digital transformation.
             </p>
           </div>
         </Section>

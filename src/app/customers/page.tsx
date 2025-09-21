@@ -12,52 +12,52 @@ const caseStudies = [
   {
     company: "Spotlight",
     industry: "Live Streaming Platform",
-    challenge: "Needed to scale their live streaming infrastructure to handle 100K+ concurrent viewers",
-    solution: "Implemented cloud-native architecture with auto-scaling and microservices for real-time streaming",
+    challenge: "Faced infrastructure bottlenecks and high costs while trying to scale live streaming platform to support growing viewer base with real-time event streaming needs",
+    solution: "Deployed cloud-native microservices architecture with auto-scaling capabilities, real-time optimization, and comprehensive monitoring for seamless live streaming",
     results: [
-      "99.9% uptime achieved",
-      "50% reduction in infrastructure costs",
-      "3x faster streaming performance",
-      "Seamless scaling to 500K+ concurrent viewers"
+      "99.9% uptime with zero streaming interruptions",
+      "50% reduction in infrastructure costs through optimization",
+      "3x faster streaming performance and lower latency",
+      "Seamless scaling to handle 500K+ concurrent viewers"
     ],
     logo: "/logos/spotlight.svg"
   },
   {
     company: "Shephertz Technologies",
     industry: "Product-Based Company",
-    challenge: "Required ongoing technology support for diverse product suite spanning 7 years",
-    solution: "Provided comprehensive TaaS partnership supporting Backend-as-a-Service, MBaaS, and AI monitoring tools",
+    challenge: "Needed reliable technology backbone for diverse product ecosystem including Backend-as-a-Service, MBaaS, and AI monitoring tools with continuous innovation and zero downtime",
+    solution: "Established 7-year Technology-as-a-Service partnership providing dedicated team, ongoing support, and continuous innovation across entire product portfolio",
     results: [
-      "Continuous product innovation",
-      "Zero downtime across all products",
-      "40% faster feature delivery",
-      "99.95% SLA maintained across all platforms"
+      "7 years of continuous product innovation and growth",
+      "Zero downtime across all products and platforms",
+      "40% faster feature delivery with dedicated team",
+      "99.95% SLA maintained with proactive monitoring"
     ],
     logo: "/logos/shephertz.png"
   },
   {
     company: "Witzeal Technologies",
-    industry: "Real Money Gaming Platform",
-    challenge: "Needed to scale to 50+ million users across 20+ games while maintaining robust infrastructure",
-    solution: "Implemented comprehensive TaaS model with dedicated team and continuous optimization",
+    industry: "Gaming Platform",
+    challenge: "Required robust, scalable infrastructure to support massive growth from startup to 50+ million users across 20+ games while ensuring fair play and regulatory compliance",
+    solution: "Implemented comprehensive Technology-as-a-Service model with dedicated gaming infrastructure team, real-time optimization, and security compliance",
     results: [
-      "Scaled to 50+ million users",
-      "60% improvement in game performance",
-      "Zero-downtime deployments",
-      "50% cost savings through optimization"
+      "Successfully scaled to 50+ million users across platforms",
+      "60% improvement in game performance and user experience",
+      "Zero-downtime deployments during peak gaming hours",
+      "50% cost savings through infrastructure optimization"
     ],
     logo: "/logos/witzeal.svg"
   },
   {
     company: "Teeoff Technologies",
-    industry: "AI Solutions Company",
-    challenge: "Required ongoing partnership to develop cutting-edge AI and AR technologies",
-    solution: "Provided dedicated TaaS team for AI development, AR implementation, and continuous innovation",
+    industry: "Artificial Intelligence",
+    challenge: "Needed specialized AI and machine learning expertise to develop cutting-edge computer vision algorithms and AR technologies for immersive user experiences",
+    solution: "Provided dedicated Technology-as-a-Service team with AI/ML expertise, advanced algorithm development, and scalable AI infrastructure",
     results: [
-      "Advanced AI and AR capabilities",
-      "Predictable development costs",
-      "Dedicated team always available",
-      "Continuous technology updates"
+      "Advanced computer vision and AR capabilities delivered",
+      "Predictable monthly costs with dedicated team model",
+      "Dedicated AI team always available for innovation",
+      "Continuous updates with latest AI/ML technologies"
     ],
     logo: "/logos/teeoff_large.png"
   }
