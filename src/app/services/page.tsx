@@ -136,7 +136,9 @@ const detailedServices = [
       "React",
       "Node.js",
       "Python",
+      "Java",
       "PostgreSQL",
+      "MySQL",
       "MongoDB",
       "Docker",
     ],
@@ -174,7 +176,7 @@ const detailedServices = [
       "Change management support",
       "Ongoing strategic guidance",
     ],
-    technologies: ["AWS", "Azure", "GCP", "Kubernetes", "Terraform", "Ansible"],
+    technologies: ["Strategy Planning", "Process Automation", "Change Management", "Digital Roadmap", "Business Intelligence", "Agile Methodologies"],
   },
   {
     title: "Technology-as-a-Service (TaaS)",
@@ -189,12 +191,12 @@ const detailedServices = [
       "Continuous improvement and innovation",
     ],
     technologies: [
-      "Full Stack",
-      "Cloud Platforms",
-      "DevOps",
-      "Security",
-      "Monitoring",
-      "AI/ML",
+      "Custom Software Development",
+      "Cloud Infrastructure & DevOps",
+      "Cybersecurity Solutions",
+      "Data Analytics & AI",
+      "Digital Transformation",
+      "Ongoing Support",
     ],
   },
   {
@@ -365,7 +367,7 @@ export default function ServicesPage() {
                             className="text-2xl font-semibold text-text"
                             style={{ color: "#044078" }}
                           >
-                            Technologies we use:
+                            Our Expertise:
                           </h4>
                           <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
                             {service.technologies.map((tech, techIndex) => (

@@ -13,7 +13,7 @@ const steps = [
   {
     icon: Handshake,
     title: "Partnership Setup",
-    description: "We establish a dedicated technology partnership, understanding your goals and setting up our ongoing collaboration framework.",
+    description: "We establish a dedicated technology partnership with predictable monthly costs, understanding your business goals and setting up our ongoing collaboration framework.",
     color: "from-blue-500 to-cyan-500",
     bgColor: "bg-blue-50",
     iconColor: "text-blue-600"
@@ -21,7 +21,7 @@ const steps = [
   {
     icon: Search,
     title: "Discovery & Planning",
-    description: "Comprehensive analysis of your current technology landscape and creation of a strategic roadmap for digital transformation.",
+    description: "Comprehensive analysis of your enterprise software, cloud infrastructure, and cybersecurity needs to create a strategic roadmap for digital transformation.",
     color: "from-emerald-500 to-teal-500",
     bgColor: "bg-emerald-50",
     iconColor: "text-emerald-600"
@@ -29,7 +29,7 @@ const steps = [
   {
     icon: Rocket,
     title: "Implementation",
-    description: "Rapid development and deployment of your technology solutions using modern tools and agile methodologies.",
+    description: "Rapid development and deployment of your technology solutions with ongoing support, using modern tools and agile methodologies for faster time-to-market.",
     color: "from-purple-500 to-indigo-500",
     bgColor: "bg-purple-50",
     iconColor: "text-purple-600"
@@ -37,7 +37,7 @@ const steps = [
   {
     icon: RefreshCw,
     title: "Ongoing Partnership",
-    description: "Ongoing support, monitoring, and continuous improvement to ensure your technology evolves with your business needs.",
+    description: "Continuous support, monitoring, and innovation to ensure your technology evolves with your business needs, with predictable costs and dedicated expertise.",
     color: "from-orange-500 to-red-500",
     bgColor: "bg-orange-50",
     iconColor: "text-orange-600"

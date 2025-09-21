@@ -47,7 +47,7 @@ export default function WhyAmplied() {
           Why Choose Amplied?
         </h2>
         <p className="text-xl text-brand-secondary max-w-3xl mx-auto" style={{ color: '#034078' }}>
-          Your trusted technology partner delivering enterprise software, cloud infrastructure, and cybersecurity with ongoing support and predictable costs
+          Your trusted technology partner for enterprise software, cloud infrastructure, and cybersecurity. We deliver Technology-as-a-Service with ongoing support, predictable costs, and the expertise to drive your digital transformation.
         </p>
       </motion.div>
 

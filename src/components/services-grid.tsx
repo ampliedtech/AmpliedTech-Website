@@ -217,7 +217,7 @@ export default function ServicesGrid() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Comprehensive technology solutions with ongoing support, predictable costs, and the expertise to drive your digital transformation.
+          Your trusted technology partner for enterprise software, cloud infrastructure, and cybersecurity. We deliver Technology-as-a-Service with ongoing support, predictable costs, and the expertise to drive your digital transformation.
         </motion.p>
       </motion.div>
 
