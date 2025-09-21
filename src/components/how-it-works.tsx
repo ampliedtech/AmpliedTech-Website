@@ -61,7 +61,7 @@ export default function HowItWorks() {
           How We Partner With You
         </h2>
         <p className="text-xl  max-w-4xl mx-auto leading-relaxed" style={{ color: '#034078' }}>
-          Our Technology-as-a-Service model provides ongoing partnership, predictable costs, and continuous innovation
+          Your trusted technology partner for enterprise software, cloud infrastructure, and cybersecurity. We deliver Technology-as-a-Service with ongoing support, predictable costs, and the expertise to drive your digital transformation.
         </p>
       </motion.div>
 

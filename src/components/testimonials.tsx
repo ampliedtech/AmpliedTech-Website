@@ -10,7 +10,7 @@ const testimonials = [
     name: "Ankit Nautiyal",
     company: "Teeoff Technologies",
     role: "CEO & Founder",
-    content: "Amplied's TaaS model has been transformative for our AI solutions company. Their ongoing partnership has enabled us to develop cutting-edge AI and AR technologies while maintaining focus on innovation. The dedicated team approach and predictable costs have been game-changers for our growth.",
+    content: "Amplied's AI and machine learning expertise accelerated our AR technology development significantly. They helped us implement advanced computer vision algorithms and scalable AI infrastructure, enabling us to deliver immersive experiences that set us apart in the competitive AI market.",
     rating: 5,
     avatar: "/avatars/ankit.jpg",
     industry: "Artificial Intelligence"
@@ -19,16 +19,16 @@ const testimonials = [
     name: "Ankur Singh",
     company: "Witzeal Technologies",
     role: "CEO & Founder",
-    content: "Amplied's TaaS model has been instrumental in supporting our real money gaming platform. Their ongoing partnership helped us scale to 50+ million users across 20+ games while maintaining robust infrastructure. The dedicated team approach and continuous optimization have been crucial for our success in the competitive gaming market.",
+    content: "Amplied's gaming infrastructure expertise was crucial for scaling our real money gaming platforms. They helped us handle 50+ million users across 20+ games while ensuring regulatory compliance and fair play. Their real-time performance optimization kept our platforms running smoothly even during peak traffic.",
     rating: 5,
     avatar: "/avatars/ankur.jpg",
-    industry: "Gaming Technology"
+    industry: "Gaming Platform"
   },
   {
     name: "Siddhartha Chandurkar",
     company: "Shephertz Technologies",
     role: "CEO & Founder",
-    content: "Amplied's TaaS model has been essential for our product-based technology company. Their ongoing partnership has supported our diverse product suite over 15 years - from Backend-as-a-Service to AI monitoring tools. The dedicated team approach ensures our platforms remain robust and innovative while we focus on product development.",
+    content: "Amplied has been our technology backbone for 7 years, powering our entire product ecosystem from Backend-as-a-Service to cutting-edge AI monitoring tools. Their cloud infrastructure expertise and DevOps automation allowed us to scale from startup to enterprise while maintaining 99.9% uptime across all products.",
     rating: 5,
     avatar: "/avatars/siddhartha.jpg",
     industry: "Technology Products"
@@ -61,7 +61,7 @@ export default function Testimonials() {
           </div>
           
           <h2 className="text-4xl lg:text-6xl font-bold text-white">
-            What Our Clients Say
+            Trusted by Industry Leaders
           </h2>
           
           <p className="text-xl text-[#00d3f3] max-w-4xl mx-auto leading-relaxed" style={{ color: '#00d3f3' }}>

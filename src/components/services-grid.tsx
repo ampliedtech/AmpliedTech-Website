@@ -209,7 +209,7 @@ export default function ServicesGrid() {
             paddingBottom: "0.1em", 
           }}
         >
-          Our Technology Services
+          Technology-as-a-Service Solutions
         </motion.h2>
         <motion.p 
           className="text-xl max-w-3xl mx-auto text-[#034078]"
@@ -217,7 +217,7 @@ export default function ServicesGrid() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Discover our comprehensive range of technology services designed to accelerate your digital transformation and drive sustainable business growth.
+          Comprehensive technology solutions with ongoing support, predictable costs, and the expertise to drive your digital transformation.
         </motion.p>
       </motion.div>
 

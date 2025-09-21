@@ -16,7 +16,6 @@ const footerLinks = {
     { name: "Terms of Service", href: "/terms" },
   ],
   resources: [
-    { name: "How It Works", href: "/#how-it-works" },
     { name: "Technology Stack", href: "/#tech-stack" },
   ],
 };

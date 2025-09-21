@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const caseStudies = [
   {
-    company: "Spotlight Streaming",
+    company: "Spotlight",
     industry: "Live Streaming Platform",
     challenge: "Needed to scale their live streaming infrastructure to handle 100K+ concurrent viewers",
     solution: "Implemented cloud-native architecture with auto-scaling and microservices for real-time streaming",
@@ -25,7 +25,7 @@ const caseStudies = [
   {
     company: "Shephertz Technologies",
     industry: "Product-Based Company",
-    challenge: "Required ongoing technology support for diverse product suite spanning 15 years",
+    challenge: "Required ongoing technology support for diverse product suite spanning 7 years",
     solution: "Provided comprehensive TaaS partnership supporting Backend-as-a-Service, MBaaS, and AI monitoring tools",
     results: [
       "Continuous product innovation",

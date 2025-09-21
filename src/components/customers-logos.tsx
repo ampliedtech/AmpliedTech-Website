@@ -6,11 +6,11 @@ import Image from "next/image";
 
 const customers = [
   {
-    name: "Spotlight Streaming",
+    name: "Spotlight",
     logo: "/logos/spotlight.svg",
-    description: "Live Streaming Events Platform",
-    industry: "Technology",
-    testimonial: "Amplied's TaaS model helped us build a robust live streaming platform where broadcasters create events and viewers purchase tickets seamlessly. Their ongoing support ensures our platform runs flawlessly.",
+    description: "Live Streaming Platform",
+    industry: "Streaming Platform",
+    testimonial: "Working with Amplied transformed our streaming infrastructure. They helped us build a scalable platform that handles 100K+ concurrent viewers with 99.9% uptime. Their cloud-native architecture and real-time optimization keeps our broadcasters and viewers connected seamlessly.",
     rating: 5,
     projectType: "Live Streaming Platform"
   },
@@ -19,7 +19,7 @@ const customers = [
     logo: "/logos/shephertz.png", 
     description: "Product-Based Company",
     industry: "Technology Products",
-    testimonial: "Amplied's TaaS model has been instrumental in supporting our diverse product suite over 15 years - from Backend-as-a-Service to AI monitoring tools. Their ongoing partnership ensures our platforms remain robust and innovative.",
+    testimonial: "Amplied has been our technology backbone for 7 years, powering everything from our Backend-as-a-Service platform to cutting-edge AI monitoring tools. Their expertise in cloud infrastructure and DevOps has been crucial in scaling our multi-product ecosystem.",
     rating: 5,
     projectType: "Multi-Product Development"
   },
@@ -27,8 +27,8 @@ const customers = [
     name: "Witzeal Technologies",
     logo: "/logos/witzeal.svg",
     description: "Skill-Based Gaming Platform",
-    industry: "Gaming Technology",
-    testimonial: "Amplied's TaaS model has been instrumental in supporting our BigCash and Big Sports platforms, helping us scale to 50+ million users across 20+ games. Their ongoing partnership ensures our gaming infrastructure remains robust and innovative.",
+    industry: "Gaming Platform",
+    testimonial: "Amplied's gaming infrastructure expertise helped us scale BigCash and Big Sports to 50+ million users across 20+ games. Their real-time performance optimization and security compliance ensured our platforms could handle massive concurrent loads while maintaining fair play.",
     rating: 5,
     projectType: "Gaming Platform Development"
   },
@@ -37,7 +37,7 @@ const customers = [
     logo: "/logos/teeoff_large.png",
     description: "AI Solutions Provider",
     industry: "Artificial Intelligence",
-    testimonial: "Amplied's TaaS model has been instrumental in supporting our AI and AR technology development. Their ongoing partnership ensures our solutions remain cutting-edge and innovative.",
+    testimonial: "Amplied's AI and machine learning expertise accelerated our AR technology development. They helped us implement advanced computer vision algorithms and scalable AI infrastructure, enabling us to deliver immersive experiences to our users.",
     rating: 5,
     projectType: "AI & AR Development"
   }
@@ -81,7 +81,7 @@ export default function CustomersLogos() {
         </motion.div>
         
         <h2 className="text-4xl lg:text-6xl font-bold text-text" style={{ color: '#044078' }}>
-          Trusted Technology{" "}
+          Our{" "}
           <motion.span
             className="bg-gradient-to-r from-brand-primary to-brand-secondary bg-clip-text text-transparent"
             animate={{
@@ -96,7 +96,7 @@ export default function CustomersLogos() {
               backgroundSize: "200% 200%",
             }}
           >
-            Partners
+            Valued Clients
           </motion.span>
         </h2>
         

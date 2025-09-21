@@ -47,7 +47,7 @@ export default function WhyAmplied() {
           Why Choose Amplied?
         </h2>
         <p className="text-xl text-brand-secondary max-w-3xl mx-auto" style={{ color: '#034078' }}>
-          Experience the difference between traditional consultancy and our ongoing Technology-as-a-Service partnership
+          Your trusted technology partner delivering enterprise software, cloud infrastructure, and cybersecurity with ongoing support and predictable costs
         </p>
       </motion.div>
 
@@ -132,7 +132,7 @@ export default function WhyAmplied() {
             Ready to Transform Your Technology?
           </h3>
           <p className="text-brand-secondary text-lg mb-6" style={{ color: '#034078' }}>
-            Join forward-thinking businesses that have embraced our Technology-as-a-Service model for predictable costs, ongoing support, and continuous innovation.
+            Join forward-thinking businesses that have embraced our Technology-as-a-Service model for enterprise software, cloud infrastructure, and cybersecurity with ongoing support and predictable costs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
