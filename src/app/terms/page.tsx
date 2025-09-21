@@ -24,7 +24,7 @@ export default function TermsPage() {
               Please read these terms carefully before using our services. By accessing our services, you agree to be bound by these terms.
             </p>
             <p className="text-sm text-brand-secondary">
-              Last updated: 16th September 2025
+              Last updated: January 16, 2025
             </p>
           </div>
         </Section>
@@ -45,11 +45,12 @@ export default function TermsPage() {
                 <div className="space-y-4 text-brand-secondary" style={{ color: "#044078" }}>
                   <p>Amplied Technologies LLP provides Technology-as-a-Service (TaaS) solutions including but not limited to:</p>
                   <ul className="list-disc list-inside space-y-2 ml-4" style={{ color: "#044078" }}>
-                    <li>Software development and maintenance</li>
+                    <li>Custom software development and enterprise applications</li>
                     <li>Cloud infrastructure and DevOps services</li>
-                    <li>Cybersecurity solutions</li>
-                    <li>Technical consulting and support</li>
-                    <li>Digital transformation services</li>
+                    <li>Cybersecurity solutions and compliance</li>
+                    <li>Data analytics and AI solutions</li>
+                    <li>Digital transformation and strategic consulting</li>
+                    <li>Ongoing support and maintenance</li>
                   </ul>
                 </div>
               </div>

@@ -29,10 +29,10 @@ export default function PrivacyPage() {
                 <div className="space-y-4 text-brand-secondary" style={{ color: "#044078" }}>
                   <p>We collect information you provide directly to us, such as when you:</p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
-                    <li>Fill out our contact form</li>
-                    <li>Subscribe to our newsletter</li>
-                    <li>Request a consultation</li>
-                    <li>Communicate with us via email or phone</li>
+                    <li>Fill out our contact form or request consultation</li>
+                    <li>Subscribe to our newsletter or updates</li>
+                    <li>Engage with our Technology-as-a-Service offerings</li>
+                    <li>Communicate with us via email, phone, or through our services</li>
                   </ul>
                   <p>This may include your name, email address, phone number, company name, and any other information you choose to provide.</p>
                 </div>
@@ -44,9 +44,10 @@ export default function PrivacyPage() {
                   <p>We use the information we collect to:</p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
                     <li>Respond to your inquiries and provide customer support</li>
+                    <li>Deliver Technology-as-a-Service solutions and ongoing support</li>
                     <li>Send you technical information and updates about our services</li>
-                    <li>Improve our website and services</li>
-                    <li>Comply with legal obligations</li>
+                    <li>Improve our website and service offerings</li>
+                    <li>Comply with legal obligations and regulatory requirements</li>
                   </ul>
                 </div>
               </div>
@@ -98,7 +99,7 @@ export default function PrivacyPage() {
                 <h2 className="text-2xl font-bold text-text" style={{ color: "#034078" }}>Changes to This Policy</h2>
                 <div className="space-y-4 text-brand-secondary" style={{ color: "#044078" }}>
                   <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &ldquo;Last updated&rdquo; date below.</p>
-                  <p><strong>Last updated:</strong> January 2025</p>
+                  <p><strong>Last updated:</strong> January 16, 2025</p>
                 </div>
               </div>
             </div>
