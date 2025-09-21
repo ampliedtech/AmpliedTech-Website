@@ -146,16 +146,16 @@ export default function Testimonials() {
           viewport={{ once: true }}
         >
           <div className="text-center space-y-2 ">
-            <div className="text-4xl font-bold text-brand-primary" style={{ color: '#ffffff' }}>100%</div>
-            <div className="text-brand-secondary font-medium" style={{ color: '#ffffff' }}>Client Satisfaction</div>
+            <div className="text-4xl font-bold" style={{ color: '#ffffff' }}>100%</div>
+            <div className="font-medium" style={{ color: '#ffffff' }}>Client Satisfaction</div>
           </div>
           <div className="text-center space-y-2">
-            <div className="text-4xl font-bold text-brand-primary" style={{ color: '#ffffff' }}>50+</div>
-            <div className="text-brand-secondary font-medium" style={{ color: '#ffffff' }}>Successful Projects</div>
+            <div className="text-4xl font-bold" style={{ color: '#ffffff' }}>50+</div>
+            <div className="font-medium" style={{ color: '#ffffff' }}>Successful Projects</div>
           </div>
           <div className="text-center space-y-2">
-            <div className="text-4xl font-bold text-brand-primary" style={{ color: '#ffffff' }}>4.9</div>
-            <div className="text-brand-secondary font-medium" style={{ color: '#ffffff' }}>Average Rating</div>
+            <div className="text-4xl font-bold" style={{ color: '#ffffff' }}>4.9</div>
+            <div className="font-medium" style={{ color: '#ffffff' }}>Average Rating</div>
           </div>
         </motion.div>
       </div>

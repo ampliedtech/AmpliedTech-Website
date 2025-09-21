@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Star, Award, TrendingUp, Clock, Shield } from "lucide-react";
-import Image from "next/image";
 
 const customers = [
   {
@@ -130,7 +129,7 @@ export default function CustomersLogos() {
                 className="relative w-24 h-24 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg border border-gray-700"
                 whileHover={{ rotate: 5 }}
               >
-                <Image 
+                <img 
                   src={customer.logo} 
                   alt={`${customer.name} logo`}
                   width={64}
