@@ -19,48 +19,48 @@ const services = [
   {
     icon: Code,
     title: "Custom Software Development",
-    description: "End-to-end software solutions built with modern technologies, from concept to deployment and ongoing maintenance.",
-    features: ["Full-Stack Development", "Mobile Applications", "API Development", "Legacy Modernization"],
+    description: "Tailored software solutions that align with your business objectives. From enterprise applications to mobile platforms, we build scalable, secure, and user-centric software that drives growth.",
+    features: ["Enterprise Applications", "Mobile & Web Development", "API & Integration", "Legacy System Modernization"],
     gradient: "from-blue-500/10 via-purple-500/5 to-cyan-500/10",
     iconGradient: "from-blue-500 to-purple-600"
   },
   {
     icon: Cloud,
     title: "Cloud Infrastructure & DevOps",
-    description: "Scalable cloud solutions with automated deployment pipelines and infrastructure management for optimal performance.",
-    features: ["AWS/Azure/GCP", "Container Orchestration", "CI/CD Pipelines", "Infrastructure as Code"],
+    description: "Transform your infrastructure with cloud-native solutions that scale automatically. Our DevOps practices ensure 99.9% uptime, faster deployments, and reduced operational costs.",
+    features: ["Multi-Cloud Strategy", "Kubernetes & Docker", "Automated CI/CD", "Infrastructure Monitoring"],
     gradient: "from-cyan-500/10 via-sky-500/5 to-blue-500/10",
     iconGradient: "from-cyan-500 to-sky-600"
   },
   {
     icon: Shield,
     title: "Cybersecurity Solutions",
-    description: "Comprehensive security services including threat assessment, compliance management, and 24/7 monitoring.",
-    features: ["Security Audits", "Compliance (SOC2, ISO)", "Penetration Testing", "Incident Response"],
+    description: "Protect your business with enterprise-grade security that adapts to evolving threats. From compliance audits to real-time monitoring, we ensure your data and systems remain secure.",
+    features: ["Security Assessment", "Compliance & Certification", "Threat Detection", "24/7 Security Monitoring"],
     gradient: "from-red-500/10 via-pink-500/5 to-rose-500/10",
     iconGradient: "from-red-500 to-pink-600"
   },
   {
     icon: Monitor,
     title: "Technology-as-a-Service (TaaS)",
-    description: "Dedicated technology partnership with ongoing support, predictable costs, and continuous improvement.",
-    features: ["Dedicated Team", "Predictable Costs", "Ongoing Support", "Regular Improvements"],
+    description: "Your dedicated technology partner with predictable monthly investment. Get ongoing support, continuous innovation, and a dedicated team that grows with your business needs.",
+    features: ["Dedicated Team", "Fixed Monthly Costs", "Ongoing Support", "Continuous Innovation"],
     gradient: "from-indigo-500/10 via-blue-500/5 to-purple-500/10",
     iconGradient: "from-indigo-500 to-blue-600"
   },
   {
     icon: Lightbulb,
     title: "Digital Transformation",
-    description: "Strategic technology consulting to modernize your business processes and accelerate digital adoption.",
-    features: ["Technology Strategy", "Process Optimization", "Digital Roadmap", "Change Management"],
+    description: "Accelerate your digital journey with strategic guidance and modern technology adoption. We help you streamline operations, improve customer experience, and drive innovation.",
+    features: ["Digital Strategy", "Process Automation", "Technology Roadmap", "Change Management"],
     gradient: "from-yellow-500/10 via-orange-500/5 to-red-500/10",
     iconGradient: "from-yellow-500 to-orange-600"
   },
   {
     icon: Gamepad2,
     title: "Data Analytics & AI",
-    description: "Intelligent data solutions and AI-powered insights to drive business growth and operational efficiency.",
-    features: ["Data Engineering", "Machine Learning", "Business Intelligence", "Predictive Analytics"],
+    description: "Unlock the power of your data with intelligent analytics and AI solutions. Transform raw data into actionable insights that drive informed decisions and competitive advantage.",
+    features: ["Data Pipeline Engineering", "Machine Learning Models", "Business Intelligence", "AI-Powered Insights"],
     gradient: "from-green-500/10 via-emerald-500/5 to-teal-500/10",
     iconGradient: "from-green-500 to-emerald-600"
   }
