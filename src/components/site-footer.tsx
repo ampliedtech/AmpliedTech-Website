@@ -40,7 +40,7 @@ export default function SiteFooter() {
             <p className="text-brand-secondary/80 text-sm mb-6 max-w-xs">
               {COMPANY_INFO.TAGLINE}
               <br />
-              We deliver secure, scalable, and innovative technology-as-a-service.
+              We deliver secure, scalable, and innovative talent-as-a-service.
             </p>
             {/* <div className="flex space-x-4">
               {socialLinks.map((item) => {

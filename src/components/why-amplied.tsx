@@ -18,19 +18,19 @@ const comparisonData = {
       "Unpredictable costs"
     ]
   },
-  taas: {
-    title: "Amplied TaaS Model",
-    features: [
-      "Ongoing partnership & support",
-      "Predictable monthly investment",
-      "2-4 week rapid deployment",
-      "Proactive monitoring & maintenance",
-      "Continuous technology updates",
-      "Dedicated team always available",
-      "Regular performance optimization",
-      "Transparent, fixed pricing"
-    ]
-  }
+    taas: {
+      title: "Amplied TaaS Model",
+      features: [
+        "Instant access to expert teams",
+        "Predictable monthly investment",
+        "2-4 week rapid team deployment",
+        "Scalable talent solutions",
+        "Specialized expertise on-demand",
+        "Dedicated teams always available",
+        "Regular performance optimization",
+        "Transparent, fixed pricing"
+      ]
+    }
 };
 
 export default function WhyAmplied() {
@@ -47,7 +47,7 @@ export default function WhyAmplied() {
           Why Choose Amplied?
         </h2>
         <p className="text-xl text-brand-secondary max-w-3xl mx-auto" style={{ color: '#034078' }}>
-          Your trusted technology partner for enterprise software, cloud infrastructure, and cybersecurity. We deliver Technology-as-a-Service with ongoing support, predictable costs, and the expertise to drive your digital transformation.
+          Experience the difference of true partnership. Unlike traditional consultancies that disappear after project completion, we provide ongoing, dedicated teams that grow with your business and adapt to your evolving needs.
         </p>
       </motion.div>
 
@@ -85,7 +85,7 @@ export default function WhyAmplied() {
           </Card>
         </motion.div>
 
-        {/* Technology-as-a-Service */}
+        {/* Talent-as-a-Service */}
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -132,7 +132,7 @@ export default function WhyAmplied() {
             Ready to Transform Your Technology?
           </h3>
           <p className="text-brand-secondary text-lg mb-6" style={{ color: '#034078' }}>
-            Join forward-thinking businesses that have embraced our Technology-as-a-Service model for enterprise software, cloud infrastructure, and cybersecurity with ongoing support and predictable costs.
+            Join forward-thinking businesses that have embraced our Talent as a Service model for instant access to expert teams for development and infrastructure management, scalable solutions, and predictable costs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

@@ -19,7 +19,7 @@ export default function AboutPage() {
               About Amplied Technologies
             </h1>
             <p className="text-xl text-brand-secondary max-w-3xl mx-auto">
-              Your trusted technology partner for enterprise software, cloud infrastructure, and cybersecurity. We deliver Technology-as-a-Service with ongoing support, predictable costs, and the expertise to drive your digital transformation.
+              Founded on the principle that exceptional talent should be instantly accessible, we've revolutionized how businesses scale their technology capabilities through our innovative Talent as a Service model.
             </p>
           </div>
         </Section>
@@ -32,7 +32,7 @@ export default function AboutPage() {
                 Our Story
               </h2>
               <p className="text-2xl text-brand-secondary max-w-4xl mx-auto leading-relaxed" style={{ color: '#034078' }}>
-                Founded with a vision to revolutionize how businesses access technology through our innovative Technology-as-a-Service (TaaS) model.
+                Founded with a vision to revolutionize how businesses access talent through our innovative Talent as a Service (TaaS) model.
               </p>
             </div>
             
@@ -40,7 +40,7 @@ export default function AboutPage() {
               <div className="space-y-6 text-center lg:text-left">
                 <div className="space-y-4 text-xl text-brand-secondary leading-relaxed text-justify" style={{ color: '#034078' }}>
                   <p>
-                    Unlike traditional consultancies that deliver <strong>one-off projects</strong> and disappear, we provide ongoing, <strong>subscription-based technology partnerships</strong> that evolve with your business. Our approach ensures <strong>continuous innovation, predictable costs, dedicated team availability,</strong> and <strong>proactive support</strong>.
+                    Unlike traditional consultancies that deliver <strong>one-off projects</strong> and disappear, we provide ongoing, <strong>subscription-based talent partnerships</strong> that evolve with your business. Our approach ensures <strong>instant access to expert teams for development and infrastructure management, predictable costs, scalable talent solutions,</strong> and <strong>specialized expertise</strong>.
                   </p>
                   <p>
                     Based in India and serving clients worldwide, we combine deep technical expertise with a <strong>partnership-first mindset</strong> to deliver solutions that not only meet today&apos;s needs but also continuously adapt to tomorrow&apos;s challenges.
@@ -52,7 +52,7 @@ export default function AboutPage() {
   <div className="w-full h-96 bg-gradient-to-br from-gray-50 drop-shadow-2xl to-gray-100 rounded-2xl border border-brand-secondary/20 overflow-hidden shadow-lg relative hover:shadow-2xl hover:scale-110 transition-transform duration-500">
     <Image 
       src="/images/story.png" 
-      alt="Technology as a Service Concept"
+      alt="Talent as a Service Concept"
       fill
       className="object-cover hover:scale-110 transition-transform duration-500"
       priority
@@ -148,10 +148,10 @@ export default function AboutPage() {
                       With over <strong>22 years of experience</strong> in technology leadership and digital transformation, <strong>Naveen</strong> founded <strong>Amplied Technologies</strong> to bridge the gap between traditional consultancy and ongoing technology partnership.
                     </p>
                     <p>
-                      His vision is to make <strong>enterprise-grade technology</strong> accessible to businesses of all sizes through our <strong>innovative TaaS model, ensuring continuous innovation, predictable costs, and dedicated team availability</strong>.
+                      His vision is to make <strong>enterprise-grade talent</strong> accessible to businesses of all sizes through our <strong>innovative TaaS model, ensuring instant access to expert teams for development and infrastructure management, predictable costs, and scalable talent solutions</strong>.
                     </p>
                     <p className="italic text-lg">
-                      <strong>&ldquo; </strong>I believe technology should be an enabler, not a barrier. Our mission is to help businesses focus on what they do best while we handle their technology needs with excellence, reliability, and ongoing partnership.<strong>&rdquo;</strong>
+                      <strong>&ldquo; </strong>I believe talent should be accessible instantly, not a barrier. Our mission is to help businesses focus on what they do best while we provide instant access to expert teams with excellence, reliability, and ongoing partnership.<strong>&rdquo;</strong>
                     </p>
                   </div>
                 </div>

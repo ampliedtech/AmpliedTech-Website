@@ -4,7 +4,7 @@ A modern, clean frontend-only marketing website for Amplied Technologies LLP bui
 
 ## Features
 
-- **Technology-as-a-Service (TaaS) Focus**: Emphasizes ongoing partnership over traditional consultancy
+- **Talent-as-a-Service (TaaS) Focus**: Emphasizes ongoing partnership over traditional consultancy
 - **Modern Tech Stack**: Next.js 15, TypeScript, Tailwind CSS, Framer Motion
 - **Responsive Design**: Mobile-first approach with beautiful animations
 - **SEO Optimized**: Comprehensive meta tags, Open Graph, and Twitter cards

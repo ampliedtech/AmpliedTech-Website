@@ -26,7 +26,7 @@ const caseStudies = [
     company: "Shephertz Technologies",
     industry: "Product-Based Company",
     challenge: "Needed reliable technology backbone for diverse product ecosystem including Backend-as-a-Service, MBaaS, and AI monitoring tools with continuous innovation and zero downtime",
-    solution: "Established 7-year Technology-as-a-Service partnership providing dedicated team, ongoing support, and continuous innovation across entire product portfolio",
+    solution: "Established 7-year Talent-as-a-Service partnership providing dedicated team, ongoing support, and continuous innovation across entire product portfolio",
     results: [
       "7 years of continuous product innovation and growth",
       "Zero downtime across all products and platforms",
@@ -39,7 +39,7 @@ const caseStudies = [
     company: "Witzeal Technologies",
     industry: "Gaming Platform",
     challenge: "Required robust, scalable infrastructure to support massive growth from startup to 50+ million users across 20+ games while ensuring fair play and regulatory compliance",
-    solution: "Implemented comprehensive Technology-as-a-Service model with dedicated gaming infrastructure team, real-time optimization, and security compliance",
+    solution: "Implemented comprehensive Talent-as-a-Service model with dedicated gaming infrastructure team, real-time optimization, and security compliance",
     results: [
       "Successfully scaled to 50+ million users across platforms",
       "60% improvement in game performance and user experience",
@@ -52,7 +52,7 @@ const caseStudies = [
     company: "Teeoff Technologies",
     industry: "Artificial Intelligence",
     challenge: "Needed specialized AI and machine learning expertise to develop cutting-edge computer vision algorithms and AR technologies for immersive user experiences",
-    solution: "Provided dedicated Technology-as-a-Service team with AI/ML expertise, advanced algorithm development, and scalable AI infrastructure",
+    solution: "Provided dedicated Talent-as-a-Service team with AI/ML expertise, advanced algorithm development, and scalable AI infrastructure",
     results: [
       "Advanced computer vision and AR capabilities delivered",
       "Predictable monthly costs with dedicated team model",
@@ -106,7 +106,7 @@ export default function CustomersPage() {
                 Success Stories
               </h2>
               <p className="text-xl text-brand-secondary max-w-3xl mx-auto">
-                Discover how we&apos;ve helped our clients achieve remarkable results through our ongoing Technology-as-a-Service partnerships
+                Discover how we&apos;ve helped our clients achieve remarkable results through our ongoing Talent-as-a-Service partnerships
               </p>
             </div>
 

@@ -45,7 +45,7 @@ export default function CTABand() {
             viewport={{ once: true }}
           >
             Ready to transform your business with{" "}
-            <span className="text-white">Technology as a Service?</span>
+            <span className="text-white">Talent as a Service?</span>
           </motion.h2>
           
           <motion.p

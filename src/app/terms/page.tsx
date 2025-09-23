@@ -5,7 +5,7 @@ import Section from '@/components/section'
 
 export const metadata: Metadata = {
   title: 'Terms of Service | Amplied Technologies',
-  description: 'Terms of Service for Amplied Technologies LLP - Technology-as-a-Service provider',
+  description: 'Terms of Service for Amplied Technologies LLP - Talent as a Service provider',
 }
 
 export default function TermsPage() {
@@ -43,7 +43,7 @@ export default function TermsPage() {
               <div className="bg-white rounded-2xl border border-brand-secondary/15 p-8 space-y-6">
                 <h2 className="text-2xl font-bold text-text" style={{ color: "#034078" }}>2. Description of Service</h2>
                 <div className="space-y-4 text-brand-secondary" style={{ color: "#044078" }}>
-                  <p>Amplied Technologies LLP provides Technology-as-a-Service (TaaS) solutions including but not limited to:</p>
+                  <p>Amplied Technologies LLP provides Talent as a Service (TaaS) solutions including but not limited to:</p>
                   <ul className="list-disc list-inside space-y-2 ml-4" style={{ color: "#044078" }}>
                     <li>Custom software development and enterprise applications</li>
                     <li>Cloud infrastructure and DevOps services</li>

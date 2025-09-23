@@ -54,7 +54,7 @@ export const NAVIGATION_ITEMS = [
 export const COMPANY_INFO = {
   NAME: 'Amplied Technologies LLP',
   TAGLINE: 'Your Partner in Digital Growth.',
-  DESCRIPTION: 'We deliver secure, scalable, and innovative technology-as-a-service — from software development to cloud, DevOps, and cybersecurity — helping businesses worldwide accelerate their digital transformation.',
+  DESCRIPTION: 'We deliver secure, scalable, and innovative talent-as-a-service — from software development to cloud, DevOps, and cybersecurity — helping businesses worldwide accelerate their digital transformation.',
   FOUNDING_YEAR: '2025',
   FOUNDER: 'Naveen Goswami',
 } as const;
@@ -63,7 +63,7 @@ export const COMPANY_INFO = {
 export const SEO = {
   SITE_URL: 'https://ampliedtech.com',
   SITE_NAME: 'Amplied Technologies LLP',
-  DEFAULT_TITLE: 'Amplied Technologies LLP - Technology as a Service',
-  DEFAULT_DESCRIPTION: 'We deliver secure, scalable, and innovative technology-as-a-service — from software development to cloud, DevOps, and cybersecurity — helping businesses worldwide accelerate their digital transformation.',
-  KEYWORDS: ['technology as a service', 'software development', 'cloud services', 'DevOps', 'cybersecurity', 'digital transformation'] as string[],
+  DEFAULT_TITLE: 'Amplied Technologies LLP - Talent as a Service',
+  DEFAULT_DESCRIPTION: 'We deliver secure, scalable, and innovative talent-as-a-service — from software development to cloud, DevOps, and cybersecurity — helping businesses worldwide accelerate their digital transformation.',
+  KEYWORDS: ['talent as a service', 'software development', 'cloud services', 'DevOps', 'cybersecurity', 'digital transformation'] as string[],
 } as const;

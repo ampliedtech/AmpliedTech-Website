@@ -103,7 +103,7 @@ function getServiceVisual(serviceTitle: string) {
       return <DataAnalyticsVisual />;
     case "Digital Transformation":
       return <DigitalTransformationVisual />;
-    case "Technology-as-a-Service (TaaS)":
+    case "Talent as a Service (TaaS)":
       return <TaaSVisual />;
     case "Cybersecurity Solutions":
       return <CybersecurityVisual />;
@@ -144,6 +144,48 @@ const detailedServices = [
     ],
   },
   {
+    title: "Cloud Infrastructure & DevOps",
+    description:
+      "Seamless cloud migration, automation, and rapid deployment for faster time-to-market. Modernize your infrastructure with our cloud and DevOps expertise and ongoing optimization.",
+    features: [
+      "Cloud migration and optimization",
+      "CI/CD pipeline setup",
+      "Infrastructure as Code (IaC)",
+      "Container orchestration",
+      "Monitoring and logging",
+      "Ongoing cost optimization",
+    ],
+    technologies: ["AWS", "Azure", "GCP", "Kubernetes", "Docker", "Terraform"],
+  },
+  {
+    title: "Cybersecurity Solutions",
+    description:
+      "Continuous threat monitoring and compliance management to protect your business and data. Stay secure and compliant with our comprehensive security services and ongoing protection.",
+    features: [
+      "Security assessment and auditing",
+      "Threat detection and response",
+      "Compliance management (SOC2, ISO)",
+      "Penetration testing",
+      "Incident response planning",
+      "Ongoing security monitoring",
+    ],
+    technologies: ["SIEM", "EDR", "WAF", "VPN", "PKI", "Security Frameworks"],
+  },
+  {
+    title: "Digital Transformation",
+    description:
+      "Strategic technology planning embedded in ongoing execution to drive your digital transformation. We help you make informed decisions about your technology investments with continuous guidance.",
+    features: [
+      "Technology strategy development",
+      "Process optimization and automation",
+      "Legacy system modernization",
+      "Digital roadmap planning",
+      "Change management support",
+      "Ongoing strategic guidance",
+    ],
+    technologies: ["Strategy Planning", "Process Automation", "Change Management", "Digital Roadmap", "Business Intelligence", "Agile Methodologies"],
+  },
+  {
     title: "Data Analytics & AI",
     description:
       "Transform your data into actionable insights with our comprehensive data analytics and AI solutions. We provide ongoing data management, analysis, and AI model development to drive business intelligence.",
@@ -165,28 +207,14 @@ const detailedServices = [
     ],
   },
   {
-    title: "Digital Transformation",
+    title: "Talent as a Service (TaaS)",
     description:
-      "Strategic technology planning embedded in ongoing execution to drive your digital transformation. We help you make informed decisions about your technology investments with continuous guidance.",
+      "Our flagship offering providing ongoing talent partnership with predictable costs, instant access to expert teams, and continuous innovation. Focus on your business while we handle your development and infrastructure needs.",
     features: [
-      "Technology strategy development",
-      "Process optimization and automation",
-      "Legacy system modernization",
-      "Digital roadmap planning",
-      "Change management support",
-      "Ongoing strategic guidance",
-    ],
-    technologies: ["Strategy Planning", "Process Automation", "Change Management", "Digital Roadmap", "Business Intelligence", "Agile Methodologies"],
-  },
-  {
-    title: "Technology-as-a-Service (TaaS)",
-    description:
-      "Our flagship offering providing ongoing technology partnership with predictable costs, dedicated team availability, and continuous innovation. Focus on your business while we handle your technology needs.",
-    features: [
-      "Dedicated technology team",
+      "Dedicated expert teams",
       "Predictable monthly costs",
       "Ongoing support and maintenance",
-      "Regular technology updates",
+      "Regular team updates and scaling",
       "Proactive monitoring and optimization",
       "Continuous improvement and innovation",
     ],
@@ -198,34 +226,6 @@ const detailedServices = [
       "Digital Transformation",
       "Ongoing Support",
     ],
-  },
-  {
-    title: "Cybersecurity Solutions",
-    description:
-      "Continuous threat monitoring and compliance management to protect your business and data. Stay secure and compliant with our comprehensive security services and ongoing protection.",
-    features: [
-      "Security assessment and auditing",
-      "Threat detection and response",
-      "Compliance management (SOC2, ISO)",
-      "Penetration testing",
-      "Incident response planning",
-      "Ongoing security monitoring",
-    ],
-    technologies: ["SIEM", "EDR", "WAF", "VPN", "PKI", "Security Frameworks"],
-  },
-  {
-    title: "Cloud Infrastructure & DevOps",
-    description:
-      "Seamless cloud migration, automation, and rapid deployment for faster time-to-market. Modernize your infrastructure with our cloud and DevOps expertise and ongoing optimization.",
-    features: [
-      "Cloud migration and optimization",
-      "CI/CD pipeline setup",
-      "Infrastructure as Code (IaC)",
-      "Container orchestration",
-      "Monitoring and logging",
-      "Ongoing cost optimization",
-    ],
-    technologies: ["AWS", "Azure", "GCP", "Kubernetes", "Docker", "Terraform"],
   },
 ];
 
@@ -294,13 +294,6 @@ export default function ServicesPage() {
               >
                 Detailed Service Offerings
               </h2>
-              <p
-                className="text-xl text-brand-secondary max-w-3xl mx-auto"
-                style={{ color: "#034078" }}
-              >
-                Explore our comprehensive range of Technology-as-a-Service
-                offerings designed to grow with your business
-              </p>
             </div>
 
             <div className="space-y-16">
@@ -310,7 +303,9 @@ export default function ServicesPage() {
                   id={service.title
                     .toLowerCase()
                     .replace(/\s+/g, "-")
-                    .replace(/&/g, "and")}
+                    .replace(/&/g, "and")
+                    .replace(/[()]/g, "")
+                    .replace(/\s+/g, "-")}
                   className="max-w-6xl mx-auto"
                   style={{ color: "#034078" }}
                 >

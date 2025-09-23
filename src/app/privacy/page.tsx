@@ -31,7 +31,7 @@ export default function PrivacyPage() {
                   <ul className="list-disc list-inside space-y-2 ml-4">
                     <li>Fill out our contact form or request consultation</li>
                     <li>Subscribe to our newsletter or updates</li>
-                    <li>Engage with our Technology-as-a-Service offerings</li>
+                    <li>Engage with our Talent as a Service offerings</li>
                     <li>Communicate with us via email, phone, or through our services</li>
                   </ul>
                   <p>This may include your name, email address, phone number, company name, and any other information you choose to provide.</p>
@@ -44,7 +44,7 @@ export default function PrivacyPage() {
                   <p>We use the information we collect to:</p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
                     <li>Respond to your inquiries and provide customer support</li>
-                    <li>Deliver Technology-as-a-Service solutions and ongoing support</li>
+                    <li>Deliver Talent as a Service solutions and ongoing support</li>
                     <li>Send you technical information and updates about our services</li>
                     <li>Improve our website and service offerings</li>
                     <li>Comply with legal obligations and regulatory requirements</li>

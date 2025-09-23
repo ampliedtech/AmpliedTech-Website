@@ -18,7 +18,7 @@ const customers = [
     logo: "/logos/shephertz.png", 
     description: "Product-Based Company",
     industry: "Technology Products",
-    testimonial: "Amplied has been our technology backbone for 7 years, powering everything from our Backend-as-a-Service platform to cutting-edge AI monitoring tools. Their expertise in cloud infrastructure and DevOps has been crucial in scaling our multi-product ecosystem.",
+    testimonial: "Amplied has been our talent backbone for 7 years, powering everything from our Backend-as-a-Service platform to cutting-edge AI monitoring tools. Their expertise in cloud infrastructure and DevOps has been crucial in scaling our multi-product ecosystem.",
     rating: 5,
     projectType: "Multi-Product Development"
   },

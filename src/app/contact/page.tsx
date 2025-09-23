@@ -37,7 +37,7 @@ const contactInfo = [
 
 const faqs = [
   {
-    question: "What is Technology-as-a-Service (TaaS)?",
+    question: "What is Talent-as-a-Service (TaaS)?",
     answer:
       "TaaS is our subscription-based model that provides ongoing technology services instead of one-off consultancy projects. You get continuous support, regular updates, and dedicated resources for a predictable monthly cost.",
   },
@@ -87,7 +87,7 @@ export default function ContactPage() {
               Contact Us
             </h1>
             <p className="text-xl text-brand-secondary max-w-3xl mx-auto">
-              Ready to transform your business with our Technology-as-a-Service?
+              Ready to transform your business with our Talent-as-a-Service?
               Let&apos;s discuss how we can help you achieve your goals.
             </p>
           </div>
@@ -166,7 +166,7 @@ export default function ContactPage() {
         className="text-xl text-brand-secondary max-w-3xl mx-auto"
         style={{ color: "#034078" }}
       >
-        Common questions about our Technology-as-a-Service model
+        Common questions about our Talent-as-a-Service model
       </p>
     </div>
 

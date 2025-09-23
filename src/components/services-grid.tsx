@@ -19,50 +19,50 @@ const services = [
   {
     icon: Code,
     title: "Custom Software Development",
-    description: "Tailored software solutions that align with your business objectives. From enterprise applications to mobile platforms, we build scalable, secure, and user-centric software that drives growth.",
-    features: ["Enterprise Applications", "Mobile & Web Development", "API & Integration", "Legacy System Modernization"],
+    description: "Access expert development teams for complete software projects. Our specialized developers build, deploy, and maintain enterprise applications, mobile platforms, and scalable software solutions.",
+    features: ["Expert Development Teams", "Full-Stack Specialists", "Project Management", "Ongoing Maintenance"],
     gradient: "from-blue-500/10 via-purple-500/5 to-cyan-500/10",
     iconGradient: "from-blue-500 to-purple-600"
   },
   {
     icon: Cloud,
     title: "Cloud Infrastructure & DevOps",
-    description: "Transform your infrastructure with cloud-native solutions that scale automatically. Our DevOps practices ensure 99.9% uptime, faster deployments, and reduced operational costs.",
-    features: ["Multi-Cloud Strategy", "Kubernetes & Docker", "Automated CI/CD", "Infrastructure Monitoring"],
+    description: "Deploy expert DevOps teams to manage and maintain your infrastructure with cloud-native solutions. Our specialists provide ongoing infrastructure management, CI/CD pipelines, and 24/7 monitoring.",
+    features: ["Infrastructure Management", "CI/CD Pipeline Management", "Cloud Architecture Teams", "24/7 Monitoring & Support"],
     gradient: "from-cyan-500/10 via-sky-500/5 to-blue-500/10",
     iconGradient: "from-cyan-500 to-sky-600"
   },
   {
     icon: Shield,
     title: "Cybersecurity Solutions",
-    description: "Protect your business with enterprise-grade security that adapts to evolving threats. From compliance audits to real-time monitoring, we ensure your data and systems remain secure.",
-    features: ["Security Assessment", "Compliance & Certification", "Threat Detection", "24/7 Security Monitoring"],
+    description: "Deploy specialized security teams to protect your business with enterprise-grade security. Our experts provide compliance audits, threat detection, and 24/7 monitoring to keep your systems secure.",
+    features: ["Security Expert Teams", "Compliance Specialists", "Threat Detection Experts", "24/7 Security Monitoring Teams"],
     gradient: "from-red-500/10 via-pink-500/5 to-rose-500/10",
     iconGradient: "from-red-500 to-pink-600"
   },
   {
-    icon: Monitor,
-    title: "Technology-as-a-Service (TaaS)",
-    description: "Your dedicated technology partner with predictable monthly investment. Get ongoing support, continuous innovation, and a dedicated team that grows with your business needs.",
-    features: ["Dedicated Team", "Fixed Monthly Costs", "Ongoing Support", "Continuous Innovation"],
-    gradient: "from-indigo-500/10 via-blue-500/5 to-purple-500/10",
-    iconGradient: "from-indigo-500 to-blue-600"
-  },
-  {
     icon: Lightbulb,
     title: "Digital Transformation",
-    description: "Accelerate your digital journey with strategic guidance and modern technology adoption. We help you streamline operations, improve customer experience, and drive innovation.",
-    features: ["Digital Strategy", "Process Automation", "Technology Roadmap", "Change Management"],
+    description: "Deploy expert transformation teams to accelerate your digital journey. Our specialists provide strategic guidance, process automation, and change management to drive innovation.",
+    features: ["Transformation Expert Teams", "Strategy Specialists", "Process Automation Experts", "Change Management Teams"],
     gradient: "from-yellow-500/10 via-orange-500/5 to-red-500/10",
     iconGradient: "from-yellow-500 to-orange-600"
   },
   {
     icon: Gamepad2,
     title: "Data Analytics & AI",
-    description: "Unlock the power of your data with intelligent analytics and AI solutions. Transform raw data into actionable insights that drive informed decisions and competitive advantage.",
-    features: ["Data Pipeline Engineering", "Machine Learning Models", "Business Intelligence", "AI-Powered Insights"],
+    description: "Access specialized data and AI teams to unlock the power of your data. Our experts transform raw data into actionable insights that drive informed decisions and competitive advantage.",
+    features: ["Data Science Expert Teams", "AI/ML Specialists", "Business Intelligence Experts", "Analytics Implementation Teams"],
     gradient: "from-green-500/10 via-emerald-500/5 to-teal-500/10",
     iconGradient: "from-green-500 to-emerald-600"
+  },
+  {
+    icon: Monitor,
+    title: "Talent as a Service (TaaS)",
+    description: "Your dedicated talent partner with predictable monthly investment. Get instant access to expert teams, ongoing support, and scalable talent that grows with your business needs.",
+    features: ["Dedicated Expert Teams", "Fixed Monthly Costs", "Instant Talent Access", "Scalable Team Solutions"],
+    gradient: "from-indigo-500/10 via-blue-500/5 to-purple-500/10",
+    iconGradient: "from-indigo-500 to-blue-600"
   }
 ];
 
@@ -75,7 +75,7 @@ function ServiceCard({ service, index }: { service: typeof services[0], index: n
   const pathname = usePathname();
 
   const handleLearnMore = () => {
-    const serviceId = service.title.toLowerCase().replace(/\s+/g, '-').replace(/&/g, 'and');
+    const serviceId = service.title.toLowerCase().replace(/\s+/g, '-').replace(/&/g, 'and').replace(/[()]/g, '').replace(/\s+/g, '-');
     
     if (pathname === '/services') {
       // If on services page, scroll to the detailed section
@@ -209,7 +209,7 @@ export default function ServicesGrid() {
             paddingBottom: "0.1em", 
           }}
         >
-          Technology-as-a-Service Solutions
+          Talent as a Service Solutions
         </motion.h2>
         <motion.p 
           className="text-xl max-w-3xl mx-auto text-[#034078]"
@@ -217,7 +217,7 @@ export default function ServicesGrid() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Your trusted technology partner for enterprise software, cloud infrastructure, and cybersecurity. We deliver Technology-as-a-Service with ongoing support, predictable costs, and the expertise to drive your digital transformation.
+          Access specialized teams instantly across all technology domains. From custom software development to cloud infrastructure and cybersecurity—we provide the right expertise when you need it most.
         </motion.p>
       </motion.div>
 

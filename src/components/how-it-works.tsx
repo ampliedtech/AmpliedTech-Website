@@ -13,7 +13,7 @@ const steps = [
   {
     icon: Handshake,
     title: "Partnership Setup",
-    description: "We establish a dedicated technology partnership with predictable monthly costs, understanding your business goals and setting up our ongoing collaboration framework.",
+    description: "We establish a dedicated talent partnership with predictable monthly costs, understanding your business goals and setting up our ongoing collaboration framework with expert teams.",
     color: "from-blue-500 to-cyan-500",
     bgColor: "bg-blue-50",
     iconColor: "text-blue-600"
@@ -21,7 +21,7 @@ const steps = [
   {
     icon: Search,
     title: "Discovery & Planning",
-    description: "Comprehensive analysis of your enterprise software, cloud infrastructure, and cybersecurity needs to create a strategic roadmap for digital transformation.",
+    description: "Comprehensive analysis of your talent needs across software development, infrastructure management, and cybersecurity to create a strategic roadmap for team deployment.",
     color: "from-emerald-500 to-teal-500",
     bgColor: "bg-emerald-50",
     iconColor: "text-emerald-600"
@@ -29,7 +29,7 @@ const steps = [
   {
     icon: Rocket,
     title: "Implementation",
-    description: "Rapid development and deployment of your technology solutions with ongoing support, using modern tools and agile methodologies for faster time-to-market.",
+    description: "Rapid deployment of expert teams and specialized talent for your projects with ongoing support, using modern tools and agile methodologies for faster time-to-market.",
     color: "from-purple-500 to-indigo-500",
     bgColor: "bg-purple-50",
     iconColor: "text-purple-600"
@@ -37,7 +37,7 @@ const steps = [
   {
     icon: RefreshCw,
     title: "Ongoing Partnership",
-    description: "Continuous support, monitoring, and innovation to ensure your technology evolves with your business needs, with predictable costs and dedicated expertise.",
+    description: "Continuous support, monitoring, and innovation to ensure your talent solutions evolve with your business needs, with predictable costs and scalable expert teams.",
     color: "from-orange-500 to-red-500",
     bgColor: "bg-orange-50",
     iconColor: "text-orange-600"
@@ -61,7 +61,7 @@ export default function HowItWorks() {
           How We Partner With You
         </h2>
         <p className="text-xl  max-w-4xl mx-auto leading-relaxed" style={{ color: '#034078' }}>
-          Your trusted technology partner for enterprise software, cloud infrastructure, and cybersecurity. We deliver Technology-as-a-Service with ongoing support, predictable costs, and the expertise to drive your digital transformation.
+          Our streamlined partnership process ensures rapid team deployment and seamless integration. From initial consultation to ongoing optimization, we maintain consistent communication and deliver measurable results at every step.
         </p>
       </motion.div>
 

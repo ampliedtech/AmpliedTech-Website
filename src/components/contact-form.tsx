@@ -105,7 +105,7 @@ export default function ContactForm() {
           Get in Touch
         </h2>
         <p className="text-xl text-brand-secondary max-w-3xl mx-auto" style={{ color: '#034078' }}>
-          Ready to transform your business? Let&apos;s discuss how our Technology-as-a-Service can help you achieve your goals.
+          Ready to transform your business? Let&apos;s discuss how our Talent-as-a-Service can help you achieve your goals.
         </p>
       </motion.div>
 

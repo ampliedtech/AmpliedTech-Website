@@ -28,7 +28,7 @@ const testimonials = [
     name: "Siddhartha Chandurkar",
     company: "Shephertz Technologies",
     role: "CEO & Founder",
-    content: "Amplied has been our technology backbone for 7 years, powering our entire product ecosystem from Backend-as-a-Service to cutting-edge AI monitoring tools. Their cloud infrastructure expertise and DevOps automation allowed us to scale from startup to enterprise while maintaining 99.9% uptime across all products.",
+    content: "Amplied has been our talent backbone for 7 years, powering our entire product ecosystem from Backend-as-a-Service to cutting-edge AI monitoring tools. Their cloud infrastructure expertise and DevOps automation allowed us to scale from startup to enterprise while maintaining 99.9% uptime across all products.",
     rating: 5,
     avatar: "/avatars/siddhartha.jpg",
     industry: "Technology Products"

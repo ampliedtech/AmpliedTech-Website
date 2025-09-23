@@ -90,7 +90,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Your trusted technology partner for enterprise software, cloud infrastructure, and cybersecurity. We deliver Technology-as-a-Service with ongoing support, predictable costs, and the expertise to drive your digital transformation.
+              Transform your business with instant access to world-class development teams, cloud infrastructure experts, and cybersecurity specialists. No more lengthy hiring processes or project delays—just immediate results.
             </motion.p>
           </motion.div>
 
